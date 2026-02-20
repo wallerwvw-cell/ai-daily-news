@@ -3,126 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI 日报</title>
+    <title>AI 日报 - 2026年02月20日</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
             background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
             min-height: 100vh;
             padding: 20px;
         }
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        header {
-            text-align: center;
-            padding: 40px 0;
-            color: #fff;
-        }
+        .container { max-width: 1200px; margin: 0 auto; }
+        header { text-align: center; padding: 40px 0; color: #fff; }
         header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 10px;
+            font-size: 2.5rem; margin-bottom: 10px;
             background: linear-gradient(90deg, #00d4ff, #7c3aed);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
+            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
         }
-        header p {
-            color: #94a3b8;
-            font-size: 1.1rem;
-        }
-        .date {
-            text-align: center;
-            color: #64748b;
-            margin-bottom: 30px;
-        }
-        .section {
-            margin-bottom: 40px;
-        }
+        header p { color: #94a3b8; font-size: 1.1rem; }
+        .date { text-align: center; color: #64748b; margin-bottom: 30px; font-size: 1.1rem; }
+        .section { margin-bottom: 40px; }
         .section-title {
-            color: #fff;
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-            padding-left: 15px;
-            border-left: 4px solid #00d4ff;
+            color: #fff; font-size: 1.5rem; margin-bottom: 20px;
+            padding-left: 15px; border-left: 4px solid #00d4ff;
         }
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-            gap: 20px;
-        }
+        .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 20px; }
         .card {
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 16px;
-            padding: 24px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
+            background: rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1); transition: transform 0.3s, box-shadow 0.3s;
             backdrop-filter: blur(10px);
         }
-        .card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
-        }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); }
         .card-category {
-            display: inline-block;
-            padding: 4px 12px;
-            border-radius: 20px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            margin-bottom: 12px;
+            display: inline-block; padding: 4px 12px; border-radius: 20px;
+            font-size: 0.75rem; font-weight: 600; margin-bottom: 12px;
         }
         .category-news { background: linear-gradient(90deg, #ff6b6b, #ee5a24); }
         .category-tech { background: linear-gradient(90deg, #00d4ff, #0984e3); }
         .category-tutorial { background: linear-gradient(90deg, #00b894, #00cec9); }
         .category-fun { background: linear-gradient(90deg, #a29bfe, #6c5ce7); }
-        
-        .card h3 {
-            color: #fff;
-            font-size: 1.2rem;
-            margin-bottom: 12px;
-            line-height: 1.4;
-        }
-        .card h3 a {
-            color: inherit;
-            text-decoration: none;
-        }
-        .card h3 a:hover {
-            color: #00d4ff;
-        }
-        .card p {
-            color: #94a3b8;
-            font-size: 0.9rem;
-            line-height: 1.6;
-            margin-bottom: 16px;
-        }
-        .card-source {
-            color: #64748b;
-            font-size: 0.8rem;
-        }
-        footer {
-            text-align: center;
-            padding: 40px 0;
-            color: #64748b;
-            font-size: 0.9rem;
-        }
-        footer a {
-            color: #00d4ff;
-            text-decoration: none;
-        }
-        @media (max-width: 768px) {
-            .cards {
-                grid-template-columns: 1fr;
-            }
-            header h1 {
-                font-size: 2rem;
-            }
-        }
+        .card h3 { color: #fff; font-size: 1.2rem; margin-bottom: 12px; line-height: 1.4; }
+        .card h3 a { color: inherit; text-decoration: none; }
+        .card h3 a:hover { color: #00d4ff; }
+        .card p { color: #94a3b8; font-size: 0.9rem; line-height: 1.6; margin-bottom: 16px; }
+        .card-source { color: #64748b; font-size: 0.8rem; }
+        footer { text-align: center; padding: 40px 0; color: #64748b; font-size: 0.9rem; }
+        footer a { color: #00d4ff; text-decoration: none; }
+        @media (max-width: 768px) { .cards { grid-template-columns: 1fr; } header h1 { font-size: 2rem; } }
     </style>
 </head>
 <body>
@@ -131,39 +57,111 @@
             <h1>🐟 AI 日报</h1>
             <p>每日 AI 新闻资讯、技术文章、教程和趣闻</p>
         </header>
-        
-        <p class="date" id="date"></p>
+        <p class="date">2026年02月20日 Friday</p>
         
         <div class="section">
             <h2 class="section-title">📰 AI 新闻</h2>
-            <div class="cards" id="news"></div>
+            <div class="cards">
+        <div class="card">
+            <span class="card-category category-news">新闻</span>
+            <h3><a href="https://venturebeat.com/orchestration/anthropics-sonnet-4-6-matches-flagship-ai-performance-at-one-fifth-the-cost" target="_blank">Anthropic's Sonnet 4.6 以五分之一成本匹配旗舰 AI 性能</a></h3>
+            <p>该模型在编码、计算机使用、长上下文推理、代理规划、知识工作和设计方面全面升级，具有 100 万 token 上下文窗口...</p>
+            <span class="card-source">VentureBeat</span>
+        </div>
+
+        <div class="card">
+            <span class="card-category category-news">新闻</span>
+            <h3><a href="https://venturebeat.com/technology/openais-acquisition-of-openclaw-signals-the-beginning-of-the-end-of-the" target="_blank">OpenAI 收购 OpenClaw 标志 ChatGPT 时代的终结</a></h3>
+            <p>开源 AI 代理 OpenClaw 创始人宣布加入 OpenAI，聊天机器人时代可能刚刚收到了讣告...</p>
+            <span class="card-source">VentureBeat</span>
+        </div>
+
+        <div class="card">
+            <span class="card-category category-news">新闻</span>
+            <h3><a href="https://venturebeat.com/orchestration/qodo-2-1-solves-your-coding-agents-amnesia-problem-giving-them-an-11" target="_blank">Qodo 2.1 解决编码代理的「失忆」问题</a></h3>
+            <p>Qodo 2.1 为 AI 编码工具带来了记忆功能，将精度提升 11%，解决了关闭会话后忘记之前工作的难题...</p>
+            <span class="card-source">VentureBeat</span>
+        </div>
+
+        <div class="card">
+            <span class="card-category category-news">新闻</span>
+            <h3><a href="https://venturebeat.com/infrastructure/nvidia-groq-and-the-limestone-race-to-real-time-ai-why-enterprises-win-or" target="_blank">Nvidia 与 Groq 竞争实时 AI：企业成败的关键</a></h3>
+            <p>从数据中心到边缘设备，实时 AI 推理成为科技巨头争夺的新战场...</p>
+            <span class="card-source">VentureBeat</span>
+        </div>
+
+        <div class="card">
+            <span class="card-category category-news">新闻</span>
+            <h3><a href="https://venturebeat.com/infrastructure/when-accurate-ai-is-still-dangerously-incomplete" target="_blank">即便准确的 AI 仍然危险地不完整</a></h3>
+            <p>LexisNexis 首席 AI 官解释为什么标准 RAG 在高风险法律 AI 中失败，以及图 RAG 如何弥补差距...</p>
+            <span class="card-source">VentureBeat</span>
+        </div></div>
         </div>
         
         <div class="section">
             <h2 class="section-title">💻 技术文章</h2>
-            <div class="cards" id="tech"></div>
+            <div class="cards">
+        <div class="card">
+            <span class="card-category category-tech">技术</span>
+            <h3><a href="https://github.com/ggml-org/llama.cpp/discussions/19759" target="_blank">Ggml.ai 加入 Hugging Face，确保本地 AI 的长期发展</a></h3>
+            <p> llama.cpp 团队加入 Hugging Face，致力于推动开源本地 AI 模型的长期发展...</p>
+            <span class="card-source">GitHub</span>
+        </div>
+
+        <div class="card">
+            <span class="card-category category-tech">技术</span>
+            <h3><a href="https://taalas.com/the-path-to-ubiquitous-ai/" target="_blank">通向无处不在的 AI 之路 (17k tokens/秒)</a></h3>
+            <p>探索如何实现每秒处理 17000 tokens 的 AI 推理，推动 AI 走向普及...</p>
+            <span class="card-source">Taalas</span>
+        </div>
+
+        <div class="card">
+            <span class="card-category category-tech">技术</span>
+            <h3><a href="https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2" target="_blank">Minions - Stripe 的编码代理 (第二部分)</a></h3>
+            <p>Stripe 分享其一次性端到端编码代理的开发经验和技术细节...</p>
+            <span class="card-source">Stripe Dev</span>
+        </div></div>
         </div>
         
         <div class="section">
             <h2 class="section-title">📚 教程</h2>
-            <div class="cards" id="tutorial"></div>
+            <div class="cards">
+        <div class="card">
+            <span class="card-category category-tutorial">教程</span>
+            <h3><a href="https://jimmyhmiller.com/learn-codebase-visualizer" target="_blank">学习代码库的新方法：构建可视化工具</a></h3>
+            <p>通过构建代码库可视化工具来更高效地理解大型项目结构...</p>
+            <span class="card-source">Jimmy Miller</span>
+        </div>
+
+        <div class="card">
+            <span class="card-category category-tutorial">教程</span>
+            <h3><a href="https://www.caimito.net/en/blog/2026/02/17/web-components-the-framework-free-renaissance.html" target="_blank">Web Components：无需框架的复兴</a></h3>
+            <p>现代 Web 开发中 Web Components 的复兴，无需框架的原生组件开发...</p>
+            <span class="card-source">Caimito</span>
+        </div></div>
         </div>
         
         <div class="section">
             <h2 class="section-title">🎉 趣闻</h2>
-            <div class="cards" id="fun"></div>
+            <div class="cards">
+        <div class="card">
+            <span class="card-category category-fun">趣闻</span>
+            <h3><a href="https://harpers.org/archive/2026/03/childs-play-sam-kriss-ai-startup-roy-lee/" target="_blank">童年游戏：科技新世代与思考的终结</a></h3>
+            <p>探讨新一代科技成长环境如何影响思维方式，以及 AI 对此的影响...</p>
+            <span class="card-source">Harper's Magazine</span>
+        </div>
+
+        <div class="card">
+            <span class="card-category category-fun">趣闻</span>
+            <h3><a href="https://blog.kinglycrow.com/no-skill-no-taste/" target="_blank">无技能，无品味</a></h3>
+            <p>关于 AI 时代创意工作的思考——当技术门槛降低，品味变得更重要...</p>
+            <span class="card-source">Kingly Crow</span>
+        </div></div>
         </div>
         
         <footer>
             <p>由 🐟 小鱼 自动生成 | <a href="https://github.com/wallerwvw-cell/ai-daily-news">GitHub</a></p>
         </footer>
     </div>
-    
-    <script>
-        // Set today's date
-        const date = new Date();
-        const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long' };
-        document.getElementById('date').textContent = date.toLocaleDateString('zh-CN', options);
-    </script>
 </body>
 </html>
