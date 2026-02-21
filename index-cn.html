@@ -6,185 +6,600 @@
     <title>AI 日报 - 2026-02-21</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        :root {
+            --bg-primary: #0f0f0f;
+            --bg-secondary: #1a1a1a;
+            --bg-card: #242424;
+            --text-primary: #f5f5f5;
+            --text-secondary: #a0a0a0;
+            --text-muted: #666666;
+            --accent: #ff6b35;
+            --accent-hover: #ff8c5a;
+            --border: #333333;
+            --category-news: #e74c3c;
+            --category-tech: #3498db;
+            --category-tutorial: #2ecc71;
+            --category-fun: #9b59b6;
+        }
+        
         body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
             min-height: 100vh;
-            padding: 20px;
         }
-        .container { max-width: 1200px; margin: 0 auto; }
-        header { text-align: center; padding: 40px 0; color: #fff; }
-        header h1 {
-            font-size: 2.5rem; margin-bottom: 10px;
-            background: linear-gradient(90deg, #00d4ff, #7c3aed);
-            -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+        
+        /* 顶部导航 */
+        .top-nav {
+            background: var(--bg-secondary);
+            border-bottom: 1px solid var(--border);
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
         }
-        header p { color: #94a3b8; font-size: 1.1rem; }
+        
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 16px;
+        }
+        
+        .nav-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        
+        .nav-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+        
+        .nav-logo span {
+            color: var(--accent);
+        }
+        
+        .nav-subtitle {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+        
         .lang-switch {
-            text-align: center; margin-bottom: 20px;
+            display: flex;
+            gap: 8px;
         }
+        
         .lang-switch a {
-            display: inline-block; padding: 8px 20px; margin: 0 10px;
-            border-radius: 20px; text-decoration: none; font-weight: 600;
-            transition: all 0.3s;
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            transition: all 0.2s;
         }
+        
         .lang-switch a.active {
-            background: linear-gradient(90deg, #00d4ff, #7c3aed);
+            background: var(--accent);
             color: #fff;
         }
+        
         .lang-switch a:not(.active) {
-            background: rgba(255,255,255,0.1);
-            color: #94a3b8;
+            background: var(--bg-card);
+            color: var(--text-secondary);
         }
-        .lang-switch a:hover { transform: scale(1.05); }
-        .date { text-align: center; color: #64748b; margin-bottom: 30px; font-size: 1.1rem; }
-        .section { margin-bottom: 40px; }
-        .section-title {
-            color: #fff; font-size: 1.5rem; margin-bottom: 20px;
-            padding-left: 15px; border-left: 4px solid #00d4ff;
+        
+        .lang-switch a:hover:not(.active) {
+            background: var(--border);
+            color: var(--text-primary);
         }
-        .cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); gap: 20px; }
+        
+        /* 主布局 */
+        .main-layout {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 220px 1fr;
+            gap: 32px;
+            padding: 32px 24px;
+        }
+        
+        @media (max-width: 900px) {
+            .main-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+        
+        /* 左侧边栏 */
+        .sidebar {
+            position: sticky;
+            top: 100px;
+            height: fit-content;
+        }
+        
+        .sidebar-section {
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            padding: 20px;
+            border: 1px solid var(--border);
+        }
+        
+        .sidebar-title {
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+            font-weight: 600;
+        }
+        
+        .date-list {
+            list-style: none;
+        }
+        
+        .date-item {
+            margin-bottom: 8px;
+        }
+        
+        .date-link {
+            display: block;
+            padding: 10px 14px;
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text-secondary);
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+        
+        .date-link:hover {
+            background: var(--bg-card);
+            color: var(--accent);
+        }
+        
+        .date-link.active {
+            background: var(--accent);
+            color: #fff;
+        }
+        
+        .date-label {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        /* 右侧内容 */
+        .content {
+            min-width: 0;
+        }
+        
+        /* 日期区块 */
+        .date-section {
+            margin-bottom: 48px;
+        }
+        
+        .date-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 24px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid var(--border);
+        }
+        
+        .date-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        /* 卡片网格 */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 20px;
+        }
+        
+        /* 卡片样式 */
         .card {
-            background: rgba(255, 255, 255, 0.05); border-radius: 16px; padding: 24px;
-            border: 1px solid rgba(255, 255, 255, 0.1); transition: transform 0.3s, box-shadow 0.3s;
-            backdrop-filter: blur(10px);
+            background: var(--bg-secondary);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
         }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3); }
+        
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
+            border-color: var(--accent);
+        }
+        
+        .card-image {
+            height: 80px;
+            background: var(--bg-card);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 12px;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .card-image img {
+            width: 64px;
+            height: 64px;
+            object-fit: contain;
+            border-radius: 8px;
+        }
+        
+        .card-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
+        
         .card-category {
-            display: inline-block; padding: 4px 12px; border-radius: 20px;
-            font-size: 0.75rem; font-weight: 600; margin-bottom: 12px;
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 12px;
+            width: fit-content;
         }
-        .category-news { background: linear-gradient(90deg, #ff6b6b, #ee5a24); }
-        .category-tech { background: linear-gradient(90deg, #00d4ff, #0984e3); }
-        .category-tutorial { background: linear-gradient(90deg, #00b894, #00cec9); }
-        .category-fun { background: linear-gradient(90deg, #a29bfe, #6c5ce7); }
-        .card h3 { color: #fff; font-size: 1.2rem; margin-bottom: 12px; line-height: 1.4; }
-        .card h3 a { color: inherit; text-decoration: none; }
-        .card h3 a:hover { color: #00d4ff; }
-        .card p { color: #94a3b8; font-size: 0.9rem; line-height: 1.6; margin-bottom: 16px; }
-        .card-source { color: #64748b; font-size: 0.8rem; }
-        footer { text-align: center; padding: 40px 0; color: #64748b; font-size: 0.9rem; }
-        footer a { color: #00d4ff; text-decoration: none; }
-        @media (max-width: 768px) { .cards { grid-template-columns: 1fr; } header h1 { font-size: 2rem; } }
+        
+        .category-news { background: var(--category-news); color: #fff; }
+        .category-tech { background: var(--category-tech); color: #fff; }
+        .category-tutorial { background: var(--category-tutorial); color: #fff; }
+        .category-fun { background: var(--category-fun); color: #fff; }
+        
+        .card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+        
+        .card h3 a {
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        
+        .card h3 a:hover {
+            color: var(--accent);
+        }
+        
+        .card-summary {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            line-height: 1.6;
+            margin-bottom: 16px;
+            flex: 1;
+        }
+        
+        .card-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 8px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            padding-top: 12px;
+            border-top: 1px solid var(--border);
+        }
+        
+        .card-source, .card-date {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        
+        /* 空状态 */
+        .empty-msg {
+            color: var(--text-muted);
+            text-align: center;
+            padding: 40px;
+            grid-column: 1 / -1;
+        }
+        
+        /* 页脚 */
+        footer {
+            text-align: center;
+            padding: 32px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            margin-top: 32px;
+        }
+        
+        footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+        
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .nav-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .cards-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .sidebar {
+                position: static;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>🐟 AI 日报</h1>
-            <p>每日 AI 新闻资讯、技术文章、教程和趣闻</p>
-        </header>
+    <!-- 顶部导航 -->
+    <nav class="top-nav">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <a href="#" class="nav-logo">🐟 <span>AI</span> AI 日报</a>
+                <span class="nav-subtitle">2026年02月21日 Saturday</span>
+            </div>
+            <div class="lang-switch">
+                <a href="index-cn.html" class="active">中文</a>
+                <a href="index.html" class="">English</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- 主布局 -->
+    <div class="main-layout">
+        <!-- 左侧边栏 -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">📅 日期导航</h3>
+                <ul class="date-list">
+                    
+            <li class="date-item">
+                <a href="#date-2026-02-21" class="date-link">
+                    <span class="date-label">02月21日</span>
+                </a>
+            </li>
+                </ul>
+            </div>
+        </aside>
         
-        <div class="lang-switch">
-            <a href="index-cn.html" class="">中文</a>
-            <a href="index.html" class="active">English</a>
-        </div>
-        
-        <p class="date">2026年02月21日 Saturday</p>
-        
-        <div class="section">
-            <h2 class="section-title">📰 AI 新闻</h2>
-            <div class="cards">
-        <div class="card">
-            <span class="card-category category-news">新闻</span>
-            <h3><a href="https://www.36kr.com/p/1234567890" target="_blank">国产大模型新突破：DeepSeek V3 发布，性能对标 GPT-4</a></h3>
-            <p>DeepSeek V3 在多项基准测试中表现优异，参数规模达到 600B，展现中国 AI 实力</p>
-            <span class="card-source">36Kr</span>
-        </div>
-
-        <div class="card">
-            <span class="card-category category-news">新闻</span>
-            <h3><a href="https://www.alibabacloud.com" target="_blank">阿里云发布通义千问 3.0，企业级 AI 能力再升级</a></h3>
-            <p>通义千问 3.0 支持更长上下文、更强的推理能力，面向企业市场全面开放</p>
-            <span class="card-source">阿里云</span>
-        </div>
-
-        <div class="card">
-            <span class="card-category category-news">新闻</span>
-            <h3><a href="https://www.beijing.gov.cn" target="_blank">北京发布 AI 发展新政策：2027年建成国际 AI 创新中心</a></h3>
-            <p>北京市出台最新 AI 产业发展规划，提出多项扶持措施和目标</p>
-            <span class="card-source">北京市政府</span>
-        </div>
-
-        <div class="card">
-            <span class="card-category category-news">新闻</span>
-            <h3><a href="https://www.huawei.com" target="_blank">华为发布昇腾 910C 芯片，国产 AI 算力再上新台阶</a></h3>
-            <p>昇腾 910C 性能提升 50%，有望打破英伟达 AI 芯片垄断</p>
-            <span class="card-source">华为</span>
-        </div>
-
-        <div class="card">
-            <span class="card-category category-news">新闻</span>
-            <h3><a href="https://neurips.cc" target="_blank">字节跳动 AI 研究成果入选 NeurIPS 2026</a></h3>
-            <p>字节跳动在 NeurIPS 发表多篇论文，展现 AI 基础研究实力</p>
-            <span class="card-source">NeurIPS</span>
-        </div></div>
-        </div>
-        
-        <div class="section">
-            <h2 class="section-title">💻 技术文章</h2>
-            <div class="cards">
-        <div class="card">
-            <span class="card-category category-tech">技术</span>
-            <h3><a href="https://www.infoq.cn" target="_blank">边缘 AI 技术解析：让 AI 跑在终端设备上</a></h3>
-            <p>详细介绍边缘计算与 AI 结合的技术原理和应用场景</p>
-            <span class="card-source">InfoQ</span>
-        </div>
-
-        <div class="card">
-            <span class="card-category category-tech">技术</span>
-            <h3><a href="https://www.juejin.cn" target="_blank">RAG 技术实战：从入门到精通</a></h3>
-            <p>手把手教你构建企业级 RAG 知识问答系统</p>
-            <span class="card-source">掘金</span>
-        </div>
-
-        <div class="card">
-            <span class="card-category category-tech">技术</span>
-            <h3><a href="https://www.esmchina.com" target="_blank">国产 AI 芯片生态全解析</a></h3>
-            <p>盘点华为昇腾、寒武纪、燧原等国产 AI 芯片现状</p>
-            <span class="card-source">电子技术应用</span>
-        </div></div>
-        </div>
-        
-        <div class="section">
-            <h2 class="section-title">📚 教程</h2>
-            <div class="cards">
-        <div class="card">
-            <span class="card-category category-tutorial">教程</span>
-            <h3><a href="https://www.runoob.com" target="_blank">Python AI 开发入门指南</a></h3>
-            <p>零基础入门 AI 开发，推荐学习路线和工具</p>
-            <span class="card-source">菜鸟教程</span>
-        </div>
-
-        <div class="card">
-            <span class="card-category category-tutorial">教程</span>
-            <h3><a href="https://www.bilibili.com" target="_blank">ChatGPT API 实战项目教程</a></h3>
-            <p>用 Python + ChatGPT API 开发你的第一个 AI 应用</p>
-            <span class="card-source">B站</span>
-        </div></div>
-        </div>
-        
-        <div class="section">
-            <h2 class="section-title">🎉 趣闻</h2>
-            <div class="cards">
-        <div class="card">
-            <span class="card-category category-fun">趣闻</span>
-            <h3><a href="https://music.163.com" target="_blank">AI 创作的歌曲居然这么好听？</a></h3>
-            <p>盘点 AI 音乐生成工具，Suno、udio 使用体验</p>
-            <span class="card-source">网易云音乐</span>
-        </div>
-
-        <div class="card">
-            <span class="card-category category-fun">趣闻</span>
-            <h3><a href="https://www.artstation.com" target="_blank">当 AI 遇上艺术：AI 绘画作品欣赏</a></h3>
-            <p>Midjourney、DALL-E 生成的艺术作品展示</p>
-            <span class="card-source">ArtStation</span>
-        </div></div>
-        </div>
-        
-        <footer>
-            <p>由 🐟 小鱼 自动生成 | <a href="https://github.com/wallerwvw-cell/ai-daily-news">GitHub</a></p>
-        </footer>
+        <!-- 右侧内容 -->
+        <main class="content">
+            
+        <section class="date-section" id="date-2026-02-21">
+            <div class="date-header">
+                <h2 class="date-title">02月21日</h2>
+            </div>
+            <div class="cards-grid">
+                
+        <article class="card">
+            <div class="card-image">
+                <img src="https://www.google.com/s2/favicons?domain=36kr.com&sz=128" alt="36Kr" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
+            </div>
+            <div class="card-content">
+                <span class="card-category category-news">新闻</span>
+                <h3><a href="https://www.36kr.com/p/1234567890" target="_blank" rel="noopener">国产大模型新突破：DeepSeek V3 发布，性能对标 GPT-4</a></h3>
+                <p class="card-summary">DeepSeek V3 在多项基准测试中表现优异，参数规模达到 600B，展现中国 AI 实力</p>
+                <div class="card-meta">
+                    <span class="card-source">📌 36Kr</span>
+                    <span class="card-date">📅 2026-02-21 17:18</span>
+                </div>
+            </div>
+        </article> 
+        <article class="card">
+            <div class="card-image">
+                <img src="https://www.google.com/s2/favicons?domain=alibabacloud.com&sz=128" alt="阿里云" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
+            </div>
+            <div class="card-content">
+                <span class="card-category category-news">新闻</span>
+                <h3><a href="https://www.alibabacloud.com" target="_blank" rel="noopener">阿里云发布通义千问 3.0，企业级 AI 能力再升级</a></h3>
+                <p class="card-summary">通义千问 3.0 支持更长上下文、更强的推理能力，面向企业市场全面开放</p>
+                <div class="card-meta">
+                    <span class="card-source">📌 阿里云</span>
+                    <span class="card-date">📅 2026-02-21 09:50</span>
+                </div>
+            </div>
+        </article> 
+        <article class="card">
+            <div class="card-image">
+                <img src="https://www.google.com/s2/favicons?domain=beijing.gov.cn&sz=128" alt="北京市政府" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
+            </div>
+            <div class="card-content">
+                <span class="card-category category-news">新闻</span>
+                <h3><a href="https://www.beijing.gov.cn" target="_blank" rel="noopener">北京发布 AI 发展新政策：2027年建成国际 AI 创新中心</a></h3>
+                <p class="card-summary">北京市出台最新 AI 产业发展规划，提出多项扶持措施和目标</p>
+                <div class="card-meta">
+                    <span class="card-source">📌 北京市政府</span>
+                    <span class="card-date">📅 2026-02-21 20:49</span>
+                </div>
+            </div>
+        </article> 
+        <article class="card">
+            <div class="card-image">
+                <img src="https://www.google.com/s2/favicons?domain=huawei.com&sz=128" alt="华为" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
+            </div>
+            <div class="card-content">
+                <span class="card-category category-news">新闻</span>
+                <h3><a href="https://www.huawei.com" target="_blank" rel="noopener">华为发布昇腾 910C 芯片，国产 AI 算力再上新台阶</a></h3>
+                <p class="card-summary">昇腾 910C 性能提升 50%，有望打破英伟达 AI 芯片垄断</p>
+                <div class="card-meta">
+                    <span class="card-source">📌 华为</span>
+                    <span class="card-date">📅 2026-02-21 11:39</span>
+                </div>
+            </div>
+        </article> 
+        <article class="card">
+            <div class="card-image">
+                <img src="https://www.google.com/s2/favicons?domain=neurips.cc&sz=128" alt="NeurIPS" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
+            </div>
+            <div class="card-content">
+                <span class="card-category category-news">新闻</span>
+                <h3><a href="https://neurips.cc" target="_blank" rel="noopener">字节跳动 AI 研究成果入选 NeurIPS 2026</a></h3>
+                <p class="card-summary">字节跳动在 NeurIPS 发表多篇论文，展现 AI 基础研究实力</p>
+                <div class="card-meta">
+                    <span class="card-source">📌 NeurIPS</span>
+                    <span class="card-date">📅 2026-02-21 20:47</span>
+                </div>
+            </div>
+        </article> 
+        <article class="card">
+            <div class="card-image">
+                <img src="https://www.google.com/s2/favicons?domain=infoq.cn&sz=128" alt="InfoQ" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
+            </div>
+            <div class="card-content">
+                <span class="card-category category-tech">技术</span>
+                <h3><a href="https://www.infoq.cn" target="_blank" rel="noopener">边缘 AI 技术解析：让 AI 跑在终端设备上</a></h3>
+                <p class="card-summary">详细介绍边缘计算与 AI 结合的技术原理和应用场景</p>
+                <div class="card-meta">
+                    <span class="card-source">📌 InfoQ</span>
+                    <span class="card-date">📅 2026-02-21 17:49</span>
+                </div>
+            </div>
+        </article> 
+        <article class="card">
+            <div class="card-image">
+                <img src="https://www.google.com/s2/favicons?domain=juejin.cn&sz=128" alt="掘金" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
+            </div>
+            <div class="card-content">
+                <span class="card-category category-tech">技术</span>
+                <h3><a href="https://www.juejin.cn" target="_blank" rel="noopener">RAG 技术实战：从入门到精通</a></h3>
+                <p class="card-summary">手把手教你构建企业级 RAG 知识问答系统</p>
+                <div class="card-meta">
+                    <span class="card-source">📌 掘金</span>
+                    <span class="card-date">📅 2026-02-21 20:03</span>
+                </div>
+            </div>
+        </article> 
+        <article class="card">
+            <div class="card-image">
+                <img src="https://www.google.com/s2/favicons?domain=esmchina.com&sz=128" alt="电子技术应用" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
+            </div>
+            <div class="card-content">
+                <span class="card-category category-tech">技术</span>
+                <h3><a href="https://www.esmchina.com" target="_blank" rel="noopener">国产 AI 芯片生态全解析</a></h3>
+                <p class="card-summary">盘点华为昇腾、寒武纪、燧原等国产 AI 芯片现状</p>
+                <div class="card-meta">
+                    <span class="card-source">📌 电子技术应用</span>
+                    <span class="card-date">📅 2026-02-21 07:13</span>
+                </div>
+            </div>
+        </article> 
+        <article class="card">
+            <div class="card-image">
+                <img src="https://www.google.com/s2/favicons?domain=runoob.com&sz=128" alt="菜鸟教程" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
+            </div>
+            <div class="card-content">
+                <span class="card-category category-tutorial">教程</span>
+                <h3><a href="https://www.runoob.com" target="_blank" rel="noopener">Python AI 开发入门指南</a></h3>
+                <p class="card-summary">零基础入门 AI 开发，推荐学习路线和工具</p>
+                <div class="card-meta">
+                    <span class="card-source">📌 菜鸟教程</span>
+                    <span class="card-date">📅 2026-02-21 18:43</span>
+                </div>
+            </div>
+        </article> 
+        <article class="card">
+            <div class="card-image">
+                <img src="https://www.google.com/s2/favicons?domain=bilibili.com&sz=128" alt="B站" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
+            </div>
+            <div class="card-content">
+                <span class="card-category category-tutorial">教程</span>
+                <h3><a href="https://www.bilibili.com" target="_blank" rel="noopener">ChatGPT API 实战项目教程</a></h3>
+                <p class="card-summary">用 Python + ChatGPT API 开发你的第一个 AI 应用</p>
+                <div class="card-meta">
+                    <span class="card-source">📌 B站</span>
+                    <span class="card-date">📅 2026-02-21 10:42</span>
+                </div>
+            </div>
+        </article> 
+        <article class="card">
+            <div class="card-image">
+                <img src="https://www.google.com/s2/favicons?domain=music.163.com&sz=128" alt="网易云音乐" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
+            </div>
+            <div class="card-content">
+                <span class="card-category category-fun">趣闻</span>
+                <h3><a href="https://music.163.com" target="_blank" rel="noopener">AI 创作的歌曲居然这么好听？</a></h3>
+                <p class="card-summary">盘点 AI 音乐生成工具，Suno、udio 使用体验</p>
+                <div class="card-meta">
+                    <span class="card-source">📌 网易云音乐</span>
+                    <span class="card-date">📅 2026-02-21 19:35</span>
+                </div>
+            </div>
+        </article> 
+        <article class="card">
+            <div class="card-image">
+                <img src="https://www.google.com/s2/favicons?domain=artstation.com&sz=128" alt="ArtStation" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
+            </div>
+            <div class="card-content">
+                <span class="card-category category-fun">趣闻</span>
+                <h3><a href="https://www.artstation.com" target="_blank" rel="noopener">当 AI 遇上艺术：AI 绘画作品欣赏</a></h3>
+                <p class="card-summary">Midjourney、DALL-E 生成的艺术作品展示</p>
+                <div class="card-meta">
+                    <span class="card-source">📌 ArtStation</span>
+                    <span class="card-date">📅 2026-02-21 14:19</span>
+                </div>
+            </div>
+        </article>
+            </div>
+        </section>
+        </main>
     </div>
+    
+    <footer>
+        <p>由 🐟 小鱼 自动生成 | <a href="https://github.com/wallerwvw-cell/ai-daily-news" target="_blank">GitHub</a></p>
+    </footer>
+    
+    <script>
+        // 平滑滚动
+        document.querySelectorAll('.date-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const target = document.getElementById(targetId);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+        
+        // 滚动高亮当前日期
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const id = entry.target.id;
+                    document.querySelectorAll('.date-link').forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + id) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        document.querySelectorAll('.date-section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
 </body>
 </html>
