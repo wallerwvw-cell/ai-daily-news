@@ -1,0 +1,82 @@
+{
+  "news": [
+    {
+      "title": "Anthropic's Sonnet 4.6 以五分之一成本匹配旗舰 AI 性能",
+      "snippet": "该模型在编码、计算机使用、长上下文推理、代理规划、知识工作和设计方面全面升级，具有 100 万 token 上下文窗口",
+      "url": "https://venturebeat.com/orchestration/anthropics-sonnet-4-6-matches-flagship-ai-performance-at-one-fifth-the-cost",
+      "source": "VentureBeat"
+    },
+    {
+      "title": "OpenAI 收购 OpenClaw 标志 ChatGPT 时代的终结",
+      "snippet": "开源 AI 代理 OpenClaw 创始人宣布加入 OpenAI，聊天机器人时代可能刚刚收到了讣告",
+      "url": "https://venturebeat.com/technology/openais-acquisition-of-openclaw-signals-the-beginning-of-the-end-of-the",
+      "source": "VentureBeat"
+    },
+    {
+      "title": "Qodo 2.1 解决编码代理的「失忆」问题",
+      "snippet": "Qodo 2.1 为 AI 编码工具带来了记忆功能，将精度提升 11%，解决了关闭会话后忘记之前工作的难题",
+      "url": "https://venturebeat.com/orchestration/qodo-2-1-solves-your-coding-agents-amnesia-problem-giving-them-an-11",
+      "source": "VentureBeat"
+    },
+    {
+      "title": "Nvidia 与 Groq 竞争实时 AI：企业成败的关键",
+      "snippet": "从数据中心到边缘设备，实时 AI 推理成为科技巨头争夺的新战场",
+      "url": "https://venturebeat.com/infrastructure/nvidia-groq-and-the-limestone-race-to-real-time-ai-why-enterprises-win-or",
+      "source": "VentureBeat"
+    },
+    {
+      "title": "即便准确的 AI 仍然危险地不完整",
+      "snippet": "LexisNexis 首席 AI 官解释为什么标准 RAG 在高风险法律 AI 中失败，以及图 RAG 如何弥补差距",
+      "url": "https://venturebeat.com/infrastructure/when-accurate-ai-is-still-dangerously-incomplete",
+      "source": "VentureBeat"
+    }
+  ],
+  "tech": [
+    {
+      "title": "Ggml.ai 加入 Hugging Face，确保本地 AI 的长期发展",
+      "snippet": " llama.cpp 团队加入 Hugging Face，致力于推动开源本地 AI 模型的长期发展",
+      "url": "https://github.com/ggml-org/llama.cpp/discussions/19759",
+      "source": "GitHub"
+    },
+    {
+      "title": "通向无处不在的 AI 之路 (17k tokens/秒)",
+      "snippet": "探索如何实现每秒处理 17000 tokens 的 AI 推理，推动 AI 走向普及",
+      "url": "https://taalas.com/the-path-to-ubiquitous-ai/",
+      "source": "Taalas"
+    },
+    {
+      "title": "Minions - Stripe 的编码代理 (第二部分)",
+      "snippet": "Stripe 分享其一次性端到端编码代理的开发经验和技术细节",
+      "url": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2",
+      "source": "Stripe Dev"
+    }
+  ],
+  "tutorial": [
+    {
+      "title": "学习代码库的新方法：构建可视化工具",
+      "snippet": "通过构建代码库可视化工具来更高效地理解大型项目结构",
+      "url": "https://jimmyhmiller.com/learn-codebase-visualizer",
+      "source": "Jimmy Miller"
+    },
+    {
+      "title": "Web Components：无需框架的复兴",
+      "snippet": "现代 Web 开发中 Web Components 的复兴，无需框架的原生组件开发",
+      "url": "https://www.caimito.net/en/blog/2026/02/17/web-components-the-framework-free-renaissance.html",
+      "source": "Caimito"
+    }
+  ],
+  "fun": [
+    {
+      "title": "童年游戏：科技新世代与思考的终结",
+      "snippet": "探讨新一代科技成长环境如何影响思维方式，以及 AI 对此的影响",
+      "url": "https://harpers.org/archive/2026/03/childs-play-sam-kriss-ai-startup-roy-lee/",
+      "source": "Harper's Magazine"
+    },
+    {
+      "title": "无技能，无品味",
+      "snippet": "关于 AI 时代创意工作的思考——当技术门槛降低，品味变得更重要",
+      "url": "https://blog.kinglycrow.com/no-skill-no-taste/",
+      "source": "Kingly Crow"
+    }
+  ]
+}

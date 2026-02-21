@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI 日报 - 2026年02月20日</title>
+    <title>AI Daily News - 2026-02-21</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -20,6 +20,23 @@
             -webkit-background-clip: text; -webkit-text-fill-color: transparent;
         }
         header p { color: #94a3b8; font-size: 1.1rem; }
+        .lang-switch {
+            text-align: center; margin-bottom: 20px;
+        }
+        .lang-switch a {
+            display: inline-block; padding: 8px 20px; margin: 0 10px;
+            border-radius: 20px; text-decoration: none; font-weight: 600;
+            transition: all 0.3s;
+        }
+        .lang-switch a.active {
+            background: linear-gradient(90deg, #00d4ff, #7c3aed);
+            color: #fff;
+        }
+        .lang-switch a:not(.active) {
+            background: rgba(255,255,255,0.1);
+            color: #94a3b8;
+        }
+        .lang-switch a:hover { transform: scale(1.05); }
         .date { text-align: center; color: #64748b; margin-bottom: 30px; font-size: 1.1rem; }
         .section { margin-bottom: 40px; }
         .section-title {
@@ -54,113 +71,119 @@
 <body>
     <div class="container">
         <header>
-            <h1>🐟 AI 日报</h1>
-            <p>每日 AI 新闻资讯、技术文章、教程和趣闻</p>
+            <h1>🐟 AI Daily News</h1>
+            <p>Daily AI News, Tech Articles, Tutorials & Fun Stuff</p>
         </header>
-        <p class="date">2026年02月20日 Friday</p>
+        
+        <div class="lang-switch">
+            <a href="index-cn.html" class="active">中文</a>
+            <a href="index.html" class="">English</a>
+        </div>
+        
+        <p class="date">February 21, 2026</p>
         
         <div class="section">
-            <h2 class="section-title">📰 AI 新闻</h2>
+            <h2 class="section-title">📰 AI News</h2>
             <div class="cards">
         <div class="card">
-            <span class="card-category category-news">新闻</span>
+            <span class="card-category category-news">News</span>
             <h3><a href="https://venturebeat.com/orchestration/anthropics-sonnet-4-6-matches-flagship-ai-performance-at-one-fifth-the-cost" target="_blank">Anthropic's Sonnet 4.6 以五分之一成本匹配旗舰 AI 性能</a></h3>
-            <p>该模型在编码、计算机使用、长上下文推理、代理规划、知识工作和设计方面全面升级，具有 100 万 token 上下文窗口...</p>
+            <p>该模型在编码、计算机使用、长上下文推理、代理规划、知识工作和设计方面全面升级，具有 100 万 token 上下文窗口</p>
             <span class="card-source">VentureBeat</span>
         </div>
 
         <div class="card">
-            <span class="card-category category-news">新闻</span>
+            <span class="card-category category-news">News</span>
             <h3><a href="https://venturebeat.com/technology/openais-acquisition-of-openclaw-signals-the-beginning-of-the-end-of-the" target="_blank">OpenAI 收购 OpenClaw 标志 ChatGPT 时代的终结</a></h3>
-            <p>开源 AI 代理 OpenClaw 创始人宣布加入 OpenAI，聊天机器人时代可能刚刚收到了讣告...</p>
+            <p>开源 AI 代理 OpenClaw 创始人宣布加入 OpenAI，聊天机器人时代可能刚刚收到了讣告</p>
             <span class="card-source">VentureBeat</span>
         </div>
 
         <div class="card">
-            <span class="card-category category-news">新闻</span>
+            <span class="card-category category-news">News</span>
             <h3><a href="https://venturebeat.com/orchestration/qodo-2-1-solves-your-coding-agents-amnesia-problem-giving-them-an-11" target="_blank">Qodo 2.1 解决编码代理的「失忆」问题</a></h3>
-            <p>Qodo 2.1 为 AI 编码工具带来了记忆功能，将精度提升 11%，解决了关闭会话后忘记之前工作的难题...</p>
+            <p>Qodo 2.1 为 AI 编码工具带来了记忆功能，将精度提升 11%，解决了关闭会话后忘记之前工作的难题</p>
             <span class="card-source">VentureBeat</span>
         </div>
 
         <div class="card">
-            <span class="card-category category-news">新闻</span>
+            <span class="card-category category-news">News</span>
             <h3><a href="https://venturebeat.com/infrastructure/nvidia-groq-and-the-limestone-race-to-real-time-ai-why-enterprises-win-or" target="_blank">Nvidia 与 Groq 竞争实时 AI：企业成败的关键</a></h3>
-            <p>从数据中心到边缘设备，实时 AI 推理成为科技巨头争夺的新战场...</p>
+            <p>从数据中心到边缘设备，实时 AI 推理成为科技巨头争夺的新战场</p>
             <span class="card-source">VentureBeat</span>
         </div>
 
         <div class="card">
-            <span class="card-category category-news">新闻</span>
+            <span class="card-category category-news">News</span>
             <h3><a href="https://venturebeat.com/infrastructure/when-accurate-ai-is-still-dangerously-incomplete" target="_blank">即便准确的 AI 仍然危险地不完整</a></h3>
-            <p>LexisNexis 首席 AI 官解释为什么标准 RAG 在高风险法律 AI 中失败，以及图 RAG 如何弥补差距...</p>
+            <p>LexisNexis 首席 AI 官解释为什么标准 RAG 在高风险法律 AI 中失败，以及图 RAG 如何弥补差距</p>
             <span class="card-source">VentureBeat</span>
         </div></div>
         </div>
         
         <div class="section">
-            <h2 class="section-title">💻 技术文章</h2>
+            <h2 class="section-title">💻 Tech Articles</h2>
             <div class="cards">
         <div class="card">
-            <span class="card-category category-tech">技术</span>
+            <span class="card-category category-tech">Tech</span>
             <h3><a href="https://github.com/ggml-org/llama.cpp/discussions/19759" target="_blank">Ggml.ai 加入 Hugging Face，确保本地 AI 的长期发展</a></h3>
-            <p> llama.cpp 团队加入 Hugging Face，致力于推动开源本地 AI 模型的长期发展...</p>
+            <p> llama.cpp 团队加入 Hugging Face，致力于推动开源本地 AI 模型的长期发展</p>
             <span class="card-source">GitHub</span>
         </div>
 
         <div class="card">
-            <span class="card-category category-tech">技术</span>
+            <span class="card-category category-tech">Tech</span>
             <h3><a href="https://taalas.com/the-path-to-ubiquitous-ai/" target="_blank">通向无处不在的 AI 之路 (17k tokens/秒)</a></h3>
-            <p>探索如何实现每秒处理 17000 tokens 的 AI 推理，推动 AI 走向普及...</p>
+            <p>探索如何实现每秒处理 17000 tokens 的 AI 推理，推动 AI 走向普及</p>
             <span class="card-source">Taalas</span>
         </div>
 
         <div class="card">
-            <span class="card-category category-tech">技术</span>
+            <span class="card-category category-tech">Tech</span>
             <h3><a href="https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2" target="_blank">Minions - Stripe 的编码代理 (第二部分)</a></h3>
-            <p>Stripe 分享其一次性端到端编码代理的开发经验和技术细节...</p>
+            <p>Stripe 分享其一次性端到端编码代理的开发经验和技术细节</p>
             <span class="card-source">Stripe Dev</span>
         </div></div>
         </div>
         
         <div class="section">
-            <h2 class="section-title">📚 教程</h2>
+            <h2 class="section-title">📚 Tutorials</h2>
             <div class="cards">
         <div class="card">
-            <span class="card-category category-tutorial">教程</span>
+            <span class="card-category category-tutorial">Tutorial</span>
             <h3><a href="https://jimmyhmiller.com/learn-codebase-visualizer" target="_blank">学习代码库的新方法：构建可视化工具</a></h3>
-            <p>通过构建代码库可视化工具来更高效地理解大型项目结构...</p>
+            <p>通过构建代码库可视化工具来更高效地理解大型项目结构</p>
             <span class="card-source">Jimmy Miller</span>
         </div>
 
         <div class="card">
-            <span class="card-category category-tutorial">教程</span>
+            <span class="card-category category-tutorial">Tutorial</span>
             <h3><a href="https://www.caimito.net/en/blog/2026/02/17/web-components-the-framework-free-renaissance.html" target="_blank">Web Components：无需框架的复兴</a></h3>
-            <p>现代 Web 开发中 Web Components 的复兴，无需框架的原生组件开发...</p>
+            <p>现代 Web 开发中 Web Components 的复兴，无需框架的原生组件开发</p>
             <span class="card-source">Caimito</span>
         </div></div>
         </div>
         
         <div class="section">
-            <h2 class="section-title">🎉 趣闻</h2>
+            <h2 class="section-title">🎉 Fun Stuff</h2>
             <div class="cards">
         <div class="card">
-            <span class="card-category category-fun">趣闻</span>
+            <span class="card-category category-fun">Fun</span>
             <h3><a href="https://harpers.org/archive/2026/03/childs-play-sam-kriss-ai-startup-roy-lee/" target="_blank">童年游戏：科技新世代与思考的终结</a></h3>
-            <p>探讨新一代科技成长环境如何影响思维方式，以及 AI 对此的影响...</p>
+            <p>探讨新一代科技成长环境如何影响思维方式，以及 AI 对此的影响</p>
             <span class="card-source">Harper's Magazine</span>
         </div>
 
         <div class="card">
-            <span class="card-category category-fun">趣闻</span>
+            <span class="card-category category-fun">Fun</span>
             <h3><a href="https://blog.kinglycrow.com/no-skill-no-taste/" target="_blank">无技能，无品味</a></h3>
-            <p>关于 AI 时代创意工作的思考——当技术门槛降低，品味变得更重要...</p>
+            <p>关于 AI 时代创意工作的思考——当技术门槛降低，品味变得更重要</p>
             <span class="card-source">Kingly Crow</span>
         </div></div>
         </div>
         
         <footer>
-            <p>由 🐟 小鱼 自动生成 | <a href="https://github.com/wallerwvw-cell/ai-daily-news">GitHub</a></p>
+            <p>Generated by 🐟 Fish | <a href="https://github.com/wallerwvw-cell/ai-daily-news">GitHub</a></p>
         </footer>
     </div>
 </body>
