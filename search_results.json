@@ -1,80 +1,98 @@
 {
   "news": [
     {
-      "title": "Anthropic's Sonnet 4.6 以五分之一成本匹配旗舰 AI 性能",
-      "snippet": "该模型在编码、计算机使用、长上下文推理、代理规划、知识工作和设计方面全面升级，具有 100 万 token 上下文窗口",
+      "title": "Alibaba's Qwen 3.5 397B-A17 beats its larger trillion-parameter model",
+      "snippet": "The new flagship open-weight model — Qwen3.5-397B-A17B — packs 397 billion total parameters but activates only 17 billion per token. It is claiming benchmark wins against Alibaba's own previous flagship, Qwen3-Max.",
+      "url": "https://venturebeat.com/technology/alibabas-qwen-3-5-397b-a17-beats-its-larger-trillion-parameter-model-at-a",
+      "source": "VentureBeat"
+    },
+    {
+      "title": "Anthropic's Sonnet 4.6 matches flagship AI performance at one-fifth the cost",
+      "snippet": "The model is a full upgrade across coding, computer use, long-context reasoning, agent planning, knowledge work, and design. It features a 1M token context window in beta.",
       "url": "https://venturebeat.com/orchestration/anthropics-sonnet-4-6-matches-flagship-ai-performance-at-one-fifth-the-cost",
       "source": "VentureBeat"
     },
     {
-      "title": "OpenAI 收购 OpenClaw 标志 ChatGPT 时代的终结",
-      "snippet": "开源 AI 代理 OpenClaw 创始人宣布加入 OpenAI，聊天机器人时代可能刚刚收到了讣告",
+      "title": "OpenAI's acquisition of OpenClaw signals the beginning of the end of the ChatGPT era",
+      "snippet": "The chatbot era may have just received its obituary. Peter Steinberger, the creator of OpenClaw — the open-source AI agent that took the developer world by storm — announced he is joining OpenAI.",
       "url": "https://venturebeat.com/technology/openais-acquisition-of-openclaw-signals-the-beginning-of-the-end-of-the",
       "source": "VentureBeat"
     },
     {
-      "title": "Qodo 2.1 解决编码代理的「失忆」问题",
-      "snippet": "Qodo 2.1 为 AI 编码工具带来了记忆功能，将精度提升 11%，解决了关闭会话后忘记之前工作的难题",
+      "title": "Qodo 2.1 solves your coding agents' 'amnesia' problem",
+      "snippet": "Qodo 2.1 brings memory to AI coding tools, boosting precision by 11% and solving the problem of forgetting previous work after closing a session.",
       "url": "https://venturebeat.com/orchestration/qodo-2-1-solves-your-coding-agents-amnesia-problem-giving-them-an-11",
       "source": "VentureBeat"
     },
     {
-      "title": "Nvidia 与 Groq 竞争实时 AI：企业成败的关键",
-      "snippet": "从数据中心到边缘设备，实时 AI 推理成为科技巨头争夺的新战场",
+      "title": "Nvidia, Groq and the limestone race to real-time AI",
+      "snippet": "From data centers to edge devices, real-time AI inference has become the new battleground for tech giants.",
       "url": "https://venturebeat.com/infrastructure/nvidia-groq-and-the-limestone-race-to-real-time-ai-why-enterprises-win-or",
-      "source": "VentureBeat"
-    },
-    {
-      "title": "即便准确的 AI 仍然危险地不完整",
-      "snippet": "LexisNexis 首席 AI 官解释为什么标准 RAG 在高风险法律 AI 中失败，以及图 RAG 如何弥补差距",
-      "url": "https://venturebeat.com/infrastructure/when-accurate-ai-is-still-dangerously-incomplete",
       "source": "VentureBeat"
     }
   ],
   "tech": [
     {
-      "title": "Ggml.ai 加入 Hugging Face，确保本地 AI 的长期发展",
-      "snippet": " llama.cpp 团队加入 Hugging Face，致力于推动开源本地 AI 模型的长期发展",
-      "url": "https://github.com/ggml-org/llama.cpp/discussions/19759",
-      "source": "GitHub"
+      "title": "Nvidia's new technique cuts LLM reasoning costs by 8x without losing accuracy",
+      "snippet": "Nvidia researchers developed dynamic memory sparsification (DMS), a technique that compresses the KV cache in large language models by up to 8x while maintaining reasoning accuracy.",
+      "url": "https://venturebeat.com/orchestration/nvidias-new-technique-cuts-llm-reasoning-costs-by-8x-without-losing-accuracy",
+      "source": "VentureBeat"
     },
     {
-      "title": "通向无处不在的 AI 之路 (17k tokens/秒)",
-      "snippet": "探索如何实现每秒处理 17000 tokens 的 AI 推理，推动 AI 走向普及",
+      "title": "When accurate AI is still dangerously incomplete",
+      "snippet": "LexisNexis' chief AI officer explains why standard RAG fails in high-stakes legal AI — and how graph RAG, planner agents, and reflection agents are closing the gap.",
+      "url": "https://venturebeat.com/infrastructure/when-accurate-ai-is-still-dangerously-incomplete",
+      "source": "VentureBeat"
+    },
+    {
+      "title": "The path to ubiquitous AI (17k tokens/second)",
+      "snippet": "Exploring how to achieve AI inference processing 17,000 tokens per second, driving AI towards ubiquity.",
       "url": "https://taalas.com/the-path-to-ubiquitous-ai/",
       "source": "Taalas"
     },
     {
-      "title": "Minions - Stripe 的编码代理 (第二部分)",
-      "snippet": "Stripe 分享其一次性端到端编码代理的开发经验和技术细节",
+      "title": "Minions - Stripe's coding agents (Part 2)",
+      "snippet": "Stripe shares development experience and technical details of its one-shot end-to-end coding agent.",
       "url": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2",
       "source": "Stripe Dev"
     }
   ],
   "tutorial": [
     {
-      "title": "学习代码库的新方法：构建可视化工具",
-      "snippet": "通过构建代码库可视化工具来更高效地理解大型项目结构",
+      "title": "Learn codebases with visualization tools",
+      "snippet": "More efficiently understand large project structures by building code visualization tools.",
       "url": "https://jimmyhmiller.com/learn-codebase-visualizer",
       "source": "Jimmy Miller"
     },
     {
-      "title": "Web Components：无需框架的复兴",
-      "snippet": "现代 Web 开发中 Web Components 的复兴，无需框架的原生组件开发",
+      "title": "Web Components: The framework-free renaissance",
+      "snippet": "The revival of Web Components in modern web development, native component development without frameworks.",
       "url": "https://www.caimito.net/en/blog/2026/02/17/web-components-the-framework-free-renaissance.html",
       "source": "Caimito"
+    },
+    {
+      "title": "Building AI agents from scratch",
+      "snippet": "A comprehensive guide to building AI agents from the ground up, covering architecture and implementation.",
+      "url": "https://www.build-together.com/ai-agents",
+      "source": "Build Together"
     }
   ],
   "fun": [
     {
-      "title": "童年游戏：科技新世代与思考的终结",
-      "snippet": "探讨新一代科技成长环境如何影响思维方式，以及 AI 对此的影响",
+      "title": "AI agents turned Super Bowl viewers into one high-IQ team",
+      "snippet": "Imagine this in the enterprise — how AI agents could transform collaborative decision-making across large organizations.",
+      "url": "https://venturebeat.com/orchestration/ai-agents-turned-super-bowl-viewers-into-one-high-iq-team-now-imagine-this",
+      "source": "VentureBeat"
+    },
+    {
+      "title": "Child's Play: Tech's new generation and the end of thinking",
+      "snippet": "Exploring how the new generation's tech environment affects thinking patterns, and AI's impact on this.",
       "url": "https://harpers.org/archive/2026/03/childs-play-sam-kriss-ai-startup-roy-lee/",
       "source": "Harper's Magazine"
     },
     {
-      "title": "无技能，无品味",
-      "snippet": "关于 AI 时代创意工作的思考——当技术门槛降低，品味变得更重要",
+      "title": "No skill, no taste",
+      "snippet": "Thoughts on creative work in the AI era — when technology barriers lower, taste becomes more important.",
       "url": "https://blog.kinglycrow.com/no-skill-no-taste/",
       "source": "Kingly Crow"
     }
