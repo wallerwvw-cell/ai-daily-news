@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Daily News - 2026-02-21</title>
+    <title>AI 日报 - 2026-02-21</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
@@ -21,6 +21,7 @@
             --category-tech: #3498db;
             --category-tutorial: #2ecc71;
             --category-fun: #9b59b6;
+            --sidebar-width: 120px;
         }
         
         body {
@@ -35,7 +36,7 @@
         .top-nav {
             background: var(--bg-secondary);
             border-bottom: 1px solid var(--border);
-            padding: 16px 24px;
+            padding: 12px 24px;
             position: sticky;
             top: 0;
             z-index: 100;
@@ -48,7 +49,7 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            gap: 16px;
+            gap: 12px;
         }
         
         .nav-brand {
@@ -58,7 +59,7 @@
         }
         
         .nav-logo {
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 700;
             color: var(--text-primary);
             text-decoration: none;
@@ -70,34 +71,27 @@
         
         .nav-subtitle {
             color: var(--text-secondary);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }
         
-        .lang-switch {
+        .nav-categories {
             display: flex;
             gap: 8px;
+            flex-wrap: wrap;
         }
         
-        .lang-switch a {
+        .nav-category-link {
             padding: 8px 16px;
             border-radius: 6px;
             text-decoration: none;
             font-weight: 500;
             font-size: 0.9rem;
             transition: all 0.2s;
-        }
-        
-        .lang-switch a.active {
-            background: var(--accent);
-            color: #fff;
-        }
-        
-        .lang-switch a:not(.active) {
             background: var(--bg-card);
             color: var(--text-secondary);
         }
         
-        .lang-switch a:hover:not(.active) {
+        .nav-category-link:hover {
             background: var(--border);
             color: var(--text-primary);
         }
@@ -107,9 +101,9 @@
             max-width: 1400px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: 220px 1fr;
-            gap: 32px;
-            padding: 32px 24px;
+            grid-template-columns: var(--sidebar-width) 1fr;
+            gap: 24px;
+            padding: 24px;
         }
         
         @media (max-width: 900px) {
@@ -118,61 +112,59 @@
             }
         }
         
-        /* 左侧边栏 */
+        /* 左侧边栏 - 缩小宽度 */
         .sidebar {
             position: sticky;
-            top: 100px;
+            top: 80px;
             height: fit-content;
         }
         
         .sidebar-section {
             background: var(--bg-secondary);
             border-radius: 12px;
-            padding: 20px;
+            padding: 16px 12px;
             border: 1px solid var(--border);
+            margin-bottom: 16px;
         }
         
         .sidebar-title {
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             text-transform: uppercase;
             letter-spacing: 1px;
             color: var(--text-muted);
-            margin-bottom: 16px;
+            margin-bottom: 12px;
             font-weight: 600;
+            text-align: center;
         }
         
-        .date-list {
+        .category-list, .date-list {
             list-style: none;
         }
         
-        .date-item {
-            margin-bottom: 8px;
+        .category-item, .date-item {
+            margin-bottom: 6px;
         }
         
-        .date-link {
+        .category-link, .date-link {
             display: block;
-            padding: 10px 14px;
-            border-radius: 8px;
+            padding: 8px 10px;
+            border-radius: 6px;
             text-decoration: none;
             color: var(--text-secondary);
             transition: all 0.2s;
             font-weight: 500;
+            font-size: 0.85rem;
+            text-align: center;
         }
         
-        .date-link:hover {
+        .category-link:hover, .date-link:hover {
             background: var(--bg-card);
             color: var(--accent);
         }
         
-        .date-link.active {
+        .category-link.active {
             background: var(--accent);
             color: #fff;
-        }
-        
-        .date-label {
-            display: flex;
-            align-items: center;
-            gap: 8px;
         }
         
         /* 右侧内容 */
@@ -180,22 +172,22 @@
             min-width: 0;
         }
         
-        /* 日期区块 */
-        .date-section {
-            margin-bottom: 48px;
+        /* 分类区块 */
+        .category-section {
+            margin-bottom: 40px;
         }
         
-        .date-header {
+        .category-header {
             display: flex;
             align-items: center;
             gap: 16px;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
             padding-bottom: 12px;
             border-bottom: 2px solid var(--border);
         }
         
-        .date-title {
-            font-size: 1.4rem;
+        .category-title {
+            font-size: 1.3rem;
             font-weight: 600;
             color: var(--text-primary);
         }
@@ -203,8 +195,8 @@
         /* 卡片网格 */
         .cards-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 16px;
         }
         
         /* 卡片样式 */
@@ -225,24 +217,24 @@
         }
         
         .card-image {
-            height: 80px;
+            height: 70px;
             background: var(--bg-card);
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 12px;
+            padding: 10px;
             border-bottom: 1px solid var(--border);
         }
         
         .card-image img {
-            width: 64px;
-            height: 64px;
+            width: 56px;
+            height: 56px;
             object-fit: contain;
             border-radius: 8px;
         }
         
         .card-content {
-            padding: 20px;
+            padding: 16px;
             display: flex;
             flex-direction: column;
             flex: 1;
@@ -250,13 +242,13 @@
         
         .card-category {
             display: inline-block;
-            padding: 4px 10px;
+            padding: 4px 8px;
             border-radius: 4px;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             width: fit-content;
         }
         
@@ -266,8 +258,8 @@
         .category-fun { background: var(--category-fun); color: #fff; }
         
         .card h3 {
-            font-size: 1.1rem;
-            margin-bottom: 10px;
+            font-size: 1rem;
+            margin-bottom: 8px;
             line-height: 1.4;
         }
         
@@ -283,9 +275,9 @@
         
         .card-summary {
             color: var(--text-secondary);
-            font-size: 0.9rem;
-            line-height: 1.6;
-            margin-bottom: 16px;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            margin-bottom: 12px;
             flex: 1;
         }
         
@@ -294,10 +286,10 @@
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            gap: 8px;
-            font-size: 0.8rem;
+            gap: 6px;
+            font-size: 0.75rem;
             color: var(--text-muted);
-            padding-top: 12px;
+            padding-top: 10px;
             border-top: 1px solid var(--border);
         }
         
@@ -305,6 +297,25 @@
             display: flex;
             align-items: center;
             gap: 4px;
+        }
+        
+        .card-source-link {
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border);
+        }
+        
+        .card-source-link a {
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        
+        .card-source-link a:hover {
+            color: var(--accent-hover);
+            text-decoration: underline;
         }
         
         /* 空状态 */
@@ -318,11 +329,11 @@
         /* 页脚 */
         footer {
             text-align: center;
-            padding: 32px;
+            padding: 24px;
             color: var(--text-muted);
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             border-top: 1px solid var(--border);
-            margin-top: 32px;
+            margin-top: 24px;
         }
         
         footer a {
@@ -348,6 +359,10 @@
             .sidebar {
                 position: static;
             }
+            
+            .nav-categories {
+                justify-content: center;
+            }
         }
     </style>
 </head>
@@ -356,27 +371,68 @@
     <nav class="top-nav">
         <div class="nav-container">
             <div class="nav-brand">
-                <a href="#" class="nav-logo">🐟 <span>AI</span> AI Daily News</a>
-                <span class="nav-subtitle">February 21, 2026</span>
+                <a href="#" class="nav-logo">🐟 <span>AI</span> AI 日报</a>
+                <span class="nav-subtitle">2026年02月21日 Saturday</span>
             </div>
-            <div class="lang-switch">
-                <a href="index-cn.html" class="">中文</a>
-                <a href="index.html" class="active">English</a>
+            <div class="nav-categories">
+                
+            <a href="#news" class="nav-category-link" data-category="news">📰 新闻</a>
+
+            <a href="#tech" class="nav-category-link" data-category="tech">💻 技术</a>
+
+            <a href="#tutorial" class="nav-category-link" data-category="tutorial">📚 教程</a>
+
+            <a href="#fun" class="nav-category-link" data-category="fun">🎉 趣闻</a>
             </div>
         </div>
     </nav>
     
     <!-- 主布局 -->
     <div class="main-layout">
-        <!-- 左侧边栏 -->
+        <!-- 左侧边栏 - 窄版 -->
         <aside class="sidebar">
             <div class="sidebar-section">
-                <h3 class="sidebar-title">📅 Dates</h3>
+                <h3 class="sidebar-title">📂 分类</h3>
+                <ul class="category-list">
+                    
+            <li class="category-item">
+                <a href="#" class="category-link all" data-filter="all">
+                    📋 全部
+                </a>
+            </li>
+
+            <li class="category-item">
+                <a href="#news" class="category-link category-news" data-filter="category-news">
+                    📰 新闻
+                </a>
+            </li>
+
+            <li class="category-item">
+                <a href="#tech" class="category-link category-tech" data-filter="category-tech">
+                    💻 技术
+                </a>
+            </li>
+
+            <li class="category-item">
+                <a href="#tutorial" class="category-link category-tutorial" data-filter="category-tutorial">
+                    📚 教程
+                </a>
+            </li>
+
+            <li class="category-item">
+                <a href="#fun" class="category-link category-fun" data-filter="category-fun">
+                    🎉 趣闻
+                </a>
+            </li>
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">📅 日期</h3>
                 <ul class="date-list">
                     
             <li class="date-item">
                 <a href="#date-2026-02-21" class="date-link">
-                    <span class="date-label">2026-02-21</span>
+                    <span class="date-label">02月21日</span>
                 </a>
             </li>
                 </ul>
@@ -386,9 +442,9 @@
         <!-- 右侧内容 -->
         <main class="content">
             
-        <section class="date-section" id="date-2026-02-21">
-            <div class="date-header">
-                <h2 class="date-title">2026-02-21</h2>
+        <section class="category-section" id="news">
+            <div class="category-header">
+                <h2 class="category-title">📰 AI 新闻</h2>
             </div>
             <div class="cards-grid">
                 
@@ -397,12 +453,15 @@
                 <img src="https://www.google.com/s2/favicons?domain=venturebeat.com&sz=128" alt="VentureBeat" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
             </div>
             <div class="card-content">
-                <span class="card-category category-news">News</span>
-                <h3><a href="https://venturebeat.com/orchestration/anthropics-sonnet-4-6-matches-flagship-ai-performance-at-one-fifth-the-cost" target="_blank" rel="noopener">Anthropic's Sonnet 4.6 以五分之一成本匹配旗舰 AI 性能</a></h3>
-                <p class="card-summary">该模型在编码、计算机使用、长上下文推理、代理规划、知识工作和设计方面全面升级，具有 100 万 token 上下文窗口</p>
+                <span class="card-category category-news">📰 新闻</span>
+                <h3><a href="https://venturebeat.com/technology/alibabas-qwen-3-5-397b-a17-beats-its-larger-trillion-parameter-model-at-a" target="_blank" rel="noopener">Alibaba's Qwen 3.5 397B-A17 beats its larger trillion-parameter model</a></h3>
+                <p class="card-summary">阿里发布Qwen3.5-397B-A17，总参数3970亿但仅激活170亿。性能超越万亿参数的Qwen3-Max，256K上下文下解码速度快19倍，成本降低60%。支持201种语言，Apache 2.0开源许可证。</p>
                 <div class="card-meta">
                     <span class="card-source">📌 VentureBeat</span>
-                    <span class="card-date">📅 2026-02-21 16:52</span>
+                    <span class="card-date">📅 2026-02-21 20:48</span>
+                </div>
+                <div class="card-source-link">
+                    <a href="https://venturebeat.com/technology/alibabas-qwen-3-5-397b-a17-beats-its-larger-trillion-parameter-model-at-a" target="_blank" rel="noopener">🔗 查看原文 →</a>
                 </div>
             </div>
         </article> 
@@ -411,12 +470,15 @@
                 <img src="https://www.google.com/s2/favicons?domain=venturebeat.com&sz=128" alt="VentureBeat" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
             </div>
             <div class="card-content">
-                <span class="card-category category-news">News</span>
-                <h3><a href="https://venturebeat.com/technology/openais-acquisition-of-openclaw-signals-the-beginning-of-the-end-of-the" target="_blank" rel="noopener">OpenAI 收购 OpenClaw 标志 ChatGPT 时代的终结</a></h3>
-                <p class="card-summary">开源 AI 代理 OpenClaw 创始人宣布加入 OpenAI，聊天机器人时代可能刚刚收到了讣告</p>
+                <span class="card-category category-news">📰 新闻</span>
+                <h3><a href="https://venturebeat.com/orchestration/anthropics-sonnet-4-6-matches-flagship-ai-performance-at-one-fifth-the-cost" target="_blank" rel="noopener">Anthropic's Sonnet 4.6 matches flagship AI performance at one-fifth the cost</a></h3>
+                <p class="card-summary">Claude Sonnet 4.6发布，性能接近旗舰Opus模型但成本仅1/5。在SWE-bench编码测试得分79.6%，计算机使用能力达72.5%。1M token上下文窗口，定价$3/$15每百万token。</p>
                 <div class="card-meta">
                     <span class="card-source">📌 VentureBeat</span>
-                    <span class="card-date">📅 2026-02-21 06:21</span>
+                    <span class="card-date">📅 2026-02-21 09:40</span>
+                </div>
+                <div class="card-source-link">
+                    <a href="https://venturebeat.com/orchestration/anthropics-sonnet-4-6-matches-flagship-ai-performance-at-one-fifth-the-cost" target="_blank" rel="noopener">🔗 查看原文 →</a>
                 </div>
             </div>
         </article> 
@@ -425,12 +487,15 @@
                 <img src="https://www.google.com/s2/favicons?domain=venturebeat.com&sz=128" alt="VentureBeat" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
             </div>
             <div class="card-content">
-                <span class="card-category category-news">News</span>
-                <h3><a href="https://venturebeat.com/orchestration/qodo-2-1-solves-your-coding-agents-amnesia-problem-giving-them-an-11" target="_blank" rel="noopener">Qodo 2.1 解决编码代理的「失忆」问题</a></h3>
-                <p class="card-summary">Qodo 2.1 为 AI 编码工具带来了记忆功能，将精度提升 11%，解决了关闭会话后忘记之前工作的难题</p>
+                <span class="card-category category-news">📰 新闻</span>
+                <h3><a href="https://venturebeat.com/technology/openais-acquisition-of-openclaw-signals-the-beginning-of-the-end-of-the" target="_blank" rel="noopener">OpenAI's acquisition of OpenClaw signals the beginning of the end of the ChatGPT era</a></h3>
+                <p class="card-summary">OpenClaw创始人Peter Steinberger加入OpenAI，标志着AI从对话界面向自主代理的转折。OpenClaw将过渡到独立基金会运营。Anthropic曾因其品牌名称发出警告信，错失收购机会。</p>
                 <div class="card-meta">
                     <span class="card-source">📌 VentureBeat</span>
-                    <span class="card-date">📅 2026-02-21 18:53</span>
+                    <span class="card-date">📅 2026-02-21 07:55</span>
+                </div>
+                <div class="card-source-link">
+                    <a href="https://venturebeat.com/technology/openais-acquisition-of-openclaw-signals-the-beginning-of-the-end-of-the" target="_blank" rel="noopener">🔗 查看原文 →</a>
                 </div>
             </div>
         </article> 
@@ -439,12 +504,15 @@
                 <img src="https://www.google.com/s2/favicons?domain=venturebeat.com&sz=128" alt="VentureBeat" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
             </div>
             <div class="card-content">
-                <span class="card-category category-news">News</span>
-                <h3><a href="https://venturebeat.com/infrastructure/nvidia-groq-and-the-limestone-race-to-real-time-ai-why-enterprises-win-or" target="_blank" rel="noopener">Nvidia 与 Groq 竞争实时 AI：企业成败的关键</a></h3>
-                <p class="card-summary">从数据中心到边缘设备，实时 AI 推理成为科技巨头争夺的新战场</p>
+                <span class="card-category category-news">📰 新闻</span>
+                <h3><a href="https://venturebeat.com/orchestration/qodo-2-1-solves-your-coding-agents-amnesia-problem-giving-them-an-11" target="_blank" rel="noopener">Qodo 2.1 solves your coding agents' 'amnesia' problem</a></h3>
+                <p class="card-summary">Qodo发布行业首个智能规则系统，为AI代码审查工具带来持久记忆能力。解决编码代理关闭会话后遗忘问题，精确度提升11%。自动从代码模式生成规则，持续维护标准，在每次代码审查中执行。</p>
                 <div class="card-meta">
                     <span class="card-source">📌 VentureBeat</span>
-                    <span class="card-date">📅 2026-02-21 12:27</span>
+                    <span class="card-date">📅 2026-02-21 13:24</span>
+                </div>
+                <div class="card-source-link">
+                    <a href="https://venturebeat.com/orchestration/qodo-2-1-solves-your-coding-agents-amnesia-problem-giving-them-an-11" target="_blank" rel="noopener">🔗 查看原文 →</a>
                 </div>
             </div>
         </article> 
@@ -453,26 +521,58 @@
                 <img src="https://www.google.com/s2/favicons?domain=venturebeat.com&sz=128" alt="VentureBeat" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
             </div>
             <div class="card-content">
-                <span class="card-category category-news">News</span>
-                <h3><a href="https://venturebeat.com/infrastructure/when-accurate-ai-is-still-dangerously-incomplete" target="_blank" rel="noopener">即便准确的 AI 仍然危险地不完整</a></h3>
-                <p class="card-summary">LexisNexis 首席 AI 官解释为什么标准 RAG 在高风险法律 AI 中失败，以及图 RAG 如何弥补差距</p>
+                <span class="card-category category-news">📰 新闻</span>
+                <h3><a href="https://venturebeat.com/infrastructure/nvidia-groq-and-the-limestone-race-to-real-time-ai" target="_blank" rel="noopener">Nvidia, Groq and the limestone race to real-time AI</a></h3>
+                <p class="card-summary">从数据中心到边缘设备，实时AI推理成为科技巨头新战场。多家厂商竞相开发专用AI芯片，目标实现低延迟推理能力。</p>
                 <div class="card-meta">
                     <span class="card-source">📌 VentureBeat</span>
-                    <span class="card-date">📅 2026-02-21 07:38</span>
+                    <span class="card-date">📅 2026-02-21 09:14</span>
+                </div>
+                <div class="card-source-link">
+                    <a href="https://venturebeat.com/infrastructure/nvidia-groq-and-the-limestone-race-to-real-time-ai" target="_blank" rel="noopener">🔗 查看原文 →</a>
+                </div>
+            </div>
+        </article>
+            </div>
+        </section>
+
+        <section class="category-section" id="tech">
+            <div class="category-header">
+                <h2 class="category-title">💻 技术文章</h2>
+            </div>
+            <div class="cards-grid">
+                
+        <article class="card">
+            <div class="card-image">
+                <img src="https://www.google.com/s2/favicons?domain=venturebeat.com&sz=128" alt="VentureBeat" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
+            </div>
+            <div class="card-content">
+                <span class="card-category category-tech">💻 技术</span>
+                <h3><a href="https://venturebeat.com/orchestration/nvidias-new-technique-cuts-llm-reasoning-costs-by-8x-without-losing-accuracy" target="_blank" rel="noopener">Nvidia's new technique cuts LLM reasoning costs by 8x without losing accuracy</a></h3>
+                <p class="card-summary">Nvidia研发动态内存稀疏化(DMS)技术，将LLM推理的内存成本降低8倍。通过压缩KV缓存实现，保持甚至提升模型推理能力。适用于Llama 3、Qwen 3等模型，几小时内即可完成部署。</p>
+                <div class="card-meta">
+                    <span class="card-source">📌 VentureBeat</span>
+                    <span class="card-date">📅 2026-02-21 12:48</span>
+                </div>
+                <div class="card-source-link">
+                    <a href="https://venturebeat.com/orchestration/nvidias-new-technique-cuts-llm-reasoning-costs-by-8x-without-losing-accuracy" target="_blank" rel="noopener">🔗 查看原文 →</a>
                 </div>
             </div>
         </article> 
         <article class="card">
             <div class="card-image">
-                <img src="https://www.google.com/s2/favicons?domain=github.com&sz=128" alt="GitHub" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
+                <img src="https://www.google.com/s2/favicons?domain=venturebeat.com&sz=128" alt="VentureBeat" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
             </div>
             <div class="card-content">
-                <span class="card-category category-tech">Tech</span>
-                <h3><a href="https://github.com/ggml-org/llama.cpp/discussions/19759" target="_blank" rel="noopener">Ggml.ai 加入 Hugging Face，确保本地 AI 的长期发展</a></h3>
-                <p class="card-summary"> llama.cpp 团队加入 Hugging Face，致力于推动开源本地 AI 模型的长期发展</p>
+                <span class="card-category category-tech">💻 技术</span>
+                <h3><a href="https://venturebeat.com/infrastructure/when-accurate-ai-is-still-dangerously-incomplete" target="_blank" rel="noopener">When accurate AI is still dangerously incomplete</a></h3>
+                <p class="card-summary">LexisNexis首席AI官解释标准RAG在高风险法律AI中的局限性，以及图RAG、规划代理和反思代理如何缩小差距。</p>
                 <div class="card-meta">
-                    <span class="card-source">📌 GitHub</span>
-                    <span class="card-date">📅 2026-02-21 14:13</span>
+                    <span class="card-source">📌 VentureBeat</span>
+                    <span class="card-date">📅 2026-02-21 10:46</span>
+                </div>
+                <div class="card-source-link">
+                    <a href="https://venturebeat.com/infrastructure/when-accurate-ai-is-still-dangerously-incomplete" target="_blank" rel="noopener">🔗 查看原文 →</a>
                 </div>
             </div>
         </article> 
@@ -481,12 +581,15 @@
                 <img src="https://www.google.com/s2/favicons?domain=taalas.com&sz=128" alt="Taalas" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
             </div>
             <div class="card-content">
-                <span class="card-category category-tech">Tech</span>
-                <h3><a href="https://taalas.com/the-path-to-ubiquitous-ai/" target="_blank" rel="noopener">通向无处不在的 AI 之路 (17k tokens/秒)</a></h3>
-                <p class="card-summary">探索如何实现每秒处理 17000 tokens 的 AI 推理，推动 AI 走向普及</p>
+                <span class="card-category category-tech">💻 技术</span>
+                <h3><a href="https://taalas.com/the-path-to-ubiquitous-ai/" target="_blank" rel="noopener">The path to ubiquitous AI (17k tokens/second)</a></h3>
+                <p class="card-summary">探索如何实现每秒17000个token的AI推理处理，推动AI走向普及。</p>
                 <div class="card-meta">
                     <span class="card-source">📌 Taalas</span>
-                    <span class="card-date">📅 2026-02-21 10:35</span>
+                    <span class="card-date">📅 2026-02-21 14:41</span>
+                </div>
+                <div class="card-source-link">
+                    <a href="https://taalas.com/the-path-to-ubiquitous-ai/" target="_blank" rel="noopener">🔗 查看原文 →</a>
                 </div>
             </div>
         </article> 
@@ -495,26 +598,41 @@
                 <img src="https://www.google.com/s2/favicons?domain=stripe.dev&sz=128" alt="Stripe Dev" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
             </div>
             <div class="card-content">
-                <span class="card-category category-tech">Tech</span>
-                <h3><a href="https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2" target="_blank" rel="noopener">Minions - Stripe 的编码代理 (第二部分)</a></h3>
-                <p class="card-summary">Stripe 分享其一次性端到端编码代理的开发经验和技术细节</p>
+                <span class="card-category category-tech">💻 技术</span>
+                <h3><a href="https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2" target="_blank" rel="noopener">Minions - Stripe's coding agents (Part 2)</a></h3>
+                <p class="card-summary">Stripe分享一次性端到端编码代理的开发经验和技术细节。</p>
                 <div class="card-meta">
                     <span class="card-source">📌 Stripe Dev</span>
-                    <span class="card-date">📅 2026-02-21 20:58</span>
+                    <span class="card-date">📅 2026-02-21 16:08</span>
+                </div>
+                <div class="card-source-link">
+                    <a href="https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2" target="_blank" rel="noopener">🔗 查看原文 →</a>
                 </div>
             </div>
-        </article> 
+        </article>
+            </div>
+        </section>
+
+        <section class="category-section" id="tutorial">
+            <div class="category-header">
+                <h2 class="category-title">📚 教程</h2>
+            </div>
+            <div class="cards-grid">
+                
         <article class="card">
             <div class="card-image">
                 <img src="https://www.google.com/s2/favicons?domain=jimmyhmiller.com&sz=128" alt="Jimmy Miller" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
             </div>
             <div class="card-content">
-                <span class="card-category category-tutorial">Tutorial</span>
-                <h3><a href="https://jimmyhmiller.com/learn-codebase-visualizer" target="_blank" rel="noopener">学习代码库的新方法：构建可视化工具</a></h3>
-                <p class="card-summary">通过构建代码库可视化工具来更高效地理解大型项目结构</p>
+                <span class="card-category category-tutorial">📚 教程</span>
+                <h3><a href="https://jimmyhmiller.com/learn-codebase-visualizer" target="_blank" rel="noopener">Learn codebases with visualization tools</a></h3>
+                <p class="card-summary">通过构建代码可视化工具，更高效地理解大型项目结构。</p>
                 <div class="card-meta">
                     <span class="card-source">📌 Jimmy Miller</span>
-                    <span class="card-date">📅 2026-02-21 11:35</span>
+                    <span class="card-date">📅 2026-02-21 21:59</span>
+                </div>
+                <div class="card-source-link">
+                    <a href="https://jimmyhmiller.com/learn-codebase-visualizer" target="_blank" rel="noopener">🔗 查看原文 →</a>
                 </div>
             </div>
         </article> 
@@ -523,12 +641,58 @@
                 <img src="https://www.google.com/s2/favicons?domain=caimito.net&sz=128" alt="Caimito" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
             </div>
             <div class="card-content">
-                <span class="card-category category-tutorial">Tutorial</span>
-                <h3><a href="https://www.caimito.net/en/blog/2026/02/17/web-components-the-framework-free-renaissance.html" target="_blank" rel="noopener">Web Components：无需框架的复兴</a></h3>
-                <p class="card-summary">现代 Web 开发中 Web Components 的复兴，无需框架的原生组件开发</p>
+                <span class="card-category category-tutorial">📚 教程</span>
+                <h3><a href="https://www.caimito.net/en/blog/2026/02/17/web-components-the-framework-free-renaissance.html" target="_blank" rel="noopener">Web Components: The framework-free renaissance</a></h3>
+                <p class="card-summary">现代Web开发中Web Components的复兴，无框架的原生组件开发方式。</p>
                 <div class="card-meta">
                     <span class="card-source">📌 Caimito</span>
-                    <span class="card-date">📅 2026-02-21 07:05</span>
+                    <span class="card-date">📅 2026-02-21 11:19</span>
+                </div>
+                <div class="card-source-link">
+                    <a href="https://www.caimito.net/en/blog/2026/02/17/web-components-the-framework-free-renaissance.html" target="_blank" rel="noopener">🔗 查看原文 →</a>
+                </div>
+            </div>
+        </article> 
+        <article class="card">
+            <div class="card-image">
+                <img src="https://www.google.com/s2/favicons?domain=build-together.com&sz=128" alt="Build Together" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
+            </div>
+            <div class="card-content">
+                <span class="card-category category-tutorial">📚 教程</span>
+                <h3><a href="https://www.build-together.com/ai-agents" target="_blank" rel="noopener">Building AI agents from scratch</a></h3>
+                <p class="card-summary">从零开始构建AI代理的全面指南，涵盖架构和实现。</p>
+                <div class="card-meta">
+                    <span class="card-source">📌 Build Together</span>
+                    <span class="card-date">📅 2026-02-21 14:09</span>
+                </div>
+                <div class="card-source-link">
+                    <a href="https://www.build-together.com/ai-agents" target="_blank" rel="noopener">🔗 查看原文 →</a>
+                </div>
+            </div>
+        </article>
+            </div>
+        </section>
+
+        <section class="category-section" id="fun">
+            <div class="category-header">
+                <h2 class="category-title">🎉 趣闻</h2>
+            </div>
+            <div class="cards-grid">
+                
+        <article class="card">
+            <div class="card-image">
+                <img src="https://www.google.com/s2/favicons?domain=venturebeat.com&sz=128" alt="VentureBeat" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
+            </div>
+            <div class="card-content">
+                <span class="card-category category-fun">🎉 趣闻</span>
+                <h3><a href="https://venturebeat.com/orchestration/ai-agents-turned-super-bowl-viewers-into-one-high-iq-team-now-imagine-this" target="_blank" rel="noopener">AI agents turned Super Bowl viewers into one high-IQ team</a></h3>
+                <p class="card-summary">想象在企业中的应用——AI代理如何改变大型组织的协作决策方式。</p>
+                <div class="card-meta">
+                    <span class="card-source">📌 VentureBeat</span>
+                    <span class="card-date">📅 2026-02-21 20:39</span>
+                </div>
+                <div class="card-source-link">
+                    <a href="https://venturebeat.com/orchestration/ai-agents-turned-super-bowl-viewers-into-one-high-iq-team-now-imagine-this" target="_blank" rel="noopener">🔗 查看原文 →</a>
                 </div>
             </div>
         </article> 
@@ -537,12 +701,15 @@
                 <img src="https://www.google.com/s2/favicons?domain=harpers.org&sz=128" alt="Harper's Magazine" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
             </div>
             <div class="card-content">
-                <span class="card-category category-fun">Fun</span>
-                <h3><a href="https://harpers.org/archive/2026/03/childs-play-sam-kriss-ai-startup-roy-lee/" target="_blank" rel="noopener">童年游戏：科技新世代与思考的终结</a></h3>
-                <p class="card-summary">探讨新一代科技成长环境如何影响思维方式，以及 AI 对此的影响</p>
+                <span class="card-category category-fun">🎉 趣闻</span>
+                <h3><a href="https://harpers.org/archive/2026/03/childs-play-sam-kriss-ai-startup-roy-lee/" target="_blank" rel="noopener">Child's Play: Tech's new generation and the end of thinking</a></h3>
+                <p class="card-summary">探索新一代技术环境如何影响思维模式，以及AI对此的影响。</p>
                 <div class="card-meta">
                     <span class="card-source">📌 Harper's Magazine</span>
-                    <span class="card-date">📅 2026-02-21 09:10</span>
+                    <span class="card-date">📅 2026-02-21 14:20</span>
+                </div>
+                <div class="card-source-link">
+                    <a href="https://harpers.org/archive/2026/03/childs-play-sam-kriss-ai-startup-roy-lee/" target="_blank" rel="noopener">🔗 查看原文 →</a>
                 </div>
             </div>
         </article> 
@@ -551,12 +718,15 @@
                 <img src="https://www.google.com/s2/favicons?domain=blog.kinglycrow.com&sz=128" alt="Kingly Crow" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
             </div>
             <div class="card-content">
-                <span class="card-category category-fun">Fun</span>
-                <h3><a href="https://blog.kinglycrow.com/no-skill-no-taste/" target="_blank" rel="noopener">无技能，无品味</a></h3>
-                <p class="card-summary">关于 AI 时代创意工作的思考——当技术门槛降低，品味变得更重要</p>
+                <span class="card-category category-fun">🎉 趣闻</span>
+                <h3><a href="https://blog.kinglycrow.com/no-skill-no-taste/" target="_blank" rel="noopener">No skill, no taste</a></h3>
+                <p class="card-summary">关于AI时代创意工作的思考——当技术门槛降低，品味变得更加重要。</p>
                 <div class="card-meta">
                     <span class="card-source">📌 Kingly Crow</span>
-                    <span class="card-date">📅 2026-02-21 19:33</span>
+                    <span class="card-date">📅 2026-02-21 16:27</span>
+                </div>
+                <div class="card-source-link">
+                    <a href="https://blog.kinglycrow.com/no-skill-no-taste/" target="_blank" rel="noopener">🔗 查看原文 →</a>
                 </div>
             </div>
         </article>
@@ -566,15 +736,18 @@
     </div>
     
     <footer>
-        <p>Generated by 🐟 Fish | <a href="https://github.com/wallerwvw-cell/ai-daily-news" target="_blank">GitHub</a></p>
+        <p>由 🐟 小鱼 自动生成 | <a href="https://github.com/wallerwvw-cell/ai-daily-news" target="_blank">GitHub</a></p>
     </footer>
     
     <script>
         // 平滑滚动
-        document.querySelectorAll('.date-link').forEach(link => {
+        document.querySelectorAll('.category-link, .date-link, .nav-category-link').forEach(link => {
             link.addEventListener('click', function(e) {
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                
                 e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
+                const targetId = href.substring(1);
                 const target = document.getElementById(targetId);
                 if (target) {
                     target.scrollIntoView({ behavior: 'smooth', block: 'start' });
@@ -582,12 +755,39 @@
             });
         });
         
-        // 滚动高亮当前日期
+        // 分类筛选功能
+        document.querySelectorAll('.category-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const filter = this.getAttribute('data-filter');
+                
+                // 更新激活状态
+                document.querySelectorAll('.category-link').forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+                
+                // 筛选卡片
+                const cards = document.querySelectorAll('.card');
+                cards.forEach(card => {
+                    if (filter === 'all' || filter === '#') {
+                        card.style.display = 'flex';
+                    } else {
+                        const category = card.querySelector('.card-category').className;
+                        if (category.includes(filter.replace('category-', ''))) {
+                            card.style.display = 'flex';
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        });
+        
+        // 滚动高亮当前分类
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     const id = entry.target.id;
-                    document.querySelectorAll('.date-link').forEach(link => {
+                    document.querySelectorAll('.category-link').forEach(link => {
                         link.classList.remove('active');
                         if (link.getAttribute('href') === '#' + id) {
                             link.classList.add('active');
@@ -595,9 +795,9 @@
                     });
                 }
             });
-        }, { threshold: 0.5 });
+        }, { threshold: 0.3 });
         
-        document.querySelectorAll('.date-section').forEach(section => {
+        document.querySelectorAll('.category-section').forEach(section => {
             observer.observe(section);
         });
     </script>

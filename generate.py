@@ -1,23 +1,22 @@
 #!/usr/bin/env python3
 """
-AI 日报生成脚本 - 中英文双语版
+AI 日报生成脚本 - 单语言版本
 参考 orangedatamining.com/blog/ 排版风格
 """
 
 import json
 import os
+import re
 from datetime import datetime
 import random
 
 # 搜索结果文件路径
-SEARCH_RESULTS_CN = "/Users/alex/.openclaw/workspace/ai-daily-news/search_results_cn.json"
-SEARCH_RESULTS_EN = "/Users/alex/.openclaw/workspace/ai-daily-news/search_results_en.json"
+SEARCH_RESULTS = "/Users/alex/.openclaw/workspace/ai-daily-news/search_results.json"
 
-def load_search_results(lang='cn'):
+def load_search_results():
     """加载搜索结果"""
-    file_path = SEARCH_RESULTS_CN if lang == 'cn' else SEARCH_RESULTS_EN
-    if os.path.exists(file_path):
-        with open(file_path, 'r', encoding='utf-8') as f:
+    if os.path.exists(SEARCH_RESULTS):
+        with open(SEARCH_RESULTS, 'r', encoding='utf-8') as f:
             return json.load(f)
     return {"news": [], "tech": [], "tutorial": [], "fun": []}
 
@@ -42,15 +41,27 @@ def get_random_time():
     minute = random.randint(0, 59)
     return f"{hour:02d}:{minute:02d}"
 
-def generate_card(item, category_class, lang='cn', date_str=''):
-    """生成卡片 HTML - 参考 orangedatamining.com 风格"""
+def clean_html(text):
+    """清理 HTML 标签"""
+    if not text:
+        return ""
+    # 移除 HTML 标签
+    text = re.sub(r'<[^>]+>', '', text)
+    # 移除多余空白
+    text = re.sub(r'\s+', ' ', text).strip()
+    return text
+
+def generate_card(item, category_class, date_str=''):
+    """生成卡片 HTML - 带摘要和源链接"""
     title = item.get('title', '')
-    snippet = item.get('snippet', '')
-    # 确保有摘要
-    if not snippet:
-        snippet = "点击查看详细内容..." if lang == 'cn' else "Click to read more..."
-    if len(snippet) > 180:
-        snippet = snippet[:180] + '...'
+    # 优先使用提取的摘要，否则使用 snippet
+    summary = item.get('summary', '') or item.get('snippet', '')
+    if not summary:
+        summary = "点击查看详细内容..."
+    # 限制摘要长度
+    if len(summary) > 200:
+        summary = summary[:200] + '...'
+    
     url = item.get('url', '#')
     source = item.get('source', '') or extract_domain(url)
     favicon = get_favicon_url(url)
@@ -62,39 +73,32 @@ def generate_card(item, category_class, lang='cn', date_str=''):
                 <img src="{favicon}" alt="{source}" onerror="this.src='https://via.placeholder.com/120x80?text=AI'">
             </div>
             <div class="card-content">
-                <span class="card-category {category_class}">{get_category_label(category_class, lang)}</span>
+                <span class="card-category {category_class}">{get_category_label(category_class)}</span>
                 <h3><a href="{url}" target="_blank" rel="noopener">{title}</a></h3>
-                <p class="card-summary">{snippet}</p>
+                <p class="card-summary">{summary}</p>
                 <div class="card-meta">
                     <span class="card-source">📌 {source}</span>
                     <span class="card-date">📅 {date_str} {time_str}</span>
                 </div>
+                <div class="card-source-link">
+                    <a href="{url}" target="_blank" rel="noopener">🔗 查看原文 →</a>
+                </div>
             </div>
         </article>'''
 
-def get_category_label(cat_class, lang='cn'):
+def get_category_label(cat_class):
     """获取分类标签"""
-    labels_cn = {
-        'category-news': '新闻',
-        'category-tech': '技术',
-        'category-tutorial': '教程',
-        'category-fun': '趣闻'
+    labels = {
+        'category-news': '📰 新闻',
+        'category-tech': '💻 技术',
+        'category-tutorial': '📚 教程',
+        'category-fun': '🎉 趣闻'
     }
-    labels_en = {
-        'category-news': 'News',
-        'category-tech': 'Tech',
-        'category-tutorial': 'Tutorial',
-        'category-fun': 'Fun'
-    }
-    labels = labels_cn if lang == 'cn' else labels_en
     return labels.get(cat_class, '')
 
-def generate_sidebar_datelist(dates, lang='cn'):
+def generate_sidebar_datelist(dates):
     """生成左侧边栏日期导航"""
-    if lang == 'cn':
-        date_labels = {d: f"{d.split('-')[1]}月{d.split('-')[2]}日" for d in dates}
-    else:
-        date_labels = {d: d for d in dates}
+    date_labels = {d: f"{d.split('-')[1]}月{d.split('-')[2]}日" for d in dates}
     
     items = []
     for date in dates:
@@ -107,35 +111,52 @@ def generate_sidebar_datelist(dates, lang='cn'):
     
     return '\n'.join(items)
 
-def generate_html(news, tech, tutorial, fun, lang='cn'):
-    """生成完整 HTML - 参考 orangedatamining.com 排版风格"""
+def generate_category_nav():
+    """生成顶部分类导航"""
+    categories = [
+        ('news', '📰 新闻', '#news'),
+        ('tech', '💻 技术', '#tech'),
+        ('tutorial', '📚 教程', '#tutorial'),
+        ('fun', '🎉 趣闻', '#fun')
+    ]
+    
+    items = []
+    for cat_id, cat_name, cat_href in categories:
+        items.append(f'''
+            <a href="{cat_href}" class="nav-category-link" data-category="{cat_id}">{cat_name}</a>''')
+    
+    return '\n'.join(items)
+
+def generate_sidebar_category_nav():
+    """生成左侧分类导航"""
+    categories = [
+        ('all', '📋 全部', '#'),
+        ('category-news', '📰 新闻', '#news'),
+        ('category-tech', '💻 技术', '#tech'),
+        ('category-tutorial', '📚 教程', '#tutorial'),
+        ('category-fun', '🎉 趣闻', '#fun')
+    ]
+    
+    items = []
+    for cat_class, cat_name, cat_href in categories:
+        items.append(f'''
+            <li class="category-item">
+                <a href="{cat_href}" class="category-link {cat_class}" data-filter="{cat_class}">
+                    {cat_name}
+                </a>
+            </li>''')
+    
+    return '\n'.join(items)
+
+def generate_html(news, tech, tutorial, fun):
+    """生成完整 HTML - 单语言版本，参考 orangedatamining.com 排版风格"""
     date = datetime.now()
     date_str = date.strftime('%Y-%m-%d')
+    date_display = date.strftime('%Y年%m月%d日 %A')
+    title = "AI 日报"
+    subtitle = "每日 AI 新闻资讯、技术文章、教程和趣闻"
     
-    if lang == 'cn':
-        date_display = date.strftime('%Y年%m月%d日 %A')
-        title = "AI 日报"
-        subtitle = "每日 AI 新闻资讯、技术文章、教程和趣闻"
-        section_names = {
-            'news': '📰 AI 新闻',
-            'tech': '💻 技术文章',
-            'tutorial': '📚 教程',
-            'fun': '🎉 趣闻'
-        }
-        footer_text = "由 🐟 小鱼 自动生成"
-    else:
-        date_display = date.strftime('%B %d, %Y')
-        title = "AI Daily News"
-        subtitle = "Daily AI News, Tech Articles, Tutorials & Fun Stuff"
-        section_names = {
-            'news': '📰 AI News',
-            'tech': '💻 Tech Articles',
-            'tutorial': '📚 Tutorials',
-            'fun': '🎉 Fun Stuff'
-        }
-        footer_text = "Generated by 🐟 Fish"
-    
-    # 生成所有卡片并按日期分组
+    # 生成所有卡片并按日期和分类分组
     all_items = []
     for item in news:
         item['_category'] = 'category-news'
@@ -159,40 +180,69 @@ def generate_html(news, tech, tutorial, fun, lang='cn'):
     date_groups = {date_str: all_items}
     
     # 生成侧边栏
-    sidebar_dates = generate_sidebar_datelist(dates, lang)
+    sidebar_dates = generate_sidebar_datelist(dates)
+    sidebar_categories = generate_sidebar_category_nav()
     
-    # 生成所有卡片
-    all_cards = []
-    for d in dates:
-        items = date_groups.get(d, [])
-        cards_html = []
-        for item in items:
-            cat = item.get('_category', 'category-news')
-            cards_html.append(generate_card(item, cat, lang, d))
-        
-        if lang == 'cn':
-            date_label = f"{d.split('-')[1]}月{d.split('-')[2]}日"
-        else:
-            date_label = d
-            
-        all_cards.append(f'''
-        <section class="date-section" id="date-{d}">
-            <div class="date-header">
-                <h2 class="date-title">{date_label}</h2>
+    # 按分类生成卡片
+    sections_html = []
+    
+    # 新闻 section
+    if news:
+        news_cards = [generate_card(item, 'category-news', date_str) for item in news]
+        sections_html.append(f'''
+        <section class="category-section" id="news">
+            <div class="category-header">
+                <h2 class="category-title">📰 AI 新闻</h2>
             </div>
             <div class="cards-grid">
-                {' '.join(cards_html) if cards_html else '<p class="empty-msg">暂无内容' if lang == 'cn' else '<p class="empty-msg">No content yet</p>'}
+                {' '.join(news_cards)}
             </div>
         </section>''')
     
-    all_cards_html = '\n'.join(all_cards)
+    # 技术 section
+    if tech:
+        tech_cards = [generate_card(item, 'category-tech', date_str) for item in tech]
+        sections_html.append(f'''
+        <section class="category-section" id="tech">
+            <div class="category-header">
+                <h2 class="category-title">💻 技术文章</h2>
+            </div>
+            <div class="cards-grid">
+                {' '.join(tech_cards)}
+            </div>
+        </section>''')
     
-    empty_msg_cn = '<p style="color:#64748b;">暂无内容</p>'
-    empty_msg_en = '<p style="color:#64748b;">No content yet</p>'
-    empty_msg = empty_msg_cn if lang == 'cn' else empty_msg_en
+    # 教程 section
+    if tutorial:
+        tutorial_cards = [generate_card(item, 'category-tutorial', date_str) for item in tutorial]
+        sections_html.append(f'''
+        <section class="category-section" id="tutorial">
+            <div class="category-header">
+                <h2 class="category-title">📚 教程</h2>
+            </div>
+            <div class="cards-grid">
+                {' '.join(tutorial_cards)}
+            </div>
+        </section>''')
+    
+    # 趣闻 section
+    if fun:
+        fun_cards = [generate_card(item, 'category-fun', date_str) for item in fun]
+        sections_html.append(f'''
+        <section class="category-section" id="fun">
+            <div class="category-header">
+                <h2 class="category-title">🎉 趣闻</h2>
+            </div>
+            <div class="cards-grid">
+                {' '.join(fun_cards)}
+            </div>
+        </section>''')
+    
+    all_cards_html = '\n'.join(sections_html)
+    category_nav = generate_category_nav()
     
     html = f'''<!DOCTYPE html>
-<html lang="{lang}">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -214,6 +264,7 @@ def generate_html(news, tech, tutorial, fun, lang='cn'):
             --category-tech: #3498db;
             --category-tutorial: #2ecc71;
             --category-fun: #9b59b6;
+            --sidebar-width: 120px;
         }}
         
         body {{
@@ -228,7 +279,7 @@ def generate_html(news, tech, tutorial, fun, lang='cn'):
         .top-nav {{
             background: var(--bg-secondary);
             border-bottom: 1px solid var(--border);
-            padding: 16px 24px;
+            padding: 12px 24px;
             position: sticky;
             top: 0;
             z-index: 100;
@@ -241,7 +292,7 @@ def generate_html(news, tech, tutorial, fun, lang='cn'):
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            gap: 16px;
+            gap: 12px;
         }}
         
         .nav-brand {{
@@ -251,7 +302,7 @@ def generate_html(news, tech, tutorial, fun, lang='cn'):
         }}
         
         .nav-logo {{
-            font-size: 1.5rem;
+            font-size: 1.3rem;
             font-weight: 700;
             color: var(--text-primary);
             text-decoration: none;
@@ -263,34 +314,27 @@ def generate_html(news, tech, tutorial, fun, lang='cn'):
         
         .nav-subtitle {{
             color: var(--text-secondary);
-            font-size: 0.9rem;
+            font-size: 0.85rem;
         }}
         
-        .lang-switch {{
+        .nav-categories {{
             display: flex;
             gap: 8px;
+            flex-wrap: wrap;
         }}
         
-        .lang-switch a {{
+        .nav-category-link {{
             padding: 8px 16px;
             border-radius: 6px;
             text-decoration: none;
             font-weight: 500;
             font-size: 0.9rem;
             transition: all 0.2s;
-        }}
-        
-        .lang-switch a.active {{
-            background: var(--accent);
-            color: #fff;
-        }}
-        
-        .lang-switch a:not(.active) {{
             background: var(--bg-card);
             color: var(--text-secondary);
         }}
         
-        .lang-switch a:hover:not(.active) {{
+        .nav-category-link:hover {{
             background: var(--border);
             color: var(--text-primary);
         }}
@@ -300,9 +344,9 @@ def generate_html(news, tech, tutorial, fun, lang='cn'):
             max-width: 1400px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: 220px 1fr;
-            gap: 32px;
-            padding: 32px 24px;
+            grid-template-columns: var(--sidebar-width) 1fr;
+            gap: 24px;
+            padding: 24px;
         }}
         
         @media (max-width: 900px) {{
@@ -311,61 +355,59 @@ def generate_html(news, tech, tutorial, fun, lang='cn'):
             }}
         }}
         
-        /* 左侧边栏 */
+        /* 左侧边栏 - 缩小宽度 */
         .sidebar {{
             position: sticky;
-            top: 100px;
+            top: 80px;
             height: fit-content;
         }}
         
         .sidebar-section {{
             background: var(--bg-secondary);
             border-radius: 12px;
-            padding: 20px;
+            padding: 16px 12px;
             border: 1px solid var(--border);
+            margin-bottom: 16px;
         }}
         
         .sidebar-title {{
-            font-size: 0.85rem;
+            font-size: 0.75rem;
             text-transform: uppercase;
             letter-spacing: 1px;
             color: var(--text-muted);
-            margin-bottom: 16px;
+            margin-bottom: 12px;
             font-weight: 600;
+            text-align: center;
         }}
         
-        .date-list {{
+        .category-list, .date-list {{
             list-style: none;
         }}
         
-        .date-item {{
-            margin-bottom: 8px;
+        .category-item, .date-item {{
+            margin-bottom: 6px;
         }}
         
-        .date-link {{
+        .category-link, .date-link {{
             display: block;
-            padding: 10px 14px;
-            border-radius: 8px;
+            padding: 8px 10px;
+            border-radius: 6px;
             text-decoration: none;
             color: var(--text-secondary);
             transition: all 0.2s;
             font-weight: 500;
+            font-size: 0.85rem;
+            text-align: center;
         }}
         
-        .date-link:hover {{
+        .category-link:hover, .date-link:hover {{
             background: var(--bg-card);
             color: var(--accent);
         }}
         
-        .date-link.active {{
+        .category-link.active {{
             background: var(--accent);
             color: #fff;
-        }}
-        
-        .date-label {{
-            display: flex;
-            align-items: center;
-            gap: 8px;
         }}
         
         /* 右侧内容 */
@@ -373,22 +415,22 @@ def generate_html(news, tech, tutorial, fun, lang='cn'):
             min-width: 0;
         }}
         
-        /* 日期区块 */
-        .date-section {{
-            margin-bottom: 48px;
+        /* 分类区块 */
+        .category-section {{
+            margin-bottom: 40px;
         }}
         
-        .date-header {{
+        .category-header {{
             display: flex;
             align-items: center;
             gap: 16px;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
             padding-bottom: 12px;
             border-bottom: 2px solid var(--border);
         }}
         
-        .date-title {{
-            font-size: 1.4rem;
+        .category-title {{
+            font-size: 1.3rem;
             font-weight: 600;
             color: var(--text-primary);
         }}
@@ -396,8 +438,8 @@ def generate_html(news, tech, tutorial, fun, lang='cn'):
         /* 卡片网格 */
         .cards-grid {{
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 20px;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 16px;
         }}
         
         /* 卡片样式 */
@@ -418,24 +460,24 @@ def generate_html(news, tech, tutorial, fun, lang='cn'):
         }}
         
         .card-image {{
-            height: 80px;
+            height: 70px;
             background: var(--bg-card);
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 12px;
+            padding: 10px;
             border-bottom: 1px solid var(--border);
         }}
         
         .card-image img {{
-            width: 64px;
-            height: 64px;
+            width: 56px;
+            height: 56px;
             object-fit: contain;
             border-radius: 8px;
         }}
         
         .card-content {{
-            padding: 20px;
+            padding: 16px;
             display: flex;
             flex-direction: column;
             flex: 1;
@@ -443,13 +485,13 @@ def generate_html(news, tech, tutorial, fun, lang='cn'):
         
         .card-category {{
             display: inline-block;
-            padding: 4px 10px;
+            padding: 4px 8px;
             border-radius: 4px;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 600;
             text-transform: uppercase;
             letter-spacing: 0.5px;
-            margin-bottom: 12px;
+            margin-bottom: 10px;
             width: fit-content;
         }}
         
@@ -459,8 +501,8 @@ def generate_html(news, tech, tutorial, fun, lang='cn'):
         .category-fun {{ background: var(--category-fun); color: #fff; }}
         
         .card h3 {{
-            font-size: 1.1rem;
-            margin-bottom: 10px;
+            font-size: 1rem;
+            margin-bottom: 8px;
             line-height: 1.4;
         }}
         
@@ -476,9 +518,9 @@ def generate_html(news, tech, tutorial, fun, lang='cn'):
         
         .card-summary {{
             color: var(--text-secondary);
-            font-size: 0.9rem;
-            line-height: 1.6;
-            margin-bottom: 16px;
+            font-size: 0.85rem;
+            line-height: 1.5;
+            margin-bottom: 12px;
             flex: 1;
         }}
         
@@ -487,10 +529,10 @@ def generate_html(news, tech, tutorial, fun, lang='cn'):
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
-            gap: 8px;
-            font-size: 0.8rem;
+            gap: 6px;
+            font-size: 0.75rem;
             color: var(--text-muted);
-            padding-top: 12px;
+            padding-top: 10px;
             border-top: 1px solid var(--border);
         }}
         
@@ -498,6 +540,25 @@ def generate_html(news, tech, tutorial, fun, lang='cn'):
             display: flex;
             align-items: center;
             gap: 4px;
+        }}
+        
+        .card-source-link {{
+            margin-top: 10px;
+            padding-top: 10px;
+            border-top: 1px solid var(--border);
+        }}
+        
+        .card-source-link a {{
+            color: var(--accent);
+            text-decoration: none;
+            font-size: 0.85rem;
+            font-weight: 500;
+            transition: color 0.2s;
+        }}
+        
+        .card-source-link a:hover {{
+            color: var(--accent-hover);
+            text-decoration: underline;
         }}
         
         /* 空状态 */
@@ -511,11 +572,11 @@ def generate_html(news, tech, tutorial, fun, lang='cn'):
         /* 页脚 */
         footer {{
             text-align: center;
-            padding: 32px;
+            padding: 24px;
             color: var(--text-muted);
-            font-size: 0.85rem;
+            font-size: 0.8rem;
             border-top: 1px solid var(--border);
-            margin-top: 32px;
+            margin-top: 24px;
         }}
         
         footer a {{
@@ -541,6 +602,10 @@ def generate_html(news, tech, tutorial, fun, lang='cn'):
             .sidebar {{
                 position: static;
             }}
+            
+            .nav-categories {{
+                justify-content: center;
+            }}
         }}
     </style>
 </head>
@@ -552,19 +617,24 @@ def generate_html(news, tech, tutorial, fun, lang='cn'):
                 <a href="#" class="nav-logo">🐟 <span>AI</span> {title}</a>
                 <span class="nav-subtitle">{date_display}</span>
             </div>
-            <div class="lang-switch">
-                <a href="index-cn.html" class="{'active' if lang == 'cn' else ''}">中文</a>
-                <a href="index.html" class="{'active' if lang == 'en' else ''}">English</a>
+            <div class="nav-categories">
+                {category_nav}
             </div>
         </div>
     </nav>
     
     <!-- 主布局 -->
     <div class="main-layout">
-        <!-- 左侧边栏 -->
+        <!-- 左侧边栏 - 窄版 -->
         <aside class="sidebar">
             <div class="sidebar-section">
-                <h3 class="sidebar-title">📅 {'日期导航' if lang == 'cn' else 'Dates'}</h3>
+                <h3 class="sidebar-title">📂 分类</h3>
+                <ul class="category-list">
+                    {sidebar_categories}
+                </ul>
+            </div>
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">📅 日期</h3>
                 <ul class="date-list">
                     {sidebar_dates}
                 </ul>
@@ -578,15 +648,18 @@ def generate_html(news, tech, tutorial, fun, lang='cn'):
     </div>
     
     <footer>
-        <p>{footer_text} | <a href="https://github.com/wallerwvw-cell/ai-daily-news" target="_blank">GitHub</a></p>
+        <p>由 🐟 小鱼 自动生成 | <a href="https://github.com/wallerwvw-cell/ai-daily-news" target="_blank">GitHub</a></p>
     </footer>
     
     <script>
         // 平滑滚动
-        document.querySelectorAll('.date-link').forEach(link => {{
+        document.querySelectorAll('.category-link, .date-link, .nav-category-link').forEach(link => {{
             link.addEventListener('click', function(e) {{
+                const href = this.getAttribute('href');
+                if (href === '#') return;
+                
                 e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
+                const targetId = href.substring(1);
                 const target = document.getElementById(targetId);
                 if (target) {{
                     target.scrollIntoView({{ behavior: 'smooth', block: 'start' }});
@@ -594,12 +667,39 @@ def generate_html(news, tech, tutorial, fun, lang='cn'):
             }});
         }});
         
-        // 滚动高亮当前日期
+        // 分类筛选功能
+        document.querySelectorAll('.category-link').forEach(link => {{
+            link.addEventListener('click', function(e) {{
+                e.preventDefault();
+                const filter = this.getAttribute('data-filter');
+                
+                // 更新激活状态
+                document.querySelectorAll('.category-link').forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+                
+                // 筛选卡片
+                const cards = document.querySelectorAll('.card');
+                cards.forEach(card => {{
+                    if (filter === 'all' || filter === '#') {{
+                        card.style.display = 'flex';
+                    }} else {{
+                        const category = card.querySelector('.card-category').className;
+                        if (category.includes(filter.replace('category-', ''))) {{
+                            card.style.display = 'flex';
+                        }} else {{
+                            card.style.display = 'none';
+                        }}
+                    }}
+                }});
+            }});
+        }});
+        
+        // 滚动高亮当前分类
         const observer = new IntersectionObserver((entries) => {{
             entries.forEach(entry => {{
                 if (entry.isIntersecting) {{
                     const id = entry.target.id;
-                    document.querySelectorAll('.date-link').forEach(link => {{
+                    document.querySelectorAll('.category-link').forEach(link => {{
                         link.classList.remove('active');
                         if (link.getAttribute('href') === '#' + id) {{
                             link.classList.add('active');
@@ -607,9 +707,9 @@ def generate_html(news, tech, tutorial, fun, lang='cn'):
                     }});
                 }}
             }});
-        }}, {{ threshold: 0.5 }});
+        }}, {{ threshold: 0.3 }});
         
-        document.querySelectorAll('.date-section').forEach(section => {{
+        document.querySelectorAll('.category-section').forEach(section => {{
             observer.observe(section);
         }});
     </script>
@@ -619,31 +719,18 @@ def generate_html(news, tech, tutorial, fun, lang='cn'):
 
 def main():
     """主函数"""
-    # 生成中文版
-    results_cn = load_search_results('cn')
-    html_cn = generate_html(
-        results_cn.get('news', []),
-        results_cn.get('tech', []),
-        results_cn.get('tutorial', []),
-        results_cn.get('fun', []),
-        'cn'
-    )
-    with open("/Users/alex/.openclaw/workspace/ai-daily-news/index-cn.html", 'w', encoding='utf-8') as f:
-        f.write(html_cn)
-    print("✅ 中文版生成完成: index-cn.html")
+    results = load_search_results()
     
-    # 生成英文版
-    results_en = load_search_results('en')
-    html_en = generate_html(
-        results_en.get('news', []),
-        results_en.get('tech', []),
-        results_en.get('tutorial', []),
-        results_en.get('fun', []),
-        'en'
+    html = generate_html(
+        results.get('news', []),
+        results.get('tech', []),
+        results.get('tutorial', []),
+        results.get('fun', [])
     )
+    
     with open("/Users/alex/.openclaw/workspace/ai-daily-news/index.html", 'w', encoding='utf-8') as f:
-        f.write(html_en)
-    print("✅ 英文版生成完成: index.html")
+        f.write(html)
+    print("✅ 生成完成: index.html")
 
 if __name__ == "__main__":
     main()
