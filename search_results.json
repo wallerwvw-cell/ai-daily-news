@@ -72,9 +72,9 @@
     },
     {
       "title": "Building AI agents from scratch",
-      "summary": "从零开始构建AI代理的全面指南，涵盖架构和实现。",
-      "url": "https://www.build-together.com/ai-agents",
-      "source": "Build Together"
+      "summary": "LangChain官方教程，从零开始构建AI代理的全面指南，涵盖LLM交互、链式调用、代理开发等核心内容。",
+      "url": "https://python.langchain.com/docs/tutorials/",
+      "source": "LangChain"
     }
   ],
   "fun": [
