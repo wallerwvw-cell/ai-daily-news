@@ -2,12 +2,12 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>七色花手抄报 - A4</title>
+    <title>七色花手抄报 - A4横版</title>
     <style>
-        @page { size: A4 portrait; margin: 0; }
+        @page { size: A4 landscape; margin: 0; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
-        html, body { width: 210mm; height: 297mm; overflow: hidden; }
+        html, body { width: 297mm; height: 210mm; overflow: hidden; }
         
         body {
             font-family: "楷体", "KaiTi", serif;
@@ -24,109 +24,83 @@
         
         .title {
             text-align: center;
-            font-size: 42px;
+            font-size: 44px;
             font-weight: bold;
             color: #e91e63;
-            letter-spacing: 14px;
-            padding: 2mm 0;
+            letter-spacing: 16px;
         }
         
         .rainbow {
-            height: 22px;
+            height: 24px;
             background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
-            border-radius: 11px;
-            margin: 3mm 0;
+            border-radius: 12px;
+            margin: 4mm 0;
         }
         
-        .story-box {
-            background: #fff9c4;
-            border: 2px solid #333;
-            padding: 8px;
-            margin-bottom: 3mm;
-            text-align: center;
-        }
-        
-        .story-title {
-            font-size: 14px;
+        .main-title {
+            font-size: 16px;
             font-weight: bold;
             color: #e91e63;
             text-align: center;
-            margin-bottom: 6px;
+            margin-bottom: 8px;
             border-bottom: 1px dashed #ccc;
+            padding-bottom: 4px;
         }
         
-        .story-text {
-            font-size: 11px;
-            line-height: 1.5;
-            text-indent: 1.2em;
+        .intro-text {
+            font-size: 13px;
+            line-height: 1.6;
+            text-indent: 1.5em;
+            color: #333;
+            margin-bottom: 4mm;
         }
         
-        .row { display: flex; gap: 4mm; margin-bottom: 3mm; }
-        .col { flex: 1; }
-        
-        .coloring-row { 
-            display: flex; 
-            gap: 3mm; 
-            margin-bottom: 3mm;
+        .flower-row {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 4mm;
         }
         
-        .coloring-box {
+        .flower-col {
             flex: 1;
-            border: 1.5px dashed #888;
-            padding: 6px;
             text-align: center;
-            background: #f8f8f8;
-            min-height: 75px;
+            padding: 10px;
         }
         
-        .coloring-label {
-            font-size: 9px;
-            color: #555;
-            margin-bottom: 3px;
-            font-weight: bold;
-        }
-        
-        .words-box {
-            background: #e1f5fe;
-            border: 2px solid #333;
-            padding: 8px;
-            height: 100%;
-        }
-        
-        .words-title {
-            font-size: 12px;
-            font-weight: bold;
-            color: #1976d2;
-            text-align: center;
-            margin-bottom: 5px;
-        }
-        
-        .words-content { font-size: 10px; line-height: 1.5; }
-        
-        .footer { 
-            text-align: center; 
-            font-size: 11px; 
-            color: #777; 
-            font-weight: bold;
-        }
-        
-        /* 主图七色花 */
         .main-flower {
-            width: 180px;
-            height: 180px;
-        }
-        
-        /* 点缀图案 */
-        .deco-svg {
-            width: 60px;
-            height: 60px;
+            width: 160px;
+            height: 160px;
         }
         
         .deco-row {
             display: flex;
             justify-content: space-around;
-            align-items: center;
-            padding: 5px 0;
+            gap: 3mm;
+            margin-bottom: 3mm;
+        }
+        
+        .deco-box {
+            flex: 1;
+            border: 1.5px dashed #888;
+            padding: 8px;
+            text-align: center;
+            background: #f8f8f8;
+            min-height: 70px;
+        }
+        
+        .deco-label {
+            font-size: 10px;
+            color: #555;
+            margin-bottom: 4px;
+            font-weight: bold;
+        }
+        
+        .footer { 
+            text-align: center; 
+            font-size: 12px; 
+            color: #777; 
+            font-weight: bold;
         }
         
         @media print {
@@ -136,99 +110,99 @@
 </head>
 <body>
     <div class="border">
-        <div style="padding: 2mm;">
+        <div style="padding: 3mm;">
             <h1 class="title">🌸 七色花 🌸</h1>
-            <p style="text-align:center;font-size:11px;color:#555;margin-bottom:2px;">—— 经典童话故事 · 小学生阅读手抄报</p>
+            <p style="text-align:center;font-size:12px;color:#555;margin-bottom:2mm;">—— 经典童话故事 · 小学生阅读手抄报</p>
             <div class="rainbow"></div>
             
-            <!-- 故事简介 - 满宽 -->
-            <div class="story-box">
-                <div class="story-title">📖 故事简介</div>
-                <p class="story-text">
-                    《七色花》是苏联作家瓦·卡泰耶夫写的经典童话。小姑娘珍妮得到一朵神奇的七色花，有七片不同颜色的花瓣，每片都能实现一个愿望。珍妮用最后一片花瓣帮助了有腿疾的小男孩，让他可以跑跳。虽然花失去了魔力，但珍妮心里充满快乐——帮助别人是最珍贵的愿望！
-                </p>
-            </div>
+            <!-- 故事简介文字（无边框） -->
+            <div class="main-title">📖 故事简介</div>
+            <p class="intro-text">
+                《七色花》是苏联作家瓦·卡泰耶夫写的经典童话。小姑娘珍妮得到一朵神奇的七色花，有七片不同颜色的花瓣，每片都能实现一个愿望。珍妮用最后一片花瓣帮助了有腿疾的小男孩，让他可以跑跳。虽然花失去了魔力，但珍妮心里充满快乐——帮助别人是最珍贵的愿望！
+            </p>
             
-            <!-- 主图：七色花 + 点缀 -->
-            <div class="story-box" style="min-height: 200px;">
-                <div class="story-title">🎨 涂色区：七色花（主图）</div>
-                <div class="deco-row">
-                    <!-- 左边点缀：小花 -->
-                    <svg class="deco-svg" viewBox="0 0 60 60" fill="none" stroke="#000" stroke-width="1.5">
-                        <line x1="30" y1="35" x2="30" y2="58" stroke="#2e7d32"/>
-                        <circle cx="30" cy="25" r="6" fill="none"/>
-                        <ellipse cx="30" cy="12" rx="5" ry="10" transform="rotate(0 30 25)" fill="none"/>
-                        <ellipse cx="30" cy="12" rx="5" ry="10" transform="rotate(51 30 25)" fill="none"/>
-                        <ellipse cx="30" cy="12" rx="5" ry="10" transform="rotate(103 30 25)" fill="none"/>
-                        <ellipse cx="30" cy="12" rx="5" ry="10" transform="rotate(154 30 25)" fill="none"/>
-                        <ellipse cx="30" cy="12" rx="5" ry="10" transform="rotate(206 30 25)" fill="none"/>
-                        <ellipse cx="30" cy="12" rx="5" ry="10" transform="rotate(257 30 25)" fill="none"/>
-                        <ellipse cx="30" cy="12" rx="5" ry="10" transform="rotate(308 30 25)" fill="none"/>
-                    </svg>
-                    
-                    <!-- 中间：七色花主图 -->
+            <!-- 三朵七色花并排 -->
+            <div class="flower-row">
+                <div class="flower-col">
                     <svg class="main-flower" viewBox="0 0 200 200" fill="none" stroke="#000" stroke-width="2">
-                        <!-- 花茎 -->
                         <line x1="100" y1="120" x2="100" y2="195" stroke="#2e7d32" stroke-width="5"/>
-                        <!-- 叶子 -->
-                        <ellipse cx="70" cy="160" rx="22" ry="10" fill="none" stroke="#2e7d32" stroke-width="2"/>
-                        <ellipse cx="130" cy="160" rx="22" ry="10" fill="none" stroke="#2e7d32" stroke-width="2"/>
-                        <!-- 花心 -->
-                        <circle cx="100" cy="90" r="18" fill="#ffeb3b" stroke="#000" stroke-width="2"/>
-                        <!-- 7片花瓣 - 更大 -->
-                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(0 100 90)" fill="none"/>
-                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(51.4 100 90)" fill="none"/>
-                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(102.8 100 90)" fill="none"/>
-                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(154.2 100 90)" fill="none"/>
-                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(205.6 100 90)" fill="none"/>
-                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(257 100 90)" fill="none"/>
-                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(308.4 100 90)" fill="none"/>
-                        <!-- 花瓣上的小线条 -->
-                        <line x1="100" y1="60" x2="100" y2="75" stroke="#000" stroke-width="1"/>
-                        <line x1="115" y1="55" x2="122" y2="68" stroke="#000" stroke-width="1"/>
-                        <line x1="130" y1="70" x2="135" y2="82" stroke="#000" stroke-width="1"/>
-                        <line x1="130" y1="95" x2="135" y2="103" stroke="#000" stroke-width="1"/>
-                        <line x1="100" y1="105" x2="100" y2="115" stroke="#000" stroke-width="1"/>
-                        <line x1="70" y1="95" x2="65" y2="103" stroke="#000" stroke-width="1"/>
-                        <line x1="70" y1="70" x2="65" y2="82" stroke="#000" stroke-width="1"/>
-                        <line x1="85" y1="55" x2="78" y2="68" stroke="#000" stroke-width="1"/>
+                        <ellipse cx="70" cy="160" rx="22" ry="10" fill="none" stroke="#2e7d32"/>
+                        <ellipse cx="130" cy="160" rx="22" ry="10" fill="none" stroke="#2e7d32"/>
+                        <circle cx="100" cy="90" r="18" fill="#ffeb3b"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(0 100 90)"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(51.4 100 90)"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(102.8 100 90)"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(154.2 100 90)"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(205.6 100 90)"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(257 100 90)"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(308.4 100 90)"/>
                     </svg>
-                    
-                    <!-- 右边点缀：爱心 -->
-                    <svg class="deco-svg" viewBox="0 0 60 60" fill="none" stroke="#000" stroke-width="1.5">
-                        <path d="M30 50 L10 30 Q5 20 15 15 Q25 10 30 20 Q35 10 45 15 Q55 20 50 30 Z" />
+                    <p style="font-size:11px;color:#666;">七色花 ❤</p>
+                </div>
+                
+                <div class="flower-col">
+                    <svg class="main-flower" viewBox="0 0 200 200" fill="none" stroke="#000" stroke-width="2">
+                        <line x1="100" y1="120" x2="100" y2="195" stroke="#2e7d32" stroke-width="5"/>
+                        <ellipse cx="70" cy="160" rx="22" ry="10" fill="none" stroke="#2e7d32"/>
+                        <ellipse cx="130" cy="160" rx="22" ry="10" fill="none" stroke="#2e7d32"/>
+                        <circle cx="100" cy="90" r="18" fill="#ffeb3b"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(0 100 90)"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(51.4 100 90)"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(102.8 100 90)"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(154.2 100 90)"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(205.6 100 90)"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(257 100 90)"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(308.4 100 90)"/>
                     </svg>
+                    <p style="font-size:11px;color:#666;">帮助他人 ✨</p>
+                </div>
+                
+                <div class="flower-col">
+                    <svg class="main-flower" viewBox="0 0 200 200" fill="none" stroke="#000" stroke-width="2">
+                        <line x1="100" y1="120" x2="100" y2="195" stroke="#2e7d32" stroke-width="5"/>
+                        <ellipse cx="70" cy="160" rx="22" ry="10" fill="none" stroke="#2e7d32"/>
+                        <ellipse cx="130" cy="160" rx="22" ry="10" fill="none" stroke="#2e7d32"/>
+                        <circle cx="100" cy="90" r="18" fill="#ffeb3b"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(0 100 90)"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(51.4 100 90)"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(102.8 100 90)"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(154.2 100 90)"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(205.6 100 90)"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(257 100 90)"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(308.4 100 90)"/>
+                    </svg>
+                    <p style="font-size:11px;color:#666;">快乐分享 🌟</p>
                 </div>
             </div>
             
-            <!-- 下方4个涂色区 -->
-            <div class="coloring-row">
-                <div class="coloring-box">
-                    <div class="coloring-label">🎨 珍妮</div>
-                    <svg style="width:50px;height:60px;" viewBox="0 0 60 80" fill="none" stroke="#000" stroke-width="1.5">
-                        <path d="M15 20 Q30 5 45 20 Q50 35 45 40 L15 40 Q10 35 15 20" fill="none"/>
+            <!-- 点缀图案 -->
+            <div class="deco-row">
+                <div class="deco-box">
+                    <div class="deco-label">🎨 珍妮</div>
+                    <svg style="width:45px;height:55px;" viewBox="0 0 60 80" fill="none" stroke="#000" stroke-width="1.5">
+                        <path d="M15 20 Q30 5 45 20 Q50 35 45 40 L15 40 Q10 35 15 20"/>
                         <circle cx="24" cy="32" r="3"/>
                         <circle cx="36" cy="32" r="3"/>
-                        <path d="M27 40 Q30 43 33 40" fill="none"/>
+                        <path d="M27 40 Q30 43 33 40"/>
                         <line x1="30" y1="45" x2="30" y2="65"/>
-                        <path d="M20 65 L30 75 L40 65" fill="none"/>
+                        <path d="M20 65 L30 75 L40 65"/>
                         <line x1="25" y1="75" x2="22" y2="85"/>
                         <line x1="35" y1="75" x2="38" y2="85"/>
                     </svg>
                 </div>
-                <div class="coloring-box">
-                    <div class="coloring-label">🎨 彩虹</div>
-                    <svg style="width:70px;height:35px;" viewBox="0 0 80 40" fill="none">
-                        <path d="M5 40 Q40 -15 75 40" stroke="#e91e63" stroke-width="3" fill="none"/>
-                        <path d="M10 40 Q40 -5 70 40" stroke="#ff9800" stroke-width="3" fill="none"/>
-                        <path d="M15 40 Q40 5 65 40" stroke="#ffeb3b" stroke-width="3" fill="none"/>
-                        <path d="M20 40 Q40 15 60 40" stroke="#4caf50" stroke-width="3" fill="none"/>
-                        <path d="M25 40 Q40 25 55 40" stroke="#2196f3" stroke-width="3" fill="none"/>
+                <div class="deco-box">
+                    <div class="deco-label">🎨 彩虹</div>
+                    <svg style="width:65px;height:30px;" viewBox="0 0 80 40" fill="none">
+                        <path d="M5 40 Q40 -15 75 40" stroke="#e91e63" stroke-width="3"/>
+                        <path d="M10 40 Q40 -5 70 40" stroke="#ff9800" stroke-width="3"/>
+                        <path d="M15 40 Q40 5 65 40" stroke="#ffeb3b" stroke-width="3"/>
+                        <path d="M20 40 Q40 15 60 40" stroke="#4caf50" stroke-width="3"/>
+                        <path d="M25 40 Q40 25 55 40" stroke="#2196f3" stroke-width="3"/>
                     </svg>
                 </div>
-                <div class="coloring-box">
-                    <div class="coloring-label">🎨 太阳</div>
-                    <svg style="width:50px;height:50px;" viewBox="0 0 60 60" fill="none" stroke="#000" stroke-width="1.5">
+                <div class="deco-box">
+                    <div class="deco-label">🎨 太阳</div>
+                    <svg style="width:45px;height:45px;" viewBox="0 0 60 60" fill="none" stroke="#000" stroke-width="1.5">
                         <circle cx="30" cy="30" r="12"/>
                         <line x1="30" y1="5" x2="30" y2="15"/>
                         <line x1="30" y1="45" x2="30" y2="55"/>
@@ -240,54 +214,21 @@
                         <line x1="41" y1="19" x2="48" y2="12"/>
                     </svg>
                 </div>
-                <div class="coloring-box">
-                    <div class="coloring-label">🎨 云朵</div>
-                    <svg style="width:60px;height:40px;" viewBox="0 0 60 40" fill="none" stroke="#000" stroke-width="1.5">
+                <div class="deco-box">
+                    <div class="deco-label">🎨 云朵</div>
+                    <svg style="width:55px;height:35px;" viewBox="0 0 60 40" fill="none" stroke="#000" stroke-width="1.5">
                         <path d="M10 35 Q5 25 15 20 Q15 10 30 10 Q40 5 45 15 Q55 15 55 25 Q55 35 45 35 Z"/>
                     </svg>
                 </div>
-            </div>
-            
-            <!-- 底部2个 -->
-            <div class="coloring-row">
-                <div class="coloring-box">
-                    <div class="coloring-label">🎨 小花</div>
-                    <svg style="width:45px;height:55px;" viewBox="0 0 50 60" fill="none" stroke="#000" stroke-width="1.5">
-                        <line x1="25" y1="35" x2="25" y2="58"/>
-                        <circle cx="25" cy="25" r="5"/>
-                        <ellipse cx="25" cy="12" rx="4" ry="8" transform="rotate(0 25 25)" fill="none"/>
-                        <ellipse cx="25" cy="12" rx="4" ry="8" transform="rotate(72 25 25)" fill="none"/>
-                        <ellipse cx="25" cy="12" rx="4" ry="8" transform="rotate(144 25 25)" fill="none"/>
-                        <ellipse cx="25" cy="12" rx="4" ry="8" transform="rotate(216 25 25)" fill="none"/>
-                        <ellipse cx="25" cy="12" rx="4" ry="8" transform="rotate(288 25 25)" fill="none"/>
+                <div class="deco-box">
+                    <div class="deco-label">🎨 爱心</div>
+                    <svg style="width:40px;height:40px;" viewBox="0 0 50 50" fill="none" stroke="#000" stroke-width="1.5">
+                        <path d="M25 45 L8 25 Q3 17 12 12 Q20 8 25 17 Q30 8 38 12 Q47 17 42 25 Z"/>
                     </svg>
                 </div>
-                <div class="coloring-box">
-                    <div class="coloring-label">🎨 房子</div>
-                    <svg style="width:55px;height:50px;" viewBox="0 0 60 55" fill="none" stroke="#000" stroke-width="1.5">
-                        <path d="M5 40 L30 15 L55 40"/>
-                        <line x1="5" y1="40" x2="55" y2="40"/>
-                        <line x1="20" y1="40" x2="20" y2="55"/>
-                        <line x1="40" y1="40" x2="40" y2="55"/>
-                        <rect x="25" y="22" width="10" height="18"/>
-                        <line x1="15" y1="25" x2="15" y2="35"/>
-                        <line x1="45" y1="25" x2="45" y2="35"/>
-                    </svg>
-                </div>
-                <div class="coloring-box">
-                    <div class="coloring-label">🎨 树</div>
-                    <svg style="width:45px;height:55px;" viewBox="0 0 50 60" fill="none" stroke="#000" stroke-width="1.5">
-                        <line x1="25" y1="35" x2="25" y2="58"/>
-                        <line x1="25" y1="35" x2="10" y2="20"/>
-                        <line x1="25" y1="35" x2="40" y2="20"/>
-                        <line x1="25" y1="25" x2="15" y2="12"/>
-                        <line x1="25" y1="25" x2="35" y2="12"/>
-                        <circle cx="25" cy="30" r="12"/>
-                    </svg>
-                </div>
-                <div class="coloring-box">
-                    <div class="coloring-label">🎨 星星</div>
-                    <svg style="width:45px;height:45px;" viewBox="0 0 50 50" fill="none" stroke="#000" stroke-width="1.5">
+                <div class="deco-box">
+                    <div class="deco-label">🎨 星星</div>
+                    <svg style="width:40px;height:40px;" viewBox="0 0 50 50" fill="none" stroke="#000" stroke-width="1.5">
                         <polygon points="25,5 30,20 45,20 33,30 38,45 25,35 12,45 17,30 5,20 20,20"/>
                     </svg>
                 </div>
