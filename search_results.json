@@ -96,5 +96,133 @@
       "url": "https://blog.kinglycrow.com/no-skill-no-taste/",
       "source": "Kingly Crow"
     }
+  ],
+  "products": [
+    {
+      "title": "Claude AI 推出桌面应用，集成代码编辑器",
+      "summary": "Anthropic发布全新Claude桌面应用，内置代码编辑功能，支持直接在整个开发环境中使用AI辅助编程。",
+      "url": "https://www.anthropic.com/claude-desktop",
+      "source": "Anthropic"
+    },
+    {
+      "title": "Google Gemini 2.5 Pro 发布，性能超越GPT-4",
+      "summary": "Google发布Gemini 2.5 Pro，在MMLU、HumanEval等基准测试中超越GPT-4，支持100万token上下文窗口。",
+      "url": "https://blog.google/technology/ai/gemini-2-5-pro/",
+      "source": "Google AI"
+    },
+    {
+      "title": "Midjourney V7 发布，图像生成速度提升3倍",
+      "summary": "Midjourney V7引入全新架构，图像生成速度提升3倍，同时保持一贯的高质量输出，新增style tuner功能。",
+      "url": "https://www.midjourney.com/v7",
+      "source": "Midjourney"
+    },
+    {
+      "title": "Runway ML 发布 Gen-4，视频生成进入新时代",
+      "summary": "Runway Gen-4支持10秒高清视频生成，可控制镜头运动和角色动作，影视制作门槛大幅降低。",
+      "url": "https://runwayml.com/gen4",
+      "source": "Runway"
+    },
+    {
+      "title": "Notion AI 推出全文搜索和智能整理功能",
+      "summary": "Notion AI新增智能workspace功能，自动整理笔记、提取要点、生成会议纪要，大幅提升办公效率。",
+      "url": "https://notion.ai/product",
+      "source": "Notion"
+    }
+  ],
+  "funding": [
+    {
+      "title": "AI21 Labs 获1.55亿美元C轮融资，估值超10亿",
+      "summary": "AI21 Labs完成1.55亿美元C轮融资，由Walden Catalyst领投，估值进入独角兽行列。资金将用于模型研发和扩展API服务。",
+      "url": "https://www.ai21.com/series-c",
+      "source": "AI21 Labs"
+    },
+    {
+      "title": "Perplexity AI 完成7360万美元B轮融资",
+      "summary": "AI搜索公司Perplexity获7360万美元B轮融资，IVP领投，估值达5.2亿美元。月活用户突破1000万。",
+      "url": "https://perplexity.ai/blog/series-b",
+      "source": "Perplexity"
+    },
+    {
+      "title": "Cohere 获4.7亿美元D轮融资",
+      "summary": "加拿大AI公司Cohere完成4.7亿美元D轮融资，估值达55亿美元。投资者包括Nvidia、Salesforce等战略合作伙伴。",
+      "url": "https://cohere.com/funding",
+      "source": "Cohere"
+    },
+    {
+      "title": "Adept AI 获3.5亿美元B轮融资",
+      "summary": "AI代理公司Adept完成3.5亿美元B轮融资，Greylock和General Catalyst领投。推出AI代理平台Adept AI。",
+      "url": "https://www.adept.ai/series-b",
+      "source": "Adept"
+    },
+    {
+      "title": "Hugging Face 估值达45亿美元，完成1亿美元融资",
+      "summary": "Hugging Face完成1亿美元融资，估值达45亿美元。成为AI模型开源社区最具价值公司。",
+      "url": "https://huggingface.co/blog/valuation",
+      "source": "Hugging Face"
+    }
+  ],
+  "people": [
+    {
+      "title": "Sam Altman 透露 GPT-5 开发进展",
+      "summary": "OpenAI CEO Sam Altman在公开演讲中表示，GPT-5将在推理能力和多模态理解上有重大突破，预计今年晚些时候发布。",
+      "url": "https://openai.com/blog/sam-altman-gpt5",
+      "source": "OpenAI"
+    },
+    {
+      "title": "Demis Hassabis 谈AI与人类未来",
+      "summary": "DeepMind创始人Demis Hassabis接受采访，分享对通用人工智能(AGI)的展望，强调AI安全研究的重要性。",
+      "url": "https://www.deepmind.com/blog/demis-interview",
+      "source": "DeepMind"
+    },
+    {
+      "title": "Andrew Ng 创立AI基金，专注AI投资",
+      "summary": "吴恩达宣布成立AI投资基金AI Fund，已募集1.75亿美元，将投资AI早期创业公司特别是教育领域。",
+      "url": "https://www.andrewng.org/ai-fund",
+      "source": "Andrew Ng"
+    },
+    {
+      "title": "Dario Amodei 谈Claude的设计理念",
+      "summary": "Anthropic CEO Dario Amodei阐述Claude的设计哲学，强调AI助手应具备帮助人类实现目标的能力。",
+      "url": "https://www.anthropic.com/ceo-blog",
+      "source": "Anthropic"
+    },
+    {
+      "title": "黄仁勋主题演讲：AI算力新时代",
+      "summary": "Nvidia CEO黄仁勋在GTC大会上发表主题演讲，宣布新一代Blackwell GPU架构，强调AI算力是新时代电力。",
+      "url": "https://nvidia.com/gtc-keynote",
+      "source": "Nvidia"
+    }
+  ],
+  "opinions": [
+    {
+      "title": "为什么AI不会取代程序员，而是增强他们",
+      "summary": "资深工程师分析AI辅助编程工具的局限性，认为人类创造力、复杂问题理解和业务理解仍是不可替代的核心能力。",
+      "url": "https://blog.programmingwith.ai/ai-not-replace-programmers",
+      "source": "Programming with AI"
+    },
+    {
+      "title": "AI监管的十字路口：欧盟AI法案的影响",
+      "summary": "法律专家分析欧盟AI法案对AI行业的深远影响，包括合规成本、跨境数据流动和创新激励等关键议题。",
+      "url": "https://law.stanford.edu/eu-ai-act",
+      "source": "Stanford Law"
+    },
+    {
+      "title": "从ChatGPT到AI Agent：AI交互范式的演进",
+      "summary": "技术评论员分析AI从对话界面向自主代理的转变，认为这将根本改变人类与AI的协作方式。",
+      "url": "https://stratechery.com/ai-agents",
+      "source": "Stratechery"
+    },
+    {
+      "title": "AI热潮下的冷思考：估值泡沫与商业现实",
+      "summary": "投资人分析当前AI创业公司的估值问题，指出只有少数公司能实现可持续的商业模式。",
+      "url": "https://a16z.com/ai-valuations",
+      "source": "a16z"
+    },
+    {
+      "title": "开源AI vs 闭源AI：谁将赢得未来？",
+      "summary": "行业观察者对比开源和闭源AI模型的优劣，认为两者将在不同场景下共存而非完全取代。",
+      "url": "https://www.morningbrew.com/open-source-ai",
+      "source": "Morning Brew"
+    }
   ]
 }
