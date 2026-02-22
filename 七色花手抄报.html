@@ -24,25 +24,26 @@
         
         .title {
             text-align: center;
-            font-size: 40px;
+            font-size: 42px;
             font-weight: bold;
             color: #e91e63;
-            letter-spacing: 12px;
+            letter-spacing: 14px;
             padding: 2mm 0;
         }
         
         .rainbow {
-            height: 20px;
+            height: 22px;
             background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
-            border-radius: 10px;
+            border-radius: 11px;
             margin: 3mm 0;
         }
         
         .story-box {
             background: #fff9c4;
             border: 2px solid #333;
-            padding: 10px;
+            padding: 8px;
             margin-bottom: 3mm;
+            text-align: center;
         }
         
         .story-title {
@@ -88,7 +89,7 @@
         .words-box {
             background: #e1f5fe;
             border: 2px solid #333;
-            padding: 10px;
+            padding: 8px;
             height: 100%;
         }
         
@@ -109,9 +110,24 @@
             font-weight: bold;
         }
         
-        .flower-svg { width: 48px; height: 48px; }
-        .girl-svg { width: 40px; height: 50px; }
-        .butterfly-svg { width: 36px; height: 36px; }
+        /* 主图七色花 */
+        .main-flower {
+            width: 180px;
+            height: 180px;
+        }
+        
+        /* 点缀图案 */
+        .deco-svg {
+            width: 60px;
+            height: 60px;
+        }
+        
+        .deco-row {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 5px 0;
+        }
         
         @media print {
             body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
@@ -129,66 +145,68 @@
             <div class="story-box">
                 <div class="story-title">📖 故事简介</div>
                 <p class="story-text">
-                    《七色花》是苏联作家瓦·卡泰耶夫写的经典童话。小姑娘珍妮得到一朵神奇的七色花，有七片不同颜色的花瓣，每片都能实现一个愿望。珍妮会怎样使用这朵神奇的花呢？让我们一起读一读这个有趣的故事吧！
+                    《七色花》是苏联作家瓦·卡泰耶夫写的经典童话。小姑娘珍妮得到一朵神奇的七色花，有七片不同颜色的花瓣，每片都能实现一个愿望。珍妮用最后一片花瓣帮助了有腿疾的小男孩，让他可以跑跳。虽然花失去了魔力，但珍妮心里充满快乐——帮助别人是最珍贵的愿望！
                 </p>
             </div>
             
-            <!-- 故事正文 - 满宽 -->
-            <div class="story-box">
-                <div class="story-title">📖 故事正文</div>
-                <p class="story-text">
-                    一天，珍妮到面包店买面包圈。她挂着七色花，一边走一边数着路边的电线杆子。突然，她一不留神绊了一跤，骨碌骨碌地滚下了坡，等到停下来一看，自己正坐在深沟里，手里拿的面包圈已经不见了。"呜呜呜！"珍妮哭了起来，"我回不了家了！"这时，一位老婆婆出现了，她送给了珍妮一朵七色花："别哭了，这朵花有七片花瓣，每片都能实现一个愿望。"珍妮高兴地接过花，撕下红色花瓣说："我要回家！"呼——她立刻回到了家里。珍妮看着神奇的七色花，心想：我还有六片花瓣呢！于是，她用黄色花瓣变出很多面包圈，用绿色花瓣让打破的花瓶重新复原，用蓝色花瓣让自己飞到了北极......可是，这些愿望都给她带来了麻烦。最后，只剩下一片橙色花瓣了。珍妮看到一个小男孩，他的腿有残疾，不能跑也不能跳。珍妮把最后一片橙色花瓣撕下来，说："让这个小男孩的腿好起来吧！"小男孩的腿立刻好了，高兴地跑啊跳啊！七色花只剩下光秃秃的花茎了。虽然七色花失去了魔力，但珍妮心里充满快乐。因为她用最后一片花瓣帮助了朋友，这才是最珍贵的愿望！
-                </p>
-            </div>
-            
-            <!-- 好词 + 思考题 -->
-            <div class="row">
-                <div class="col">
-                    <div class="words-box">
-                        <div class="words-title">📝 好词好句</div>
-                        <p class="words-content">
-                            <strong>好词：</strong>七色花、神奇、愿望、骨碌、漂亮、快乐<br>
-                            <strong>好句：</strong>小男孩的腿立刻好了起来，他高兴地跑啊跳啊！
-                        </p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="words-box">
-                        <div class="words-title">❓ 思考题</div>
-                        <p class="words-content">
-                            1. 如果你有一朵七色花，会许什么愿望？<br>
-                            2. 珍妮帮助小男孩，体现了什么品质？<br>
-                            3. 这个故事告诉我们什么道理？
-                        </p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- 涂色区 -->
-            <div class="coloring-row">
-                <div class="coloring-box">
-                    <div class="coloring-label">🎨 涂色区：七色花</div>
-                    <svg class="flower-svg" viewBox="0 0 100 100" fill="none" stroke="#000" stroke-width="2">
-                        <line x1="50" y1="60" x2="50" y2="95" stroke="#2e7d32" stroke-width="3"/>
-                        <ellipse cx="35" cy="80" rx="10" ry="5" fill="none" stroke="#2e7d32"/>
-                        <ellipse cx="65" cy="80" rx="10" ry="5" fill="none" stroke="#2e7d32"/>
-                        <circle cx="50" cy="45" r="7" fill="#ffeb3b"/>
-                        <ellipse cx="50" cy="25" rx="7" ry="16" transform="rotate(0 50 45)" fill="none"/>
-                        <ellipse cx="50" cy="25" rx="7" ry="16" transform="rotate(51 50 45)" fill="none"/>
-                        <ellipse cx="50" cy="25" rx="7" ry="16" transform="rotate(103 50 45)" fill="none"/>
-                        <ellipse cx="50" cy="25" rx="7" ry="16" transform="rotate(154 50 45)" fill="none"/>
-                        <ellipse cx="50" cy="25" rx="7" ry="16" transform="rotate(206 50 45)" fill="none"/>
-                        <ellipse cx="50" cy="25" rx="7" ry="16" transform="rotate(257 50 45)" fill="none"/>
-                        <ellipse cx="50" cy="25" rx="7" ry="16" transform="rotate(308 50 45)" fill="none"/>
+            <!-- 主图：七色花 + 点缀 -->
+            <div class="story-box" style="min-height: 200px;">
+                <div class="story-title">🎨 涂色区：七色花（主图）</div>
+                <div class="deco-row">
+                    <!-- 左边点缀：小花 -->
+                    <svg class="deco-svg" viewBox="0 0 60 60" fill="none" stroke="#000" stroke-width="1.5">
+                        <line x1="30" y1="35" x2="30" y2="58" stroke="#2e7d32"/>
+                        <circle cx="30" cy="25" r="6" fill="none"/>
+                        <ellipse cx="30" cy="12" rx="5" ry="10" transform="rotate(0 30 25)" fill="none"/>
+                        <ellipse cx="30" cy="12" rx="5" ry="10" transform="rotate(51 30 25)" fill="none"/>
+                        <ellipse cx="30" cy="12" rx="5" ry="10" transform="rotate(103 30 25)" fill="none"/>
+                        <ellipse cx="30" cy="12" rx="5" ry="10" transform="rotate(154 30 25)" fill="none"/>
+                        <ellipse cx="30" cy="12" rx="5" ry="10" transform="rotate(206 30 25)" fill="none"/>
+                        <ellipse cx="30" cy="12" rx="5" ry="10" transform="rotate(257 30 25)" fill="none"/>
+                        <ellipse cx="30" cy="12" rx="5" ry="10" transform="rotate(308 30 25)" fill="none"/>
+                    </svg>
+                    
+                    <!-- 中间：七色花主图 -->
+                    <svg class="main-flower" viewBox="0 0 200 200" fill="none" stroke="#000" stroke-width="2">
+                        <!-- 花茎 -->
+                        <line x1="100" y1="120" x2="100" y2="195" stroke="#2e7d32" stroke-width="5"/>
+                        <!-- 叶子 -->
+                        <ellipse cx="70" cy="160" rx="22" ry="10" fill="none" stroke="#2e7d32" stroke-width="2"/>
+                        <ellipse cx="130" cy="160" rx="22" ry="10" fill="none" stroke="#2e7d32" stroke-width="2"/>
+                        <!-- 花心 -->
+                        <circle cx="100" cy="90" r="18" fill="#ffeb3b" stroke="#000" stroke-width="2"/>
+                        <!-- 7片花瓣 - 更大 -->
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(0 100 90)" fill="none"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(51.4 100 90)" fill="none"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(102.8 100 90)" fill="none"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(154.2 100 90)" fill="none"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(205.6 100 90)" fill="none"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(257 100 90)" fill="none"/>
+                        <ellipse cx="100" cy="45" rx="16" ry="35" transform="rotate(308.4 100 90)" fill="none"/>
+                        <!-- 花瓣上的小线条 -->
+                        <line x1="100" y1="60" x2="100" y2="75" stroke="#000" stroke-width="1"/>
+                        <line x1="115" y1="55" x2="122" y2="68" stroke="#000" stroke-width="1"/>
+                        <line x1="130" y1="70" x2="135" y2="82" stroke="#000" stroke-width="1"/>
+                        <line x1="130" y1="95" x2="135" y2="103" stroke="#000" stroke-width="1"/>
+                        <line x1="100" y1="105" x2="100" y2="115" stroke="#000" stroke-width="1"/>
+                        <line x1="70" y1="95" x2="65" y2="103" stroke="#000" stroke-width="1"/>
+                        <line x1="70" y1="70" x2="65" y2="82" stroke="#000" stroke-width="1"/>
+                        <line x1="85" y1="55" x2="78" y2="68" stroke="#000" stroke-width="1"/>
+                    </svg>
+                    
+                    <!-- 右边点缀：爱心 -->
+                    <svg class="deco-svg" viewBox="0 0 60 60" fill="none" stroke="#000" stroke-width="1.5">
+                        <path d="M30 50 L10 30 Q5 20 15 15 Q25 10 30 20 Q35 10 45 15 Q55 20 50 30 Z" />
                     </svg>
                 </div>
+            </div>
+            
+            <!-- 下方4个涂色区 -->
+            <div class="coloring-row">
                 <div class="coloring-box">
-                    <div class="coloring-label">🎨 涂色区：珍妮</div>
-                    <svg class="girl-svg" viewBox="0 0 60 80" fill="none" stroke="#000" stroke-width="2">
+                    <div class="coloring-label">🎨 珍妮</div>
+                    <svg style="width:50px;height:60px;" viewBox="0 0 60 80" fill="none" stroke="#000" stroke-width="1.5">
                         <path d="M15 20 Q30 5 45 20 Q50 35 45 40 L15 40 Q10 35 15 20" fill="none"/>
-                        <line x1="20" y1="22" x2="25" y2="28"/>
-                        <line x1="30" y1="20" x2="30" y2="28"/>
-                        <line x1="40" y1="22" x2="35" y2="28"/>
                         <circle cx="24" cy="32" r="3"/>
                         <circle cx="36" cy="32" r="3"/>
                         <path d="M27 40 Q30 43 33 40" fill="none"/>
@@ -196,35 +214,86 @@
                         <path d="M20 65 L30 75 L40 65" fill="none"/>
                         <line x1="25" y1="75" x2="22" y2="85"/>
                         <line x1="35" y1="75" x2="38" y2="85"/>
-                        <circle cx="45" cy="55" r="4"/>
                     </svg>
                 </div>
                 <div class="coloring-box">
-                    <div class="coloring-label">🎨 涂色区：蝴蝶</div>
-                    <svg class="butterfly-svg" viewBox="0 0 60 50" fill="none" stroke="#000" stroke-width="1.5">
-                        <line x1="30" y1="10" x2="30" y2="40"/>
-                        <ellipse cx="30" cy="42" rx="3" ry="4"/>
-                        <path d="M28 10 Q25 5 22 8" fill="none"/>
-                        <path d="M32 10 Q35 5 38 8" fill="none"/>
-                        <ellipse cx="15" cy="22" rx="11" ry="14"/>
-                        <ellipse cx="45" cy="22" rx="11" ry="14"/>
-                        <ellipse cx="20" cy="35" rx="7" ry="9"/>
-                        <ellipse cx="40" cy="35" rx="7" ry="9"/>
+                    <div class="coloring-label">🎨 彩虹</div>
+                    <svg style="width:70px;height:35px;" viewBox="0 0 80 40" fill="none">
+                        <path d="M5 40 Q40 -15 75 40" stroke="#e91e63" stroke-width="3" fill="none"/>
+                        <path d="M10 40 Q40 -5 70 40" stroke="#ff9800" stroke-width="3" fill="none"/>
+                        <path d="M15 40 Q40 5 65 40" stroke="#ffeb3b" stroke-width="3" fill="none"/>
+                        <path d="M20 40 Q40 15 60 40" stroke="#4caf50" stroke-width="3" fill="none"/>
+                        <path d="M25 40 Q40 25 55 40" stroke="#2196f3" stroke-width="3" fill="none"/>
                     </svg>
                 </div>
                 <div class="coloring-box">
-                    <div class="coloring-label">🎨 涂色区：彩虹</div>
-                    <svg class="flower-svg" viewBox="0 0 80 40" fill="none">
-                        <path d="M5 40 Q40 -15 75 40" stroke="#e91e63" stroke-width="3.5" fill="none"/>
-                        <path d="M10 40 Q40 -5 70 40" stroke="#ff9800" stroke-width="3.5" fill="none"/>
-                        <path d="M15 40 Q40 5 65 40" stroke="#ffeb3b" stroke-width="3.5" fill="none"/>
-                        <path d="M20 40 Q40 15 60 40" stroke="#4caf50" stroke-width="3.5" fill="none"/>
-                        <path d="M25 40 Q40 25 55 40" stroke="#2196f3" stroke-width="3.5" fill="none"/>
+                    <div class="coloring-label">🎨 太阳</div>
+                    <svg style="width:50px;height:50px;" viewBox="0 0 60 60" fill="none" stroke="#000" stroke-width="1.5">
+                        <circle cx="30" cy="30" r="12"/>
+                        <line x1="30" y1="5" x2="30" y2="15"/>
+                        <line x1="30" y1="45" x2="30" y2="55"/>
+                        <line x1="5" y1="30" x2="15" y2="30"/>
+                        <line x1="45" y1="30" x2="55" y2="30"/>
+                        <line x1="12" y1="12" x2="19" y2="19"/>
+                        <line x1="41" y1="41" x2="48" y2="48"/>
+                        <line x1="12" y1="48" x2="19" y2="41"/>
+                        <line x1="41" y1="19" x2="48" y2="12"/>
+                    </svg>
+                </div>
+                <div class="coloring-box">
+                    <div class="coloring-label">🎨 云朵</div>
+                    <svg style="width:60px;height:40px;" viewBox="0 0 60 40" fill="none" stroke="#000" stroke-width="1.5">
+                        <path d="M10 35 Q5 25 15 20 Q15 10 30 10 Q40 5 45 15 Q55 15 55 25 Q55 35 45 35 Z"/>
                     </svg>
                 </div>
             </div>
             
-            <div class="footer">✨ 七色花 · 经典童话故事 ✨ 动手画一画，涂一涂，写一写</div>
+            <!-- 底部2个 -->
+            <div class="coloring-row">
+                <div class="coloring-box">
+                    <div class="coloring-label">🎨 小花</div>
+                    <svg style="width:45px;height:55px;" viewBox="0 0 50 60" fill="none" stroke="#000" stroke-width="1.5">
+                        <line x1="25" y1="35" x2="25" y2="58"/>
+                        <circle cx="25" cy="25" r="5"/>
+                        <ellipse cx="25" cy="12" rx="4" ry="8" transform="rotate(0 25 25)" fill="none"/>
+                        <ellipse cx="25" cy="12" rx="4" ry="8" transform="rotate(72 25 25)" fill="none"/>
+                        <ellipse cx="25" cy="12" rx="4" ry="8" transform="rotate(144 25 25)" fill="none"/>
+                        <ellipse cx="25" cy="12" rx="4" ry="8" transform="rotate(216 25 25)" fill="none"/>
+                        <ellipse cx="25" cy="12" rx="4" ry="8" transform="rotate(288 25 25)" fill="none"/>
+                    </svg>
+                </div>
+                <div class="coloring-box">
+                    <div class="coloring-label">🎨 房子</div>
+                    <svg style="width:55px;height:50px;" viewBox="0 0 60 55" fill="none" stroke="#000" stroke-width="1.5">
+                        <path d="M5 40 L30 15 L55 40"/>
+                        <line x1="5" y1="40" x2="55" y2="40"/>
+                        <line x1="20" y1="40" x2="20" y2="55"/>
+                        <line x1="40" y1="40" x2="40" y2="55"/>
+                        <rect x="25" y="22" width="10" height="18"/>
+                        <line x1="15" y1="25" x2="15" y2="35"/>
+                        <line x1="45" y1="25" x2="45" y2="35"/>
+                    </svg>
+                </div>
+                <div class="coloring-box">
+                    <div class="coloring-label">🎨 树</div>
+                    <svg style="width:45px;height:55px;" viewBox="0 0 50 60" fill="none" stroke="#000" stroke-width="1.5">
+                        <line x1="25" y1="35" x2="25" y2="58"/>
+                        <line x1="25" y1="35" x2="10" y2="20"/>
+                        <line x1="25" y1="35" x2="40" y2="20"/>
+                        <line x1="25" y1="25" x2="15" y2="12"/>
+                        <line x1="25" y1="25" x2="35" y2="12"/>
+                        <circle cx="25" cy="30" r="12"/>
+                    </svg>
+                </div>
+                <div class="coloring-box">
+                    <div class="coloring-label">🎨 星星</div>
+                    <svg style="width:45px;height:45px;" viewBox="0 0 50 50" fill="none" stroke="#000" stroke-width="1.5">
+                        <polygon points="25,5 30,20 45,20 33,30 38,45 25,35 12,45 17,30 5,20 20,20"/>
+                    </svg>
+                </div>
+            </div>
+            
+            <div class="footer">✨ 七色花 · 经典童话故事 ✨ 动手画一画，涂一涂</div>
         </div>
     </div>
 </body>
