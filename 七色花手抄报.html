@@ -2,375 +2,256 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>《七色花》手抄报 - A4</title>
+    <title>七色花手抄报 - A4</title>
     <style>
-        @page {
-            size: A4;
-            margin: 0;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+        @page { size: A4; margin: 0; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
             font-family: "楷体", "KaiTi", serif;
-            background: white;
             width: 210mm;
             min-height: 297mm;
-            padding: 15mm;
+            padding: 12mm;
             margin: 0 auto;
-            position: relative;
+            font-size: 11px;
+            line-height: 1.5;
         }
         
-        /* 装饰边框 */
         .border {
             position: absolute;
-            top: 10mm;
-            left: 10mm;
-            right: 10mm;
-            bottom: 10mm;
-            border: 3px solid #333;
-            border-radius: 8px;
+            top: 8mm; left: 8mm; right: 8mm; bottom: 8mm;
+            border: 2px solid #333;
+            border-radius: 6px;
         }
         
-        .border-inner {
-            position: absolute;
-            top: 15mm;
-            left: 15mm;
-            right: 15mm;
-            bottom: 15mm;
-            border: 1px dashed #666;
-            border-radius: 4px;
-        }
-        
-        /* 标题 */
         .title {
             text-align: center;
-            font-size: 42px;
+            font-size: 32px;
             font-weight: bold;
             color: #e91e63;
-            margin-bottom: 10px;
-            text-shadow: 2px 2px 0 #fff;
+            margin-bottom: 5px;
         }
         
-        .subtitle {
-            text-align: center;
-            font-size: 18px;
-            color: #666;
-            margin-bottom: 20px;
-        }
-        
-        /* 彩虹装饰 */
         .rainbow {
-            height: 30px;
-            background: linear-gradient(to right, 
-                #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
-            border-radius: 15px;
-            margin: 10px 0;
+            height: 18px;
+            background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #9400d3);
+            border-radius: 9px;
+            margin: 5px 0;
         }
         
-        /* 内容区域 */
-        .content {
-            display: flex;
-            gap: 15px;
-        }
+        .content { display: flex; gap: 10px; }
+        .left-col, .right-col { flex: 1; }
         
-        .left-col, .right-col {
-            flex: 1;
-        }
-        
-        /* 文字区域 */
         .story-box {
             background: #fff9c4;
-            border: 2px solid #333;
-            border-radius: 8px;
-            padding: 12px;
-            margin-bottom: 15px;
+            border: 1.5px solid #333;
+            border-radius: 6px;
+            padding: 8px;
+            margin-bottom: 8px;
         }
         
         .story-title {
-            font-size: 18px;
+            font-size: 13px;
             font-weight: bold;
             color: #e91e63;
             text-align: center;
-            margin-bottom: 8px;
+            margin-bottom: 5px;
             border-bottom: 1px dashed #ccc;
-            padding-bottom: 5px;
+            padding-bottom: 3px;
         }
         
         .story-text {
-            font-size: 14px;
-            line-height: 1.8;
-            text-indent: 2em;
+            font-size: 10px;
+            line-height: 1.6;
+            text-indent: 1.5em;
             color: #333;
         }
         
-        /* 涂色区域 - 线稿 */
         .coloring-box {
-            border: 2px dashed #999;
-            border-radius: 8px;
-            padding: 10px;
+            border: 1.5px dashed #999;
+            border-radius: 6px;
+            padding: 6px;
             text-align: center;
-            margin-bottom: 10px;
+            margin-bottom: 6px;
             background: #fafafa;
+            min-height: 90px;
         }
         
         .coloring-label {
-            font-size: 12px;
-            color: #999;
-            margin-bottom: 5px;
+            font-size: 9px;
+            color: #666;
+            margin-bottom: 4px;
         }
         
-        .coloring-area {
-            width: 100%;
-            height: 120px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        /* 线稿SVG */
-        .line-art {
-            width: 100px;
-            height: 100px;
-        }
-        
-        /* 七色花线稿 */
-        .flower-svg {
-            width: 140px;
-            height: 140px;
-        }
-        
-        /* 小女孩线稿 */
-        .girl-svg {
-            width: 100px;
-            height: 120px;
-        }
-        
-        /* 蝴蝶线稿 */
-        .butterfly-svg {
-            width: 80px;
-            height: 80px;
-        }
-        
-        /* 彩虹 */
-        .rainbow-svg {
-            width: 150px;
-            height: 60px;
-        }
-        
-        /* 底部装饰 */
-        .footer {
-            margin-top: 15px;
-            text-align: center;
-            font-size: 12px;
-            color: #999;
-        }
-        
-        .decoration {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 10px 0;
-        }
-        
-        .star {
-            color: #ffd700;
-            font-size: 24px;
-        }
-        
-        /* 词句积累 */
         .words-box {
             background: #e1f5fe;
-            border: 2px solid #333;
-            border-radius: 8px;
-            padding: 10px;
-            margin-top: 10px;
+            border: 1.5px solid #333;
+            border-radius: 6px;
+            padding: 6px;
+            margin-top: 6px;
         }
         
         .words-title {
-            font-size: 14px;
+            font-size: 11px;
             font-weight: bold;
             color: #1976d2;
             text-align: center;
-            margin-bottom: 5px;
+            margin-bottom: 3px;
         }
         
         .words-content {
-            font-size: 12px;
-            line-height: 1.6;
+            font-size: 9px;
+            line-height: 1.5;
             color: #333;
         }
         
+        .footer {
+            margin-top: 8px;
+            text-align: center;
+            font-size: 10px;
+            color: #999;
+        }
+        
+        .flower-svg { width: 70px; height: 70px; }
+        .girl-svg { width: 55px; height: 70px; }
+        .butterfly-svg { width: 45px; height: 45px; }
+        
         @media print {
-            body {
-                -webkit-print-color-adjust: exact;
-                print-color-adjust: exact;
-            }
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
         }
     </style>
 </head>
 <body>
     <div class="border"></div>
-    <div class="border-inner"></div>
     
-    <!-- 标题 -->
     <h1 class="title">🌸 七色花 🌸</h1>
-    <p class="subtitle">—— 经典童话故事 · 小学生阅读手抄报</p>
-    
-    <!-- 彩虹装饰 -->
+    <p style="text-align:center;font-size:12px;color:#666;">—— 经典童话故事 · 小学生阅读手抄报</p>
     <div class="rainbow"></div>
     
-    <!-- 主要内容 -->
     <div class="content">
         <div class="left-col">
-            <!-- 故事简介 -->
             <div class="story-box">
                 <div class="story-title">📖 故事简介</div>
                 <p class="story-text">
-                    《七色花》是苏联作家瓦·卡泰耶夫写的童话故事。讲述了一个叫珍妮的小姑娘，得到了一朵神奇的七色花。这朵花有七片不同颜色的花瓣，每撕下一片花瓣，就可以实现一个愿望。珍妮会怎样使用这朵神奇的花呢？让我们一起来读一读这个有趣的故事吧！
+                    《七色花》是苏联作家瓦·卡泰耶夫写的童话。小姑娘珍妮得到了一朵神奇的七色花，有七片不同颜色的花瓣，每片花瓣都能实现一个愿望。珍妮会怎样使用这朵神奇的花呢？
                 </p>
             </div>
             
-            <!-- 故事正文 -->
             <div class="story-box">
-                <div class="story-title">📖 故事正文</div>
+                <div class="story-title">📖 故事正文（一）</div>
                 <p class="story-text">
-                    一天，小姑娘珍妮到面包店里去买面包圈。她挂着七色花，一边走，一边数着路边的电线杆子。
+                    一天，珍妮到面包店买面包圈。她挂着七色花，一边走一边数着电线杆子。
                     <br><br>
-                    突然，她一不留神，绊了一跤，骨碌骨碌地滚下了坡，等到她停下来一看，自己正坐在一道深沟里，手里拿的面包圈已经不见了。
+                    突然，她一不留神绊了一跤，骨碌骨碌地滚下了坡，等到停下来一看，自己正坐在深沟里，手里拿的面包圈已经不见了。
                     <br><br>
-                    "呜呜呜！"珍妮哭了起来，"我的面包圈不见了，我回不了家了！"
+                    "呜呜呜！"珍妮哭了起来，"我回不了家了！"
                     <br><br>
-                    这时，一位老婆婆出现了，她问："小姑娘，你为什么哭啊？"珍妮把事情的经过说了一遍。老婆婆笑了笑，说："别哭了，我送给你一朵七色花，它有七片花瓣，每片花瓣都能实现一个愿望。"
+                    这时，一位老婆婆出现了，她送给了珍妮一朵七色花："别哭了，这朵花有七片花瓣，每片都能实现一个愿望。"
                     <br><br>
-                    珍妮高兴地接过七色花，撕下红色的花瓣，说："我要回家！"呼——她立刻回到了家里。
+                    珍妮高兴地接过花，撕下红色花瓣说："我要回家！"呼——她立刻回到了家里。
+                </p>
+            </div>
+            
+            <div class="story-box">
+                <div class="story-title">📖 故事正文（二）</div>
+                <p class="story-text">
+                    珍妮看着神奇的七色花心想：我还有六片花瓣呢！于是，她用黄色花瓣变出很多面包圈，用绿色花瓣让打破的花瓶复原，用蓝色花瓣让自己飞到北极......
                     <br><br>
-                    珍妮看着这朵神奇的七色花，心想：我还有六片花瓣呢！于是，她用黄色的花瓣变出了很多面包圈，用绿色的花瓣让打破了的花瓶重新复原，用蓝色的花瓣让自己飞到了北极......
-                    <br><br>
-                    可是，这些愿望都给她带来了麻烦。最后，只剩下一片橙色的花瓣了。
+                    可是，这些愿望都给她带来了麻烦。最后，只剩下一片橙色花瓣了。
                     <br><br>
                     珍妮看到一个小男孩，他的腿有残疾，不能跑也不能跳。珍妮把最后一片橙色花瓣撕下来，说："让这个小男孩的腿好起来吧！"
                     <br><br>
-                    小男孩的腿立刻好了起来，他高兴地跑啊跳啊！七色花只剩下光秃秃的花茎了。
+                    小男孩的腿立刻好了，高兴地跑啊跳啊！七色花只剩下光秃秃的花茎了。
                     <br><br>
-                    虽然七色花已经失去了魔力，但珍妮心里充满了快乐。因为她用最后一片花瓣，帮助了一个需要帮助的朋友，这才是最珍贵的愿望！
+                    虽然七色花失去了魔力，但珍妮心里充满快乐。因为她用最后一片花瓣帮助了朋友，这才是最珍贵的愿望！
                 </p>
             </div>
             
-            <!-- 词句积累 -->
             <div class="words-box">
                 <div class="words-title">📝 好词好句</div>
                 <p class="words-content">
-                    <strong>好词：</strong>七色花、神奇、愿望、骨碌、缠绕、漂亮、快乐<br>
+                    <strong>好词：</strong>七色花、神奇、愿望、骨碌、漂亮、快乐<br>
                     <strong>好句：</strong>小男孩的腿立刻好了起来，他高兴地跑啊跳啊！
+                </p>
+            </div>
+            
+            <div class="words-box">
+                <div class="words-title">❓ 思考题</div>
+                <p class="words-content">
+                    1. 如果你有七色花，会许什么愿？<br>
+                    2. 珍妮帮助小男孩，体现了什么品质？<br>
+                    3. 这个故事告诉我们什么道理？
                 </p>
             </div>
         </div>
         
         <div class="right-col">
-            <!-- 涂色区域1: 七色花 -->
             <div class="coloring-box">
-                <div class="coloring-label">🎨 涂色区：七色花（参考故事内容，用七种颜色涂花瓣）</div>
-                <div class="coloring-area">
-                    <svg class="flower-svg" viewBox="0 0 100 100" fill="none" stroke="#000" stroke-width="2">
-                        <!-- 花茎 -->
-                        <line x1="50" y1="60" x2="50" y2="95" stroke="#2e7d32" stroke-width="3"/>
-                        <!-- 叶子 -->
-                        <ellipse cx="35" cy="80" rx="12" ry="6" fill="none" stroke="#2e7d32" stroke-width="2"/>
-                        <ellipse cx="65" cy="80" rx="12" ry="6" fill="none" stroke="#2e7d32" stroke-width="2"/>
-                        <!-- 花心 -->
-                        <circle cx="50" cy="45" r="8" fill="#ffeb3b" stroke="#000" stroke-width="1.5"/>
-                        <!-- 7片花瓣 - 线稿 -->
-                        <ellipse cx="50" cy="25" rx="8" ry="18" fill="none" stroke="#000" stroke-width="1.5" transform="rotate(0 50 45)"/>
-                        <ellipse cx="50" cy="25" rx="8" ry="18" fill="none" stroke="#000" stroke-width="1.5" transform="rotate(51.4 50 45)"/>
-                        <ellipse cx="50" cy="25" rx="8" ry="18" fill="none" stroke="#000" stroke-width="1.5" transform="rotate(102.8 50 45)"/>
-                        <ellipse cx="50" cy="25" rx="8" ry="18" fill="none" stroke="#000" stroke-width="1.5" transform="rotate(154.2 50 45)"/>
-                        <ellipse cx="50" cy="25" rx="8" ry="18" fill="none" stroke="#000" stroke-width="1.5" transform="rotate(205.6 50 45)"/>
-                        <ellipse cx="50" cy="25" rx="8" ry="18" fill="none" stroke="#000" stroke-width="1.5" transform="rotate(257 50 45)"/>
-                        <ellipse cx="50" cy="25" rx="8" ry="18" fill="none" stroke="#000" stroke-width="1.5" transform="rotate(308.4 50 45)"/>
-                    </svg>
-                </div>
+                <div class="coloring-label">🎨 涂色区：七色花</div>
+                <svg class="flower-svg" viewBox="0 0 100 100" fill="none" stroke="#000" stroke-width="2">
+                    <line x1="50" y1="60" x2="50" y2="95" stroke="#2e7d32" stroke-width="3"/>
+                    <ellipse cx="35" cy="80" rx="12" ry="6" fill="none" stroke="#2e7d32"/>
+                    <ellipse cx="65" cy="80" rx="12" ry="6" fill="none" stroke="#2e7d32"/>
+                    <circle cx="50" cy="45" r="8" fill="#ffeb3b" stroke="#000"/>
+                    <ellipse cx="50" cy="25" rx="8" ry="18" transform="rotate(0 50 45)" fill="none"/>
+                    <ellipse cx="50" cy="25" rx="8" ry="18" transform="rotate(51.4 50 45)" fill="none"/>
+                    <ellipse cx="50" cy="25" rx="8" ry="18" transform="rotate(102.8 50 45)" fill="none"/>
+                    <ellipse cx="50" cy="25" rx="8" ry="18" transform="rotate(154.2 50 45)" fill="none"/>
+                    <ellipse cx="50" cy="25" rx="8" ry="18" transform="rotate(205.6 50 45)" fill="none"/>
+                    <ellipse cx="50" cy="25" rx="8" ry="18" transform="rotate(257 50 45)" fill="none"/>
+                    <ellipse cx="50" cy="25" rx="8" ry="18" transform="rotate(308.4 50 45)" fill="none"/>
+                </svg>
             </div>
             
-            <!-- 涂色区域2: 小女孩珍妮 -->
             <div class="coloring-box">
                 <div class="coloring-label">🎨 涂色区：珍妮小姑娘</div>
-                <div class="coloring-area">
-                    <svg class="girl-svg" viewBox="0 0 60 80" fill="none" stroke="#000" stroke-width="2">
-                        <!-- 头发 -->
-                        <path d="M15 20 Q30 5 45 20 Q50 35 45 40 L15 40 Q10 35 15 20" fill="none"/>
-                        <!-- 刘海 -->
-                        <line x1="20" y1="22" x2="25" y2="28"/>
-                        <line x1="30" y1="20" x2="30" y2="28"/>
-                        <line x1="40" y1="22" x2="35" y2="28"/>
-                        <!-- 眼睛 -->
-                        <circle cx="24" cy="32" r="3" fill="none"/>
-                        <circle cx="36" cy="32" r="3" fill="none"/>
-                        <!-- 嘴巴 -->
-                        <path d="M27 40 Q30 43 33 40" fill="none"/>
-                        <!-- 身体 -->
-                        <line x1="30" y1="45" x2="30" y2="65"/>
-                        <!-- 裙子 -->
-                        <path d="M20 65 L30 75 L40 65" fill="none"/>
-                        <!-- 腿 -->
-                        <line x1="25" y1="75" x2="22" y2="85"/>
-                        <line x1="35" y1="75" x2="38" y2="85"/>
-                        <!-- 手臂 -->
-                        <line x1="20" y1="50" x2="15" y2="60"/>
-                        <line x1="40" y1="50" x2="45" y2="60"/>
-                        <!-- 七色花 -->
-                        <circle cx="45" cy="55" r="5" fill="none"/>
-                    </svg>
-                </div>
+                <svg class="girl-svg" viewBox="0 0 60 80" fill="none" stroke="#000" stroke-width="2">
+                    <path d="M15 20 Q30 5 45 20 Q50 35 45 40 L15 40 Q10 35 15 20" fill="none"/>
+                    <line x1="20" y1="22" x2="25" y2="28"/>
+                    <line x1="30" y1="20" x2="30" y2="28"/>
+                    <line x1="40" y1="22" x2="35" y2="28"/>
+                    <circle cx="24" cy="32" r="3"/>
+                    <circle cx="36" cy="32" r="3"/>
+                    <path d="M27 40 Q30 43 33 40" fill="none"/>
+                    <line x1="30" y1="45" x2="30" y2="65"/>
+                    <path d="M20 65 L30 75 L40 65" fill="none"/>
+                    <line x1="25" y1="75" x2="22" y2="85"/>
+                    <line x1="35" y1="75" x2="38" y2="85"/>
+                    <line x1="20" y1="50" x2="15" y2="60"/>
+                    <line x1="40" y1="50" x2="45" y2="60"/>
+                    <circle cx="45" cy="55" r="5"/>
+                </svg>
             </div>
             
-            <!-- 涂色区域3: 蝴蝶 -->
             <div class="coloring-box">
-                <div class="coloring-label">🎨 涂色区：蝴蝶（可以装饰画面）</div>
-                <div class="coloring-area">
-                    <svg class="butterfly-svg" viewBox="0 0 60 50" fill="none" stroke="#000" stroke-width="1.5">
-                        <!-- 身体 -->
-                        <line x1="30" y1="10" x2="30" y2="40"/>
-                        <ellipse cx="30" cy="42" rx="3" ry="5" fill="none"/>
-                        <!-- 触角 -->
-                        <path d="M28 10 Q25 5 22 8" fill="none"/>
-                        <path d="M32 10 Q35 5 38 8" fill="none"/>
-                        <!-- 翅膀 -->
-                        <ellipse cx="15" cy="22" rx="12" ry="15" fill="none"/>
-                        <ellipse cx="45" cy="22" rx="12" ry="15" fill="none"/>
-                        <ellipse cx="20" cy="35" rx="8" ry="10" fill="none"/>
-                        <ellipse cx="40" cy="35" rx="8" ry="10" fill="none"/>
-                    </svg>
-                </div>
+                <div class="coloring-label">🎨 涂色区：可爱蝴蝶</div>
+                <svg class="butterfly-svg" viewBox="0 0 60 50" fill="none" stroke="#000" stroke-width="1.5">
+                    <line x1="30" y1="10" x2="30" y2="40"/>
+                    <ellipse cx="30" cy="42" rx="3" ry="5"/>
+                    <path d="M28 10 Q25 5 22 8" fill="none"/>
+                    <path d="M32 10 Q35 5 38 8" fill="none"/>
+                    <ellipse cx="15" cy="22" rx="12" ry="15"/>
+                    <ellipse cx="45" cy="22" rx="12" ry="15"/>
+                    <ellipse cx="20" cy="35" rx="8" ry="10"/>
+                    <ellipse cx="40" cy="35" rx="8" ry="10"/>
+                </svg>
             </div>
             
-            <!-- 思考题 -->
-            <div class="words-box">
-                <div class="words-title">❓ 思考题</div>
-                <p class="words-content">
-                    1. 如果你有一朵七色花，你会许什么愿望？<br>
-                    2. 珍妮最后帮助了小男孩，你认为这体现了什么品质？<br>
-                    3. 这个故事告诉我们什么道理？
-                </p>
+            <div class="coloring-box">
+                <div class="coloring-label">🎨 涂色区：彩虹</div>
+                <svg class="flower-svg" viewBox="0 0 100 50" fill="none">
+                    <path d="M10 50 Q50 -10 90 50" stroke="#e91e63" stroke-width="4" fill="none"/>
+                    <path d="M15 50 Q50 0 85 50" stroke="#ff9800" stroke-width="4" fill="none"/>
+                    <path d="M20 50 Q50 10 80 50" stroke="#ffeb3b" stroke-width="4" fill="none"/>
+                    <path d="M25 50 Q50 20 75 50" stroke="#4caf50" stroke-width="4" fill="none"/>
+                    <path d="M30 50 Q50 30 70 50" stroke="#2196f3" stroke-width="4" fill="none"/>
+                </svg>
             </div>
         </div>
     </div>
     
-    <!-- 底部装饰 -->
-    <div class="decoration">
-        <span class="star">★</span>
-        <span class="star">★</span>
-        <span class="star">★</span>
-    </div>
-    
     <div class="footer">
-        <p>✨ 七色花 · 经典童话 ✨</p>
-        <p>动手画一画，涂一涂，写一写</p>
+        ✨ 七色花 · 经典童话 ✨ 动手画一画，涂一涂，写一写
     </div>
 </body>
 </html>
