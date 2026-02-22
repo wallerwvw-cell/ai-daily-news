@@ -38,14 +38,11 @@
             margin: 2px 0 4px 0;
         }
         
-        .row { display: flex; gap: 6px; margin-bottom: 5px; }
-        .col { flex: 1; }
-        
         .story-box {
             background: #fff9c4;
             border: 1.5px solid #333;
             padding: 8px;
-            height: 100%;
+            margin-bottom: 5px;
         }
         
         .story-title {
@@ -62,6 +59,9 @@
             line-height: 1.45;
             text-indent: 1.2em;
         }
+        
+        .row { display: flex; gap: 6px; margin-bottom: 5px; }
+        .col { flex: 1; }
         
         .coloring-row { 
             display: flex; 
@@ -89,6 +89,7 @@
             background: #e1f5fe;
             border: 1.5px solid #333;
             padding: 8px;
+            margin-bottom: 5px;
         }
         
         .words-title {
@@ -125,48 +126,24 @@
     <p style="text-align:center;font-size:11px;color:#555;">—— 经典童话故事 · 小学生阅读手抄报</p>
     <div class="rainbow"></div>
     
-    <!-- 第一行：简介 + 正文1 平行 -->
-    <div class="row" style="height: 95px;">
-        <div class="col">
-            <div class="story-box">
-                <div class="story-title">📖 故事简介</div>
-                <p class="story-text">
-                    《七色花》是苏联作家瓦·卡泰耶夫写的经典童话。小姑娘珍妮得到一朵神奇的七色花，有七片不同颜色的花瓣，每片都能实现一个愿望。珍妮会怎样使用这朵神奇的花呢？让我们一起读一读这个有趣的故事吧！
-                </p>
-            </div>
-        </div>
-        <div class="col">
-            <div class="story-box">
-                <div class="story-title">📖 故事正文（一）</div>
-                <p class="story-text">
-                    一天，珍妮到面包店买面包圈。她挂着七色花，一边走一边数着路边的电线杆子。突然，她一不留神绊了一跤，骨碌骨碌地滚下了坡，等到停下来一看，自己正坐在深沟里，手里拿的面包圈已经不见了。"呜呜呜！"珍妮哭了起来，"我回不了家了！"这时，一位老婆婆出现了，她送给了珍妮一朵七色花："别哭了，这朵花有七片花瓣，每片都能实现一个愿望。"珍妮高兴地接过花，撕下红色花瓣说："我要回家！"呼——她立刻回到了家里。
-                </p>
-            </div>
-        </div>
+    <!-- 故事简介 - 整行 -->
+    <div class="story-box">
+        <div class="story-title">📖 故事简介</div>
+        <p class="story-text">
+            《七色花》是苏联作家瓦·卡泰耶夫写的经典童话。小姑娘珍妮得到一朵神奇的七色花，有七片不同颜色的花瓣，每片都能实现一个愿望。珍妮会怎样使用这朵神奇的花呢？让我们一起读一读这个有趣的故事吧！
+        </p>
     </div>
     
-    <!-- 第二行：正文2 + 正义3 平行 -->
-    <div class="row" style="height: 95px;">
-        <div class="col">
-            <div class="story-box">
-                <div class="story-title">📖 故事正文（二）</div>
-                <p class="story-text">
-                    珍妮看着神奇的七色花，心想：我还有六片花瓣呢！于是，她用黄色花瓣变出很多面包圈，用绿色花瓣让打破的花瓶重新复原，用蓝色花瓣让自己飞到了北极......可是，这些愿望都给她带来了麻烦。最后，只剩下一片橙色花瓣了。
-                </p>
-            </div>
-        </div>
-        <div class="col">
-            <div class="story-box">
-                <div class="story-title">📖 故事正文（三）</div>
-                <p class="story-text">
-                    珍妮看到一个小男孩，他的腿有残疾，不能跑也不能跳。珍妮把最后一片橙色花瓣撕下来，说："让这个小男孩的腿好起来吧！"小男孩的腿立刻好了，高兴地跑啊跳啊！七色花只剩下光秃秃的花茎了。虽然七色花失去了魔力，但珍妮心里充满快乐。因为她用最后一片花瓣帮助了朋友，这才是最珍贵的愿望！
-                </p>
-            </div>
-        </div>
+    <!-- 故事正文 - 整行 -->
+    <div class="story-box">
+        <div class="story-title">📖 故事正文</div>
+        <p class="story-text">
+            一天，珍妮到面包店买面包圈。她挂着七色花，一边走一边数着路边的电线杆子。突然，她一不留神绊了一跤，骨碌骨碌地滚下了坡，等到停下来一看，自己正坐在深沟里，手里拿的面包圈已经不见了。"呜呜呜！"珍妮哭了起来，"我回不了家了！"这时，一位老婆婆出现了，她送给了珍妮一朵七色花："别哭了，这朵花有七片花瓣，每片都能实现一个愿望。"珍妮高兴地接过花，撕下红色花瓣说："我要回家！"呼——她立刻回到了家里。珍妮看着神奇的七色花，心想：我还有六片花瓣呢！于是，她用黄色花瓣变出很多面包圈，用绿色花瓣让打破的花瓶重新复原，用蓝色花瓣让自己飞到了北极......可是，这些愿望都给她带来了麻烦。最后，只剩下一片橙色花瓣了。珍妮看到一个小男孩，他的腿有残疾，不能跑也不能跳。珍妮把最后一片橙色花瓣撕下来，说："让这个小男孩的腿好起来吧！"小男孩的腿立刻好了，高兴地跑啊跳啊！七色花只剩下光秃秃的花茎了。虽然七色花失去了魔力，但珍妮心里充满快乐。因为她用最后一片花瓣帮助了朋友，这才是最珍贵的愿望！
+        </p>
     </div>
     
-    <!-- 第三行：好词 + 思考题 -->
-    <div class="row" style="height: 70px;">
+    <!-- 好词 + 思考题 -->
+    <div class="row">
         <div class="col">
             <div class="words-box">
                 <div class="words-title">📝 好词好句</div>
