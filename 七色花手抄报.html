@@ -7,11 +7,7 @@
         @page { size: A4 portrait; margin: 0; }
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
-        html, body {
-            width: 210mm;
-            height: 297mm;
-            overflow: hidden;
-        }
+        html, body { width: 210mm; height: 297mm; overflow: hidden; }
         
         body {
             font-family: "楷体", "KaiTi", serif;
@@ -49,7 +45,7 @@
             background: #fff9c4;
             border: 1.5px solid #333;
             padding: 8px;
-            margin-bottom: 5px;
+            height: 100%;
         }
         
         .story-title {
@@ -93,7 +89,6 @@
             background: #e1f5fe;
             border: 1.5px solid #333;
             padding: 8px;
-            margin-bottom: 5px;
         }
         
         .words-title {
@@ -130,8 +125,8 @@
     <p style="text-align:center;font-size:11px;color:#555;">—— 经典童话故事 · 小学生阅读手抄报</p>
     <div class="rainbow"></div>
     
-    <!-- 第一行：简介 + 正文1 -->
-    <div class="row">
+    <!-- 第一行：简介 + 正文1 平行 -->
+    <div class="row" style="height: 95px;">
         <div class="col">
             <div class="story-box">
                 <div class="story-title">📖 故事简介</div>
@@ -150,16 +145,28 @@
         </div>
     </div>
     
-    <!-- 第二行：正文2 -->
-    <div class="story-box" style="margin-bottom:5px;">
-        <div class="story-title">📖 故事正文（二）</div>
-        <p class="story-text">
-            珍妮看着神奇的七色花，心想：我还有六片花瓣呢！于是，她用黄色花瓣变出很多面包圈，用绿色花瓣让打破的花瓶重新复原，用蓝色花瓣让自己飞到了北极......可是，这些愿望都给她带来了麻烦。最后，只剩下一片橙色花瓣了。珍妮看到一个小男孩，他的腿有残疾，不能跑也不能跳。珍妮把最后一片橙色花瓣撕下来，说："让这个小男孩的腿好起来吧！"小男孩的腿立刻好了，高兴地跑啊跳啊！七色花只剩下光秃秃的花茎了。虽然七色花失去了魔力，但珍妮心里充满快乐。因为她用最后一片花瓣帮助了朋友，这才是最珍贵的愿望！
-        </p>
+    <!-- 第二行：正文2 + 正义3 平行 -->
+    <div class="row" style="height: 95px;">
+        <div class="col">
+            <div class="story-box">
+                <div class="story-title">📖 故事正文（二）</div>
+                <p class="story-text">
+                    珍妮看着神奇的七色花，心想：我还有六片花瓣呢！于是，她用黄色花瓣变出很多面包圈，用绿色花瓣让打破的花瓶重新复原，用蓝色花瓣让自己飞到了北极......可是，这些愿望都给她带来了麻烦。最后，只剩下一片橙色花瓣了。
+                </p>
+            </div>
+        </div>
+        <div class="col">
+            <div class="story-box">
+                <div class="story-title">📖 故事正文（三）</div>
+                <p class="story-text">
+                    珍妮看到一个小男孩，他的腿有残疾，不能跑也不能跳。珍妮把最后一片橙色花瓣撕下来，说："让这个小男孩的腿好起来吧！"小男孩的腿立刻好了，高兴地跑啊跳啊！七色花只剩下光秃秃的花茎了。虽然七色花失去了魔力，但珍妮心里充满快乐。因为她用最后一片花瓣帮助了朋友，这才是最珍贵的愿望！
+                </p>
+            </div>
+        </div>
     </div>
     
     <!-- 第三行：好词 + 思考题 -->
-    <div class="row">
+    <div class="row" style="height: 70px;">
         <div class="col">
             <div class="words-box">
                 <div class="words-title">📝 好词好句</div>
