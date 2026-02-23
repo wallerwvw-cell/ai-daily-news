@@ -1,74 +1,74 @@
 {
   "news": [
     {
-      "title": "Alibaba's Qwen 3.5 397B-A17 beats its larger trillion-parameter model",
-      "summary": "阿里发布Qwen3.5-397B-A17，总参数3970亿但仅激活170亿。性能超越万亿参数的Qwen3-Max，256K上下文下解码速度快19倍，成本降低60%。支持201种语言，Apache 2.0开源许可证。",
-      "url": "https://venturebeat.com/technology/alibabas-qwen-3-5-397b-a17-beats-its-larger-trillion-parameter-model-at-a",
-      "source": "VentureBeat"
+      "title": "Code Metal Raises $125 Million to Rewrite the Defense Industry's Code With AI",
+      "summary": "AI代码工具初创公司Code Metal完成1.25亿美元B轮融资，旨在用AI重写国防工业代码。该公司提供自动化代码转换和现代化服务，帮助军工企业升级遗留系统。",
+      "url": "https://www.wired.com/story/code-metal-raises-125-million/",
+      "source": "WIRED"
     },
     {
-      "title": "Anthropic's Sonnet 4.6 matches flagship AI performance at one-fifth the cost",
-      "summary": "Claude Sonnet 4.6发布，性能接近旗舰Opus模型但成本仅1/5。在SWE-bench编码测试得分79.6%，计算机使用能力达72.5%。1M token上下文窗口，定价$3/$15每百万token。",
-      "url": "https://venturebeat.com/orchestration/anthropics-sonnet-4-6-matches-flagship-ai-performance-at-one-fifth-the-cost",
-      "source": "VentureBeat"
+      "title": "Perplexity's Retreat From Ads Signals a Bigger Strategic Shift",
+      "summary": "AI搜索公司Perplexity放弃广告模式，转向订阅制。这标志着AI搜索领域商业模式的重大转变，可能影响谷歌搜索广告霸权。",
+      "url": "https://www.wired.com/story/perplexity-ads-shift-search-google/",
+      "source": "WIRED"
     },
     {
-      "title": "OpenAI's acquisition of OpenClaw signals the beginning of the end of the ChatGPT era",
-      "summary": "OpenClaw创始人Peter Steinberger加入OpenAI，标志着AI从对话界面向自主代理的转折。OpenClaw将过渡到独立基金会运营。Anthropic曾因其品牌名称发出警告信，错失收购机会。",
-      "url": "https://venturebeat.com/technology/openais-acquisition-of-openclaw-signals-the-beginning-of-the-end-of-the",
-      "source": "VentureBeat"
+      "title": "Nvidia's Deal With Meta Signals a New Era in Computing Power",
+      "summary": "Nvidia与Meta达成新合作协议，标志着计算能力新时代的到来。这次合作将推动AI模型训练和部署的重大突破。",
+      "url": "https://www.wired.com/story/nvidias-deal-with-meta/",
+      "source": "WIRED"
     },
     {
-      "title": "Qodo 2.1 solves your coding agents' 'amnesia' problem",
-      "summary": "Qodo发布行业首个智能规则系统，为AI代码审查工具带来持久记忆能力。解决编码代理关闭会话后遗忘问题，精确度提升11%。自动从代码模式生成规则，持续维护标准，在每次代码审查中执行。",
-      "url": "https://venturebeat.com/orchestration/qodo-2-1-solves-your-coding-agents-amnesia-problem-giving-them-an-11",
-      "source": "VentureBeat"
+      "title": "AI Safety Meets the War Machine",
+      "summary": "Anthropic与五角大楼发生纠纷，AI安全问题再次引发关注。AI公司如何在国家安全需求和AI安全原则之间寻求平衡成为焦点。",
+      "url": "https://www.wired.com/story/backchannel-anthropic-dispute-with-the-pentagon/",
+      "source": "WIRED"
     },
     {
-      "title": "Nvidia, Groq and the limestone race to real-time AI",
-      "summary": "从数据中心到边缘设备，实时AI推理成为科技巨头新战场。多家厂商竞相开发专用AI芯片，目标实现低延迟推理能力。",
-      "url": "https://venturebeat.com/infrastructure/nvidia-groq-and-the-limestone-race-to-real-time-ai",
-      "source": "VentureBeat"
+      "title": "IBM Plunges After Anthropic's Latest Update Takes on COBOL",
+      "summary": "IBM股价大跌，因Anthropic最新更新使得AI能够处理传统COBOL系统。AI正在颠覆企业IT基础设施维护市场。",
+      "url": "https://www.zerohedge.com/markets/ibm-plunges-after-anthropics-latest-update-takes-cobol",
+      "source": "Zero Hedge"
     }
   ],
   "tech": [
     {
-      "title": "Nvidia's new technique cuts LLM reasoning costs by 8x without losing accuracy",
-      "summary": "Nvidia研发动态内存稀疏化(DMS)技术，将LLM推理的内存成本降低8倍。通过压缩KV缓存实现，保持甚至提升模型推理能力。适用于Llama 3、Qwen 3等模型，几小时内即可完成部署。",
-      "url": "https://venturebeat.com/orchestration/nvidias-new-technique-cuts-llm-reasoning-costs-by-8x-without-losing-accuracy",
-      "source": "VentureBeat"
+      "title": "AI-powered reverse-engineering of Rosetta 2 for Linux",
+      "summary": "开发者使用AI技术对Rosetta 2进行反向工程，成功在Linux系统上运行macOS应用。这是AI在软件兼容性领域的重要突破。",
+      "url": "https://github.com/Inokinoki/attesor",
+      "source": "GitHub"
     },
     {
-      "title": "When accurate AI is still dangerously incomplete",
-      "summary": "LexisNexis首席AI官解释标准RAG在高风险法律AI中的局限性，以及图RAG、规划代理和反思代理如何缩小差距。",
-      "url": "https://venturebeat.com/infrastructure/when-accurate-ai-is-still-dangerously-incomplete",
-      "source": "VentureBeat"
+      "title": "ASML unveils EUV light source advance that could yield 50% more chips by 2030",
+      "summary": "ASML发布EUV光刻机新光源技术突破，预计到2030年芯片产量可提升50%。这将为AI芯片供给提供更强支撑。",
+      "url": "https://www.reuters.com/world/china/asml-unveils-euv-light-source-advance-that-could-yield-50-more-chips-by-2030-2026-02-23/",
+      "source": "Reuters"
     },
     {
-      "title": "The path to ubiquitous AI (17k tokens/second)",
-      "summary": "探索如何实现每秒17000个token的AI推理处理，推动AI走向普及。",
-      "url": "https://taalas.com/the-path-to-ubiquitous-ai/",
-      "source": "Taalas"
+      "title": "Could AI Data Centers Be Moved to Outer Space?",
+      "summary": "科学家探讨将AI数据中心移至外太空的可行性，利用太空低温环境和可再生能源解决散热和能耗问题。",
+      "url": "https://www.wired.com/story/could-we-put-ai-data-centers-in-space/",
+      "source": "WIRED"
     },
     {
-      "title": "Minions - Stripe's coding agents (Part 2)",
-      "summary": "Stripe分享一次性端到端编码代理的开发经验和技术细节。",
-      "url": "https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2",
-      "source": "Stripe Dev"
+      "title": "AI Digital Twins Are Helping People Manage Diabetes and Obesity",
+      "summary": "AI数字孪生技术正在帮助人们管理糖尿病和肥胖症。通过个性化AI模型，患者可以获得精准的健康建议。",
+      "url": "https://www.wired.com/story/ai-digital-twins-are-helping-people-manage-diabetes-and-obesity/",
+      "source": "WIRED"
     }
   ],
   "tutorial": [
     {
-      "title": "Learn codebases with visualization tools",
-      "summary": "通过构建代码可视化工具，更高效地理解大型项目结构。",
-      "url": "https://jimmyhmiller.com/learn-codebase-visualizer",
-      "source": "Jimmy Miller"
+      "title": "How to Hide Google's AI Overviews From Your Search Results",
+      "summary": "WIRED提供详细指南，教用户如何隐藏谷歌搜索中的AI概述。对于不想被AI干扰的用户非常实用。",
+      "url": "https://www.wired.com/story/how-to-hide-google-ai-overviews-from-your-search-results/",
+      "source": "WIRED"
     },
     {
-      "title": "Web Components: The framework-free renaissance",
-      "summary": "现代Web开发中Web Components的复兴，无框架的原生组件开发方式。",
-      "url": "https://www.caimito.net/en/blog/2026/02/17/web-components-the-framework-free-renaissance.html",
-      "source": "Caimito"
+      "title": "Google's AI Overviews Can Scam You. Here's How to Stay Safe",
+      "summary": "专家警告谷歌AI概述可能存在误导甚至欺诈信息，并提供识别和避免AI搜索陷阱的实用技巧。",
+      "url": "https://www.wired.com/story/googles-ai-overviews-can-scam-you-heres-how-to-stay-safe/",
+      "source": "WIRED"
     },
     {
       "title": "Building AI agents from scratch",
@@ -79,22 +79,22 @@
   ],
   "fun": [
     {
-      "title": "AI agents turned Super Bowl viewers into one high-IQ team",
-      "summary": "想象在企业中的应用——AI代理如何改变大型组织的协作决策方式。",
-      "url": "https://venturebeat.com/orchestration/ai-agents-turned-super-bowl-viewers-into-one-high-iq-team-now-imagine-this",
-      "source": "VentureBeat"
+      "title": "The Rise of RentAHuman, the Marketplace Where Bots Put People to Work",
+      "summary": "新兴平台RentAHuman让AI代理雇佣人类完成它们无法独立完成的任务。这种人机协作新模式引发热议。",
+      "url": "https://www.wired.com/story/ai-agent-rentahuman-bots-hire-humans/",
+      "source": "WIRED"
     },
     {
-      "title": "Child's Play: Tech's new generation and the end of thinking",
-      "summary": "探索新一代技术环境如何影响思维模式，以及AI对此的影响。",
-      "url": "https://harpers.org/archive/2026/03/childs-play-sam-kriss-ai-startup-roy-lee/",
-      "source": "Harper's Magazine"
+      "title": "I Tried RentAHuman, Where AI Agents Hired Me to Hype Their AI Startups",
+      "summary": "记者亲身体验RentAHuman平台，AI代理雇佣人类为其AI初创公司宣传。探索人机协作的奇幻新世界。",
+      "url": "https://www.wired.com/story/i-tried-rentahuman-ai-agents-hired-me-to-hype-their-ai-startups/",
+      "source": "WIRED"
     },
     {
-      "title": "No skill, no taste",
-      "summary": "关于AI时代创意工作的思考——当技术门槛降低，品味变得更加重要。",
-      "url": "https://blog.kinglycrow.com/no-skill-no-taste/",
-      "source": "Kingly Crow"
+      "title": "Inside the New York City Date Night for AI Lovers",
+      "summary": "纽约市举办AI爱好者专属相亲活动，单身人士与AI专家配对。科技时代的浪漫新尝试。",
+      "url": "https://www.wired.com/story/inside-the-new-york-city-date-night-for-ai-lovers/",
+      "source": "WIRED"
     }
   ],
   "products": [
@@ -121,12 +121,6 @@
       "summary": "Runway Gen-4支持10秒高清视频生成，可控制镜头运动和角色动作，影视制作门槛大幅降低。",
       "url": "https://runwayml.com/gen4",
       "source": "Runway"
-    },
-    {
-      "title": "Notion AI 推出全文搜索和智能整理功能",
-      "summary": "Notion AI新增智能workspace功能，自动整理笔记、提取要点、生成会议纪要，大幅提升办公效率。",
-      "url": "https://notion.ai/product",
-      "source": "Notion"
     }
   ],
   "funding": [
@@ -147,18 +141,6 @@
       "summary": "加拿大AI公司Cohere完成4.7亿美元D轮融资，估值达55亿美元。投资者包括Nvidia、Salesforce等战略合作伙伴。",
       "url": "https://cohere.com/funding",
       "source": "Cohere"
-    },
-    {
-      "title": "Adept AI 获3.5亿美元B轮融资",
-      "summary": "AI代理公司Adept完成3.5亿美元B轮融资，Greylock和General Catalyst领投。推出AI代理平台Adept AI。",
-      "url": "https://www.adept.ai/series-b",
-      "source": "Adept"
-    },
-    {
-      "title": "Hugging Face 估值达45亿美元，完成1亿美元融资",
-      "summary": "Hugging Face完成1亿美元融资，估值达45亿美元。成为AI模型开源社区最具价值公司。",
-      "url": "https://huggingface.co/blog/valuation",
-      "source": "Hugging Face"
     }
   ],
   "people": [
@@ -173,18 +155,6 @@
       "summary": "DeepMind创始人Demis Hassabis接受采访，分享对通用人工智能(AGI)的展望，强调AI安全研究的重要性。",
       "url": "https://www.deepmind.com/blog/demis-interview",
       "source": "DeepMind"
-    },
-    {
-      "title": "Andrew Ng 创立AI基金，专注AI投资",
-      "summary": "吴恩达宣布成立AI投资基金AI Fund，已募集1.75亿美元，将投资AI早期创业公司特别是教育领域。",
-      "url": "https://www.andrewng.org/ai-fund",
-      "source": "Andrew Ng"
-    },
-    {
-      "title": "Dario Amodei 谈Claude的设计理念",
-      "summary": "Anthropic CEO Dario Amodei阐述Claude的设计哲学，强调AI助手应具备帮助人类实现目标的能力。",
-      "url": "https://www.anthropic.com/ceo-blog",
-      "source": "Anthropic"
     },
     {
       "title": "黄仁勋主题演讲：AI算力新时代",
@@ -211,18 +181,6 @@
       "summary": "技术评论员分析AI从对话界面向自主代理的转变，认为这将根本改变人类与AI的协作方式。",
       "url": "https://stratechery.com/ai-agents",
       "source": "Stratechery"
-    },
-    {
-      "title": "AI热潮下的冷思考：估值泡沫与商业现实",
-      "summary": "投资人分析当前AI创业公司的估值问题，指出只有少数公司能实现可持续的商业模式。",
-      "url": "https://a16z.com/ai-valuations",
-      "source": "a16z"
-    },
-    {
-      "title": "开源AI vs 闭源AI：谁将赢得未来？",
-      "summary": "行业观察者对比开源和闭源AI模型的优劣，认为两者将在不同场景下共存而非完全取代。",
-      "url": "https://www.morningbrew.com/open-source-ai",
-      "source": "Morning Brew"
     }
   ]
 }
