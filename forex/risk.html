@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>外汇交易学习 - 风险管理</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-white min-h-screen">
+  <header class="bg-slate-800 border-b border-slate-700">
+    <div class="max-w-6xl mx-auto px-4 py-6">
+      <div class="flex items-center gap-4">
+        <a href="../" class="text-emerald-400 hover:underline">← 返回</a>
+        <h1 class="text-2xl font-bold text-red-400">⚠️ 风险管理 - 最重要的课程</h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <div class="bg-red-900/30 border border-red-600 rounded-xl p-6 mb-8">
+      <p class="text-lg text-red-300">
+        🚨 <strong>警告：</strong> 90%的新手交易者会在第一年亏损。学好风险管理才能成为那10%的盈利者！
+      </p>
+    </div>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-bold mb-4">📊 风险管理黄金法则</h2>
+      <div class="grid md:grid-cols-4 gap-4">
+        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700 text-center">
+          <div class="text-4xl font-bold text-red-400">≤2%</div>
+          <p class="text-slate-400 mt-2">单笔交易最大风险</p>
+        </div>
+        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700 text-center">
+          <div class="text-4xl font-bold text-orange-400">≤5%</div>
+          <p class="text-slate-400 mt-2">单日最大风险</p>
+        </div>
+        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700 text-center">
+          <div class="text-4xl font-bold text-yellow-400">≤10%</div>
+          <p class="text-slate-400 mt-2">单周最大风险</p>
+        </div>
+        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700 text-center">
+          <div class="text-4xl font-bold text-emerald-400">100%</div>
+          <p class="text-slate-400 mt-2">必须设置止损</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-bold mb-4">🧮 仓位计算方法</h2>
+      <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+        <h3 class="text-lg font-bold text-emerald-400 mb-3">仓位大小计算公式</h3>
+        <div class="bg-slate-700/50 rounded-lg p-4 font-mono text-center text-lg">
+          仓位 = 账户余额 × 风险比例 ÷ 止损点数
+        </div>
+        
+        <div class="mt-4">
+          <p class="font-bold mb-2">举例：</p>
+          <ul class="text-slate-300 space-y-1 text-sm">
+            <li>• 账户余额：$10,000</li>
+            <li>• 风险比例：2%</li>
+            <li>• 止损距离：50点</li>
+            <li>• 仓位 = 10000 × 0.02 ÷ 50 = 4手</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-bold mb-4">🛡️ 止损设置技巧</h2>
+      <div class="space-y-4">
+        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+          <h3 class="text-lg font-bold text-emerald-400">技术止损</h3>
+          <p class="text-slate-300 mt-2">根据技术分析设置止损位置</p>
+          <ul class="mt-2 text-slate-400 text-sm space-y-1">
+            <li>• 放在支撑位下方</li>
+            <li>• 放在阻力位上方</li>
+            <li>• 放在趋势线另一侧</li>
+          </ul>
+        </div>
+        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+          <h3 class="text-lg font-bold text-emerald-400">资金止损</h3>
+          <p class="text-slate-300 mt-2">根据账户资金设置止损</p>
+          <ul class="mt-2 text-slate-400 text-sm space-y-1">
+            <li>• 单笔亏损达2%无条件止损</li>
+            <li>• 日亏损达5%停止交易</li>
+            <li>• 周亏损达10%停止交易一周</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-bold mb-4">🚫 常见错误</h2>
+      <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-slate-700">
+              <th class="text-left py-2">错误</th>
+              <th class="text-left py-2">后果</th>
+              <th class="text-left py-2">解决方法</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-300">
+            <tr class="border-b border-slate-700/50">
+              <td class="py-2">不止损</td>
+              <td class="py-2 text-red-400">爆仓</td>
+              <td class="py-2">必须带止损</td>
+            </tr>
+            <tr class="border-b border-slate-700/50">
+              <td class="py-2">重仓交易</td>
+              <td class="py-2 text-red-400">大幅亏损</td>
+              <td class="py-2">轻仓操作</td>
+            </tr>
+            <tr class="border-b border-slate-700/50">
+              <td class="py-2">频繁交易</td>
+              <td class="py-2 text-red-400">亏损累积</td>
+              <td class="py-2">减少交易频率</td>
+            </tr>
+            <tr class="border-b border-slate-700/50">
+              <td class="py-2">扛单</td>
+              <td class="py-2 text-red-400">亏损扩大</td>
+              <td class="py-2">到止损走人</td>
+            </tr>
+            <tr>
+              <td class="py-2">情绪交易</td>
+              <td class="py-2 text-red-400">冲动亏损</td>
+              <td class="py-2">按计划交易</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-bold mb-4">🧠 心态控制</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+          <h3 class="text-lg font-bold text-emerald-400">❌ 避免心态</h3>
+          <ul class="mt-3 space-y-2 text-slate-300 text-sm">
+            <li>🤦 亏损后急于翻本</li>
+            <li>🤦 连续盈利后骄傲</li>
+            <li>🤦 害怕错失机会</li>
+            <li>🤦 亏损后报复市场</li>
+          </ul>
+        </div>
+        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+          <h3 class="text-lg font-bold text-emerald-400">✅ 正确心态</h3>
+          <ul class="mt-3 space-y-2 text-slate-300 text-sm">
+            <li>💡 接受亏损是交易一部分</li>
+            <li>💡 严格执行交易计划</li>
+            <li>💡 保持耐心等待机会</li>
+            <li>💡 定期复盘总结</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-bold mb-4">✅ 风险管理检查清单</h2>
+      <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+        <ul class="space-y-3 text-slate-300">
+          <li>🛡️ <input type="checkbox" class="mr-2"> 每笔交易前计算好仓位</li>
+          <li>🛡️ <input type="checkbox" class="mr-2"> 每笔交易必须带止损</li>
+          <li>🛡️ <input type="checkbox" class="mr-2"> 严格遵守2%风险法则</li>
+          <li>🛡️ <input type="checkbox" class="mr-2"> 日亏损5%停止交易</li>
+          <li>🛡️ <input type="checkbox" class="mr-2"> 交易日志记录每笔交易</li>
+          <li>🛡️ <input type="checkbox" class="mr-2"> 每周复盘交易表现</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-800 border-t border-slate-700 mt-12">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-center text-slate-400 text-sm">
+      🐟 外汇交易学习知识库 | <a href="../" class="text-emerald-400 hover:underline">返回首页</a>
+    </div>
+  </footer>
+</body>
+</html>

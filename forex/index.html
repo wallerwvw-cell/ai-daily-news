@@ -11,57 +11,83 @@
   <header class="bg-slate-800 border-b border-slate-700">
     <div class="max-w-6xl mx-auto px-4 py-6">
       <h1 class="text-3xl font-bold text-emerald-400">🌍 外汇交易知识库</h1>
-      <p class="text-slate-400 mt-2">从入门到精通的系统学习路径</p>
+      <p class="text-slate-400 mt-2">从入门到精通的系统学习路径 | 6个月成为稳定交易者</p>
     </div>
   </header>
 
   <main class="max-w-6xl mx-auto px-4 py-8">
+    <!-- 欢迎 -->
+    <section class="mb-12">
+      <div class="bg-gradient-to-r from-emerald-900/50 to-slate-800 rounded-xl p-8 border border-slate-700">
+        <h2 class="text-2xl font-bold mb-4">🎯 欢迎开始外汇交易学习之旅</h2>
+        <p class="text-slate-300">这是一个系统化的外汇交易学习平台，按照以下路径学习，6个月后你将具备独立交易的能力。</p>
+        <div class="mt-4 flex gap-4 flex-wrap">
+          <span class="bg-emerald-600 px-3 py-1 rounded-full text-sm">📖 基础入门</span>
+          <span class="bg-blue-600 px-3 py-1 rounded-full text-sm">📊 技术分析</span>
+          <span class="bg-purple-600 px-3 py-1 rounded-full text-sm">🎯 交易策略</span>
+          <span class="bg-red-600 px-3 py-1 rounded-full text-sm">⚠️ 风险管理</span>
+        </div>
+      </div>
+    </section>
+
     <!-- 学习阶段 -->
     <section class="mb-12">
       <h2 class="text-2xl font-bold mb-6">📚 学习路径</h2>
       <div class="grid md:grid-cols-3 gap-6">
-        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+        <a href="basics.html" class="block bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-emerald-500 transition">
           <div class="text-3xl mb-4">📖</div>
           <h3 class="text-xl font-bold mb-2">第一阶段：基础知识</h3>
           <p class="text-slate-400 text-sm mb-4">1个月</p>
           <ul class="space-y-2 text-sm text-slate-300">
             <li>✓ 外汇市场结构</li>
-            <li>✓ K线图形态</li>
-            <li>✓ 支撑与阻力</li>
-            <li>✓ 移动平均线 MA</li>
-            <li>✓ RSI、布林带</li>
+            <li>✓ 核心术语</li>
+            <li>✓ 主要货币对</li>
+            <li>✓ 交易时间</li>
           </ul>
-        </div>
-        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
-          <div class="text-3xl mb-4">🎮</div>
-          <h3 class="text-xl font-bold mb-2">第二阶段：模拟交易</h3>
+        </a>
+
+        <a href="technical.html" class="block bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-emerald-500 transition">
+          <div class="text-3xl mb-4">📊</div>
+          <h3 class="text-xl font-bold mb-2">第二阶段：技术分析</h3>
           <p class="text-slate-400 text-sm mb-4">1-2个月</p>
           <ul class="space-y-2 text-sm text-slate-300">
-            <li>✓ MT4/MT5 平台</li>
+            <li>✓ K线图形态</li>
+            <li>✓ 趋势与支撑阻力</li>
+            <li>✓ 常用技术指标</li>
+            <li>✓ 画线工具</li>
+          </ul>
+        </a>
+
+        <a href="strategy.html" class="block bg-slate-800 rounded-xl p-6 border border-slate-700 hover:border-emerald-500 transition">
+          <div class="text-3xl mb-4">🎯</div>
+          <h3 class="text-xl font-bold mb-2">第三阶段：交易策略</h3>
+          <p class="text-slate-400 text-sm mb-4">1-2个月</p>
+          <ul class="space-y-2 text-sm text-slate-300">
             <li>✓ 趋势跟踪策略</li>
             <li>✓ 区间交易策略</li>
             <li>✓ 突破策略</li>
-            <li>✓ 交易日志</li>
+            <li>✓ 新闻交易</li>
           </ul>
-        </div>
-        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
-          <div class="text-3xl mb-4">💰</div>
-          <h3 class="text-xl font-bold mb-2">第三阶段：小资金实盘</h3>
-          <p class="text-slate-400 text-sm mb-4">3-6个月</p>
-          <ul class="space-y-2 text-sm text-slate-300">
-            <li>✓ 仓位管理</li>
-            <li>✓ 严格止损</li>
-            <li>✓ 心态培养</li>
-            <li>✓ 每周复盘</li>
-            <li>✓ 策略优化</li>
-          </ul>
-        </div>
+        </a>
       </div>
+    </section>
+
+    <!-- 风险管理 (重要) -->
+    <section class="mb-12">
+      <a href="risk.html" class="block bg-gradient-to-r from-red-900/50 to-slate-800 rounded-xl p-8 border border-red-600 hover:border-red-400 transition">
+        <div class="flex items-center gap-4">
+          <div class="text-4xl">⚠️</div>
+          <div>
+            <h2 class="text-2xl font-bold text-red-400">风险管理 - 最重要的一课</h2>
+            <p class="text-slate-300 mt-1">90%新手亏损的原因：不懂风险管理。学会这个，你已经赢了一半！</p>
+          </div>
+        </div>
+      </a>
     </section>
 
     <!-- 核心概念 -->
     <section class="mb-12">
-      <h2 class="text-2xl font-bold mb-6">📊 核心概念</h2>
+      <h2 class="text-2xl font-bold mb-6">📊 核心概念速查</h2>
       <div class="bg-slate-800 rounded-xl p-6 border border-slate-700 overflow-x-auto">
         <table class="w-full text-sm">
           <thead>
@@ -88,13 +114,13 @@
               <td class="py-3">⭐⭐⭐⭐</td>
             </tr>
             <tr class="border-b border-slate-700/50">
-              <td class="py-3 pr-4 text-emerald-400">保证金</td>
-              <td class="py-3 pr-4">开仓所需资金</td>
-              <td class="py-3">⭐⭐⭐⭐</td>
-            </tr>
-            <tr>
               <td class="py-3 pr-4 text-emerald-400">止损</td>
               <td class="py-3 pr-4">限制亏损的订单</td>
+              <td class="py-3">⭐⭐⭐⭐⭐</td>
+            </tr>
+            <tr>
+              <td class="py-3 pr-4 text-emerald-400">仓位</td>
+              <td class="py-3 pr-4">交易多少手数</td>
               <td class="py-3">⭐⭐⭐⭐⭐</td>
             </tr>
           </tbody>
@@ -129,31 +155,6 @@
             <li>USD/CNH - 美元/离岸人民币</li>
             <li>EUR/CNH - 欧元/离岸人民币</li>
           </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- 风险管理 -->
-    <section class="mb-12">
-      <h2 class="text-2xl font-bold mb-6">⚠️ 风险管理黄金法则</h2>
-      <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
-        <div class="grid md:grid-cols-4 gap-6 text-center">
-          <div>
-            <div class="text-3xl font-bold text-red-400">≤2%</div>
-            <div class="text-slate-400 text-sm mt-1">单笔风险</div>
-          </div>
-          <div>
-            <div class="text-3xl font-bold text-orange-400">≤5%</div>
-            <div class="text-slate-400 text-sm mt-1">日风险</div>
-          </div>
-          <div>
-            <div class="text-3xl font-bold text-yellow-400">≤10%</div>
-            <div class="text-slate-400 text-sm mt-1">周风险</div>
-          </div>
-          <div>
-            <div class="text-3xl font-bold text-emerald-400">100%</div>
-            <div class="text-slate-400 text-sm mt-1">必须设止损</div>
-          </div>
         </div>
       </div>
     </section>

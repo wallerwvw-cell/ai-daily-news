@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>外汇交易学习 - 技术分析</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-white min-h-screen">
+  <header class="bg-slate-800 border-b border-slate-700">
+    <div class="max-w-6xl mx-auto px-4 py-6">
+      <div class="flex items-center gap-4">
+        <a href="../" class="text-emerald-400 hover:underline">← 返回</a>
+        <h1 class="text-2xl font-bold text-emerald-400">📊 第二阶段：技术分析</h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <section class="mb-8">
+      <h2 class="text-xl font-bold mb-4">🕯️ K线图形态</h2>
+      <div class="space-y-4">
+        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+          <h3 class="text-lg font-bold text-emerald-400 mb-3">常见反转形态</h3>
+          <div class="grid md:grid-cols-2 gap-4">
+            <div class="bg-slate-700/50 rounded-lg p-4">
+              <p class="font-bold">🔨 锤子线 (Hammer)</p>
+              <p class="text-sm text-slate-400 mt-1">出现在下降趋势底部，下影线长于实体，预示反转上涨</p>
+            </div>
+            <div class="bg-slate-700/50 rounded-lg p-4">
+              <p class="font-bold">⬇️ 吞没形态 (Engulfing)</p>
+              <p class="text-sm text-slate-400 mt-1">后一根K线完全包裹前一根，颜色相反，预示趋势反转</p>
+            </div>
+            <div class="bg-slate-700/50 rounded-lg p-4">
+              <p class="font-bold">⭐ 十字星 (Doji)</p>
+              <p class="text-sm text-slate-400 mt-1">开盘价等于收盘价，表示市场犹豫，可能反转</p>
+            </div>
+            <div class="bg-slate-700/50 rounded-lg p-4">
+              <p class="font-bold">🌙 流星线 (Shooting Star)</p>
+              <p class="text-sm text-slate-400 mt-1">出现在上升趋势顶部，上影线长，预示下跌</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-bold mb-4">📈 趋势与支撑阻力</h2>
+      <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+        <div class="space-y-4">
+          <div>
+            <h3 class="text-lg font-bold text-emerald-400">趋势判断</h3>
+            <ul class="mt-2 space-y-1 text-slate-300">
+              <li>📈 <strong>上升趋势</strong> - 高点越来越高，低点也越来越高</li>
+              <li>📉 <strong>下降趋势</strong> - 高点越来越低，低点也越来越低</li>
+              <li>➡️ <strong>横盘整理</strong> - 价格在区间内波动</li>
+            </ul>
+          </div>
+          <div class="border-t border-slate-700 pt-4">
+            <h3 class="text-lg font-bold text-emerald-400">支撑与阻力</h3>
+            <ul class="mt-2 space-y-1 text-slate-300">
+              <li>🟢 <strong>支撑位</strong> - 价格下跌时遇到买盘支撑的区域</li>
+              <li>🔴 <strong>阻力位</strong> - 价格上涨时遇到卖盘压力的区域</li>
+              <li>💡 <strong>突破</strong> - 支撑变阻力，阻力变支撑</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-bold mb-4">📉 常用技术指标</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+          <h3 class="text-lg font-bold text-emerald-400">移动平均线 (MA)</h3>
+          <p class="text-slate-400 mt-2">MA20、MA50、MA200 最常用</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-300">
+            <li>✅ 价格在 MA 上方 = 多头趋势</li>
+            <li>✅ 价格在 MA 下方 = 空头趋势</li>
+            <li>✅ 金叉(短上穿长) = 买入信号</li>
+            <li>✅ 死叉(短下穿长) = 卖出信号</li>
+          </ul>
+        </div>
+        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+          <h3 class="text-lg font-bold text-emerald-400">RSI 相对强弱指数</h3>
+          <p class="text-slate-400 mt-2">0-100，超买超卖指标</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-300">
+            <li>📊 RSI > 70 = 超买，可能下跌</li>
+            <li>📊 RSI < 30 = 超卖，可能上涨</li>
+            <li>💡 配合趋势使用效果更好</li>
+          </ul>
+        </div>
+        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+          <h3 class="text-lg font-bold text-emerald-400">布林带 (Bollinger Bands)</h3>
+          <p class="text-slate-400 mt-2">中轨=MA，上下轨=价格波动范围</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-300">
+            <li>🎯 价格触及上轨 = 可能回调</li>
+            <li>🎯 价格触及下轨 = 可能反弹</li>
+            <li>💡 收窄=酝酿行情，放宽=趋势形成</li>
+          </ul>
+        </div>
+        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+          <h3 class="text-lg font-bold text-emerald-400">MACD</h3>
+          <p class="text-slate-400 mt-2">趋势与动量指标</p>
+          <ul class="mt-3 space-y-1 text-sm text-slate-300">
+            <li>📊 DIF上穿DEA = 金叉买入</li>
+            <li>📊 DIF下穿DEA = 死叉卖出</li>
+            <li>💡 零轴上方 = 多头市场</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-bold mb-4">🔧 画线工具</h2>
+      <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+        <ul class="space-y-3 text-slate-300">
+          <li>📏 <strong>趋势线</strong> - 连接两个以上的高点或低点</li>
+          <li>📐 <strong>水平线</strong> - 标记重要的支撑阻力位</li>
+          <li>📊 <strong>斐波那契回撤</strong> - 0.382、0.618是常见回调位</li>
+          <li>📐 <strong>通道线</strong> - 限定价格的波动范围</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-bold mb-4">✅ 本阶段任务清单</h2>
+      <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+        <ul class="space-y-3 text-slate-300">
+          <li>🕯️ <input type="checkbox" class="mr-2"> 记住5种以上K线形态</li>
+          <li>📈 <input type="checkbox" class="mr-2"> 练习画趋势线和支撑阻力位</li>
+          <li>📊 <input type="checkbox" class="mr-2"> 掌握MA、RSI、布林带使用方法</li>
+          <li>🎮 <input type="checkbox" class="mr-2"> 在模拟账户练习技术分析</li>
+          <li>📝 <input type="checkbox" class="mr-2"> 记录每日技术分析笔记</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-800 border-t border-slate-700 mt-12">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-center text-slate-400 text-sm">
+      🐟 外汇交易学习知识库 | <a href="../" class="text-emerald-400 hover:underline">返回首页</a>
+    </div>
+  </footer>
+</body>
+</html>

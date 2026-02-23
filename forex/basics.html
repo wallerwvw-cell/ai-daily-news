@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>外汇交易学习 - 基础知识</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 text-white min-h-screen">
+  <header class="bg-slate-800 border-b border-slate-700">
+    <div class="max-w-6xl mx-auto px-4 py-6">
+      <div class="flex items-center gap-4">
+        <a href="../" class="text-emerald-400 hover:underline">← 返回</a>
+        <h1 class="text-2xl font-bold text-emerald-400">📖 第一阶段：基础知识</h1>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-4 py-8">
+    <section class="mb-8">
+      <h2 class="text-xl font-bold mb-4">🎯 学习目标</h2>
+      <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+        <ul class="space-y-2 text-slate-300">
+          <li>✅ 理解外汇市场基本结构</li>
+          <li>✅ 掌握核心术语（点、点差、杠杆、保证金）</li>
+          <li>✅ 熟悉主要货币对特性</li>
+          <li>✅ 了解交易时间窗口</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-bold mb-4">🏦 外汇市场基础</h2>
+      <div class="space-y-4">
+        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+          <h3 class="text-lg font-bold text-emerald-400 mb-3">什么是外汇市场？</h3>
+          <p class="text-slate-300">外汇市场是全球最大的金融市场，日交易量超过6万亿美元。在这个市场中，人们兑换不同国家的货币。</p>
+        </div>
+        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+          <h3 class="text-lg font-bold text-emerald-400 mb-3">市场参与者</h3>
+          <ul class="space-y-2 text-slate-300">
+            <li>🏛️ <strong>央行</strong> - 制定货币政策，干预市场</li>
+            <li>🏦 <strong>商业银行</strong> - 最大交易量</li>
+            <li>📊 <strong>机构投资者</strong> - 对冲基金、资产管理</li>
+            <li>👤 <strong>零售交易者</strong> - 个人投资者</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-bold mb-4">📊 核心术语</h2>
+      <div class="grid md:grid-cols-2 gap-4">
+        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+          <h3 class="text-lg font-bold text-emerald-400">点 (Pip)</h3>
+          <p class="text-slate-300 mt-2">货币对的最小价格变动单位。通常 EUR/USD 上涨 0.0001 = 1 点</p>
+        </div>
+        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+          <h3 class="text-lg font-bold text-emerald-400">点差 (Spread)</h3>
+          <p class="text-slate-300 mt-2">买入价(Bid)与卖出价(Ask)之间的差额，就是交易成本</p>
+        </div>
+        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+          <h3 class="text-lg font-bold text-emerald-400">杠杆 (Leverage)</h3>
+          <p class="text-slate-300 mt-2">放大交易规模的工具。100倍杠杆 = 1美元可交易100美元</p>
+        </div>
+        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+          <h3 class="text-lg font-bold text-emerald-400">保证金 (Margin)</h3>
+          <p class="text-slate-300 mt-2">开仓所需资金。杠杆越高，保证金越低</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-bold mb-4">💱 主要货币对</h2>
+      <div class="space-y-4">
+        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+          <h3 class="text-lg font-bold text-emerald-400 mb-3">主要货币对 (Major Pairs)</h3>
+          <div class="grid md:grid-cols-2 gap-4 text-slate-300">
+            <div>
+              <p class="font-bold">EUR/USD</p>
+              <p class="text-sm">欧元/美元，交易量最大</p>
+            </div>
+            <div>
+              <p class="font-bold">GBP/USD</p>
+              <p class="text-sm">英镑/美元，"电缆"</p>
+            </div>
+            <div>
+              <p class="font-bold">USD/JPY</p>
+              <p class="text-sm">美元/日元</p>
+            </div>
+            <div>
+              <p class="font-bold">USD/CHF</p>
+              <p class="text-sm">美元/瑞郎</p>
+            </div>
+          </div>
+        </div>
+        <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+          <h3 class="text-lg font-bold text-emerald-400 mb-3">商品货币对</h3>
+          <div class="grid md:grid-cols-3 gap-4 text-slate-300">
+            <div>
+              <p class="font-bold">AUD/USD</p>
+              <p class="text-sm">澳元/美元，与铁矿石价格相关</p>
+            </div>
+            <div>
+              <p class="font-bold">USD/CAD</p>
+              <p class="text-sm">美元/加元，与石油相关</p>
+            </div>
+            <div>
+              <p class="font-bold">NZD/USD</p>
+              <p class="text-sm">纽元/美元</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-8">
+      <h2 class="text-xl font-bold mb-4">🕐 交易时间</h2>
+      <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+        <table class="w-full text-sm">
+          <thead>
+            <tr class="border-b border-slate-700">
+              <th class="text-left py-2">时段</th>
+              <th class="text-left py-2">北京时间</th>
+              <th class="text-left py-2">特点</th>
+            </tr>
+          </thead>
+          <tbody class="text-slate-300">
+            <tr class="border-b border-slate-700/50">
+              <td class="py-2">悉尼</td>
+              <td class="py-2">6:00-15:00</td>
+              <td class="py-2">波动较小</td>
+            </tr>
+            <tr class="border-b border-slate-700/50">
+              <td class="py-2">东京</td>
+              <td class="py-2">8:00-16:00</td>
+              <td class="py-2">亚洲市场为主</td>
+            </tr>
+            <tr class="border-b border-slate-700/50">
+              <td class="py-2">伦敦</td>
+              <td class="py-2">16:00-24:00</td>
+              <td class="py-2">波动最大</td>
+            </tr>
+            <tr>
+              <td class="py-2">纽约</td>
+              <td class="py-2">21:00-次日5:00</td>
+              <td class="py-2">波动较大</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-bold mb-4">✅ 本阶段任务清单</h2>
+      <div class="bg-slate-800 rounded-xl p-6 border border-slate-700">
+        <ul class="space-y-3 text-slate-300">
+          <li>📚 <input type="checkbox" class="mr-2"> 阅读《外汇交易入门》书籍</li>
+          <li>📚 <input type="checkbox" class="mr-2"> 在 Babypips.com 完成 School of Pipsology</li>
+          <li>🔧 <input type="checkbox" class="mr-2"> 注册模拟账户 (MT4/MT5)</li>
+          <li>👀 <input type="checkbox" class="mr-2"> 观察主要货币对走势</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-800 border-t border-slate-700 mt-12">
+    <div class="max-w-6xl mx-auto px-4 py-6 text-center text-slate-400 text-sm">
+      🐟 外汇交易学习知识库 | <a href="../" class="text-emerald-400 hover:underline">返回首页</a>
+    </div>
+  </footer>
+</body>
+</html>
