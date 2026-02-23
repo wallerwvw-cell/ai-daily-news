@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>AI 日报</title>
+    <link>https://wallerwvw-cell.github.io/ai-daily-news/</link>
+    <description>每日AI新闻、技术文章、产品融资、人物观点 - 您的AI资讯助手</description>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 23 Feb 2026 04:33:05 +0000</lastBuildDate>
+    <atom:link href="https://wallerwvw-cell.github.io/ai-daily-news/feed.xml" rel="self" type="application/rss+xml"/>
+    <item>
+        <title><![CDATA[Alibaba's Qwen 3.5 397B-A17 beats its larger trillion-parameter model]]></title>
+        <link>https://venturebeat.com/technology/alibabas-qwen-3-5-397b-a17-beats-its-larger-trillion-parameter-model-at-a</link>
+        <description><![CDATA[阿里发布Qwen3.5-397B-A17，总参数3970亿但仅激活170亿。性能超越万亿参数的Qwen3-Max，256K上下文下解码速度快19倍，成本降低60%。支持201种语言，Apache 2.0开源许可证。]]></description>
+        <source>VentureBeat</source>
+        <category>📰 新闻</category>
+        <guid isPermaLink="true">https://venturebeat.com/technology/alibabas-qwen-3-5-397b-a17-beats-its-larger-trillion-parameter-model-at-a</guid>
+    </item>
+    <item>
+        <title><![CDATA[Anthropic's Sonnet 4.6 matches flagship AI performance at one-fifth the cost]]></title>
+        <link>https://venturebeat.com/orchestration/anthropics-sonnet-4-6-matches-flagship-ai-performance-at-one-fifth-the-cost</link>
+        <description><![CDATA[Claude Sonnet 4.6发布，性能接近旗舰Opus模型但成本仅1/5。在SWE-bench编码测试得分79.6%，计算机使用能力达72.5%。1M token上下文窗口，定价$3/$15每百万token。]]></description>
+        <source>VentureBeat</source>
+        <category>📰 新闻</category>
+        <guid isPermaLink="true">https://venturebeat.com/orchestration/anthropics-sonnet-4-6-matches-flagship-ai-performance-at-one-fifth-the-cost</guid>
+    </item>
+    <item>
+        <title><![CDATA[OpenAI's acquisition of OpenClaw signals the beginning of the end of the ChatGPT era]]></title>
+        <link>https://venturebeat.com/technology/openais-acquisition-of-openclaw-signals-the-beginning-of-the-end-of-the</link>
+        <description><![CDATA[OpenClaw创始人Peter Steinberger加入OpenAI，标志着AI从对话界面向自主代理的转折。OpenClaw将过渡到独立基金会运营。Anthropic曾因其品牌名称发出警告信，错失收购机会。]]></description>
+        <source>VentureBeat</source>
+        <category>📰 新闻</category>
+        <guid isPermaLink="true">https://venturebeat.com/technology/openais-acquisition-of-openclaw-signals-the-beginning-of-the-end-of-the</guid>
+    </item>
+    <item>
+        <title><![CDATA[Qodo 2.1 solves your coding agents' 'amnesia' problem]]></title>
+        <link>https://venturebeat.com/orchestration/qodo-2-1-solves-your-coding-agents-amnesia-problem-giving-them-an-11</link>
+        <description><![CDATA[Qodo发布行业首个智能规则系统，为AI代码审查工具带来持久记忆能力。解决编码代理关闭会话后遗忘问题，精确度提升11%。自动从代码模式生成规则，持续维护标准，在每次代码审查中执行。]]></description>
+        <source>VentureBeat</source>
+        <category>📰 新闻</category>
+        <guid isPermaLink="true">https://venturebeat.com/orchestration/qodo-2-1-solves-your-coding-agents-amnesia-problem-giving-them-an-11</guid>
+    </item>
+    <item>
+        <title><![CDATA[Nvidia, Groq and the limestone race to real-time AI]]></title>
+        <link>https://venturebeat.com/infrastructure/nvidia-groq-and-the-limestone-race-to-real-time-ai</link>
+        <description><![CDATA[从数据中心到边缘设备，实时AI推理成为科技巨头新战场。多家厂商竞相开发专用AI芯片，目标实现低延迟推理能力。]]></description>
+        <source>VentureBeat</source>
+        <category>📰 新闻</category>
+        <guid isPermaLink="true">https://venturebeat.com/infrastructure/nvidia-groq-and-the-limestone-race-to-real-time-ai</guid>
+    </item>
+    <item>
+        <title><![CDATA[Nvidia's new technique cuts LLM reasoning costs by 8x without losing accuracy]]></title>
+        <link>https://venturebeat.com/orchestration/nvidias-new-technique-cuts-llm-reasoning-costs-by-8x-without-losing-accuracy</link>
+        <description><![CDATA[Nvidia研发动态内存稀疏化(DMS)技术，将LLM推理的内存成本降低8倍。通过压缩KV缓存实现，保持甚至提升模型推理能力。适用于Llama 3、Qwen 3等模型，几小时内即可完成部署。]]></description>
+        <source>VentureBeat</source>
+        <category>💻 技术</category>
+        <guid isPermaLink="true">https://venturebeat.com/orchestration/nvidias-new-technique-cuts-llm-reasoning-costs-by-8x-without-losing-accuracy</guid>
+    </item>
+    <item>
+        <title><![CDATA[When accurate AI is still dangerously incomplete]]></title>
+        <link>https://venturebeat.com/infrastructure/when-accurate-ai-is-still-dangerously-incomplete</link>
+        <description><![CDATA[LexisNexis首席AI官解释标准RAG在高风险法律AI中的局限性，以及图RAG、规划代理和反思代理如何缩小差距。]]></description>
+        <source>VentureBeat</source>
+        <category>💻 技术</category>
+        <guid isPermaLink="true">https://venturebeat.com/infrastructure/when-accurate-ai-is-still-dangerously-incomplete</guid>
+    </item>
+    <item>
+        <title><![CDATA[The path to ubiquitous AI (17k tokens/second)]]></title>
+        <link>https://taalas.com/the-path-to-ubiquitous-ai/</link>
+        <description><![CDATA[探索如何实现每秒17000个token的AI推理处理，推动AI走向普及。]]></description>
+        <source>Taalas</source>
+        <category>💻 技术</category>
+        <guid isPermaLink="true">https://taalas.com/the-path-to-ubiquitous-ai/</guid>
+    </item>
+    <item>
+        <title><![CDATA[Minions - Stripe's coding agents (Part 2)]]></title>
+        <link>https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2</link>
+        <description><![CDATA[Stripe分享一次性端到端编码代理的开发经验和技术细节。]]></description>
+        <source>Stripe Dev</source>
+        <category>💻 技术</category>
+        <guid isPermaLink="true">https://stripe.dev/blog/minions-stripes-one-shot-end-to-end-coding-agents-part-2</guid>
+    </item>
+    <item>
+        <title><![CDATA[Learn codebases with visualization tools]]></title>
+        <link>https://jimmyhmiller.com/learn-codebase-visualizer</link>
+        <description><![CDATA[通过构建代码可视化工具，更高效地理解大型项目结构。]]></description>
+        <source>Jimmy Miller</source>
+        <category>📚 教程</category>
+        <guid isPermaLink="true">https://jimmyhmiller.com/learn-codebase-visualizer</guid>
+    </item>
+    <item>
+        <title><![CDATA[Web Components: The framework-free renaissance]]></title>
+        <link>https://www.caimito.net/en/blog/2026/02/17/web-components-the-framework-free-renaissance.html</link>
+        <description><![CDATA[现代Web开发中Web Components的复兴，无框架的原生组件开发方式。]]></description>
+        <source>Caimito</source>
+        <category>📚 教程</category>
+        <guid isPermaLink="true">https://www.caimito.net/en/blog/2026/02/17/web-components-the-framework-free-renaissance.html</guid>
+    </item>
+    <item>
+        <title><![CDATA[Building AI agents from scratch]]></title>
+        <link>https://python.langchain.com/docs/tutorials/</link>
+        <description><![CDATA[LangChain官方教程，从零开始构建AI代理的全面指南，涵盖LLM交互、链式调用、代理开发等核心内容。]]></description>
+        <source>LangChain</source>
+        <category>📚 教程</category>
+        <guid isPermaLink="true">https://python.langchain.com/docs/tutorials/</guid>
+    </item>
+    <item>
+        <title><![CDATA[AI agents turned Super Bowl viewers into one high-IQ team]]></title>
+        <link>https://venturebeat.com/orchestration/ai-agents-turned-super-bowl-viewers-into-one-high-iq-team-now-imagine-this</link>
+        <description><![CDATA[想象在企业中的应用——AI代理如何改变大型组织的协作决策方式。]]></description>
+        <source>VentureBeat</source>
+        <category>🎉 趣闻</category>
+        <guid isPermaLink="true">https://venturebeat.com/orchestration/ai-agents-turned-super-bowl-viewers-into-one-high-iq-team-now-imagine-this</guid>
+    </item>
+    <item>
+        <title><![CDATA[Child's Play: Tech's new generation and the end of thinking]]></title>
+        <link>https://harpers.org/archive/2026/03/childs-play-sam-kriss-ai-startup-roy-lee/</link>
+        <description><![CDATA[探索新一代技术环境如何影响思维模式，以及AI对此的影响。]]></description>
+        <source>Harper's Magazine</source>
+        <category>🎉 趣闻</category>
+        <guid isPermaLink="true">https://harpers.org/archive/2026/03/childs-play-sam-kriss-ai-startup-roy-lee/</guid>
+    </item>
+    <item>
+        <title><![CDATA[No skill, no taste]]></title>
+        <link>https://blog.kinglycrow.com/no-skill-no-taste/</link>
+        <description><![CDATA[关于AI时代创意工作的思考——当技术门槛降低，品味变得更加重要。]]></description>
+        <source>Kingly Crow</source>
+        <category>🎉 趣闻</category>
+        <guid isPermaLink="true">https://blog.kinglycrow.com/no-skill-no-taste/</guid>
+    </item>
+    <item>
+        <title><![CDATA[Claude AI 推出桌面应用，集成代码编辑器]]></title>
+        <link>https://www.anthropic.com/claude-desktop</link>
+        <description><![CDATA[Anthropic发布全新Claude桌面应用，内置代码编辑功能，支持直接在整个开发环境中使用AI辅助编程。]]></description>
+        <source>Anthropic</source>
+        <category>🚀 AI产品</category>
+        <guid isPermaLink="true">https://www.anthropic.com/claude-desktop</guid>
+    </item>
+    <item>
+        <title><![CDATA[Google Gemini 2.5 Pro 发布，性能超越GPT-4]]></title>
+        <link>https://blog.google/technology/ai/gemini-2-5-pro/</link>
+        <description><![CDATA[Google发布Gemini 2.5 Pro，在MMLU、HumanEval等基准测试中超越GPT-4，支持100万token上下文窗口。]]></description>
+        <source>Google AI</source>
+        <category>🚀 AI产品</category>
+        <guid isPermaLink="true">https://blog.google/technology/ai/gemini-2-5-pro/</guid>
+    </item>
+    <item>
+        <title><![CDATA[Midjourney V7 发布，图像生成速度提升3倍]]></title>
+        <link>https://www.midjourney.com/v7</link>
+        <description><![CDATA[Midjourney V7引入全新架构，图像生成速度提升3倍，同时保持一贯的高质量输出，新增style tuner功能。]]></description>
+        <source>Midjourney</source>
+        <category>🚀 AI产品</category>
+        <guid isPermaLink="true">https://www.midjourney.com/v7</guid>
+    </item>
+    <item>
+        <title><![CDATA[Runway ML 发布 Gen-4，视频生成进入新时代]]></title>
+        <link>https://runwayml.com/gen4</link>
+        <description><![CDATA[Runway Gen-4支持10秒高清视频生成，可控制镜头运动和角色动作，影视制作门槛大幅降低。]]></description>
+        <source>Runway</source>
+        <category>🚀 AI产品</category>
+        <guid isPermaLink="true">https://runwayml.com/gen4</guid>
+    </item>
+    <item>
+        <title><![CDATA[Notion AI 推出全文搜索和智能整理功能]]></title>
+        <link>https://notion.ai/product</link>
+        <description><![CDATA[Notion AI新增智能workspace功能，自动整理笔记、提取要点、生成会议纪要，大幅提升办公效率。]]></description>
+        <source>Notion</source>
+        <category>🚀 AI产品</category>
+        <guid isPermaLink="true">https://notion.ai/product</guid>
+    </item>
+    <item>
+        <title><![CDATA[AI21 Labs 获1.55亿美元C轮融资，估值超10亿]]></title>
+        <link>https://www.ai21.com/series-c</link>
+        <description><![CDATA[AI21 Labs完成1.55亿美元C轮融资，由Walden Catalyst领投，估值进入独角兽行列。资金将用于模型研发和扩展API服务。]]></description>
+        <source>AI21 Labs</source>
+        <category>💰 融资</category>
+        <guid isPermaLink="true">https://www.ai21.com/series-c</guid>
+    </item>
+    <item>
+        <title><![CDATA[Perplexity AI 完成7360万美元B轮融资]]></title>
+        <link>https://perplexity.ai/blog/series-b</link>
+        <description><![CDATA[AI搜索公司Perplexity获7360万美元B轮融资，IVP领投，估值达5.2亿美元。月活用户突破1000万。]]></description>
+        <source>Perplexity</source>
+        <category>💰 融资</category>
+        <guid isPermaLink="true">https://perplexity.ai/blog/series-b</guid>
+    </item>
+    <item>
+        <title><![CDATA[Cohere 获4.7亿美元D轮融资]]></title>
+        <link>https://cohere.com/funding</link>
+        <description><![CDATA[加拿大AI公司Cohere完成4.7亿美元D轮融资，估值达55亿美元。投资者包括Nvidia、Salesforce等战略合作伙伴。]]></description>
+        <source>Cohere</source>
+        <category>💰 融资</category>
+        <guid isPermaLink="true">https://cohere.com/funding</guid>
+    </item>
+    <item>
+        <title><![CDATA[Adept AI 获3.5亿美元B轮融资]]></title>
+        <link>https://www.adept.ai/series-b</link>
+        <description><![CDATA[AI代理公司Adept完成3.5亿美元B轮融资，Greylock和General Catalyst领投。推出AI代理平台Adept AI。]]></description>
+        <source>Adept</source>
+        <category>💰 融资</category>
+        <guid isPermaLink="true">https://www.adept.ai/series-b</guid>
+    </item>
+    <item>
+        <title><![CDATA[Hugging Face 估值达45亿美元，完成1亿美元融资]]></title>
+        <link>https://huggingface.co/blog/valuation</link>
+        <description><![CDATA[Hugging Face完成1亿美元融资，估值达45亿美元。成为AI模型开源社区最具价值公司。]]></description>
+        <source>Hugging Face</source>
+        <category>💰 融资</category>
+        <guid isPermaLink="true">https://huggingface.co/blog/valuation</guid>
+    </item>
+    <item>
+        <title><![CDATA[Sam Altman 透露 GPT-5 开发进展]]></title>
+        <link>https://openai.com/blog/sam-altman-gpt5</link>
+        <description><![CDATA[OpenAI CEO Sam Altman在公开演讲中表示，GPT-5将在推理能力和多模态理解上有重大突破，预计今年晚些时候发布。]]></description>
+        <source>OpenAI</source>
+        <category>👤 人物</category>
+        <guid isPermaLink="true">https://openai.com/blog/sam-altman-gpt5</guid>
+    </item>
+    <item>
+        <title><![CDATA[Demis Hassabis 谈AI与人类未来]]></title>
+        <link>https://www.deepmind.com/blog/demis-interview</link>
+        <description><![CDATA[DeepMind创始人Demis Hassabis接受采访，分享对通用人工智能(AGI)的展望，强调AI安全研究的重要性。]]></description>
+        <source>DeepMind</source>
+        <category>👤 人物</category>
+        <guid isPermaLink="true">https://www.deepmind.com/blog/demis-interview</guid>
+    </item>
+    <item>
+        <title><![CDATA[Andrew Ng 创立AI基金，专注AI投资]]></title>
+        <link>https://www.andrewng.org/ai-fund</link>
+        <description><![CDATA[吴恩达宣布成立AI投资基金AI Fund，已募集1.75亿美元，将投资AI早期创业公司特别是教育领域。]]></description>
+        <source>Andrew Ng</source>
+        <category>👤 人物</category>
+        <guid isPermaLink="true">https://www.andrewng.org/ai-fund</guid>
+    </item>
+    <item>
+        <title><![CDATA[Dario Amodei 谈Claude的设计理念]]></title>
+        <link>https://www.anthropic.com/ceo-blog</link>
+        <description><![CDATA[Anthropic CEO Dario Amodei阐述Claude的设计哲学，强调AI助手应具备帮助人类实现目标的能力。]]></description>
+        <source>Anthropic</source>
+        <category>👤 人物</category>
+        <guid isPermaLink="true">https://www.anthropic.com/ceo-blog</guid>
+    </item>
+    <item>
+        <title><![CDATA[黄仁勋主题演讲：AI算力新时代]]></title>
+        <link>https://nvidia.com/gtc-keynote</link>
+        <description><![CDATA[Nvidia CEO黄仁勋在GTC大会上发表主题演讲，宣布新一代Blackwell GPU架构，强调AI算力是新时代电力。]]></description>
+        <source>Nvidia</source>
+        <category>👤 人物</category>
+        <guid isPermaLink="true">https://nvidia.com/gtc-keynote</guid>
+    </item>
+    <item>
+        <title><![CDATA[为什么AI不会取代程序员，而是增强他们]]></title>
+        <link>https://blog.programmingwith.ai/ai-not-replace-programmers</link>
+        <description><![CDATA[资深工程师分析AI辅助编程工具的局限性，认为人类创造力、复杂问题理解和业务理解仍是不可替代的核心能力。]]></description>
+        <source>Programming with AI</source>
+        <category>💡 观点</category>
+        <guid isPermaLink="true">https://blog.programmingwith.ai/ai-not-replace-programmers</guid>
+    </item>
+    <item>
+        <title><![CDATA[AI监管的十字路口：欧盟AI法案的影响]]></title>
+        <link>https://law.stanford.edu/eu-ai-act</link>
+        <description><![CDATA[法律专家分析欧盟AI法案对AI行业的深远影响，包括合规成本、跨境数据流动和创新激励等关键议题。]]></description>
+        <source>Stanford Law</source>
+        <category>💡 观点</category>
+        <guid isPermaLink="true">https://law.stanford.edu/eu-ai-act</guid>
+    </item>
+    <item>
+        <title><![CDATA[从ChatGPT到AI Agent：AI交互范式的演进]]></title>
+        <link>https://stratechery.com/ai-agents</link>
+        <description><![CDATA[技术评论员分析AI从对话界面向自主代理的转变，认为这将根本改变人类与AI的协作方式。]]></description>
+        <source>Stratechery</source>
+        <category>💡 观点</category>
+        <guid isPermaLink="true">https://stratechery.com/ai-agents</guid>
+    </item>
+    <item>
+        <title><![CDATA[AI热潮下的冷思考：估值泡沫与商业现实]]></title>
+        <link>https://a16z.com/ai-valuations</link>
+        <description><![CDATA[投资人分析当前AI创业公司的估值问题，指出只有少数公司能实现可持续的商业模式。]]></description>
+        <source>a16z</source>
+        <category>💡 观点</category>
+        <guid isPermaLink="true">https://a16z.com/ai-valuations</guid>
+    </item>
+    <item>
+        <title><![CDATA[开源AI vs 闭源AI：谁将赢得未来？]]></title>
+        <link>https://www.morningbrew.com/open-source-ai</link>
+        <description><![CDATA[行业观察者对比开源和闭源AI模型的优劣，认为两者将在不同场景下共存而非完全取代。]]></description>
+        <source>Morning Brew</source>
+        <category>💡 观点</category>
+        <guid isPermaLink="true">https://www.morningbrew.com/open-source-ai</guid>
+    </item>
+</channel>
+</rss>
