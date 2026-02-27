@@ -2,15 +2,15 @@
   "news": [
     {
       "title": "Nvidia's Quarterly Profit Hits $43 Billion on Strong A.I. Chip Sales",
-      "snippet": "Nvidia's profit for the last 12 months hit $120 billion, providing ample evidence that it is cashing in on the tech industry's artificial intelligence boom more than any other company in the world.",
+      "snippet": "Total profit for the fiscal year was $120 billion, the company said. Three years ago, it was just $4.4 billion.",
       "url": "https://www.nytimes.com/2026/02/25/technology/nvidia-earnings.html"
     }
   ],
   "tech": [
     {
-      "title": "Janitor AI Breakthrough – JLLM V2 Model Launch Announced!",
-      "snippet": "A detailed, practical guide for getting started with Janitor AI in 2026.",
-      "url": "https://www.janitor-ai.com/"
+      "title": "How I'd Learn ML in 2026 (If I Could Start Over)",
+      "snippet": "All you need to learn ML in 2026 is a laptop and a list of the steps you need to take.",
+      "url": "https://towardsai.net/p/machine-learning/how-id-learn-ml-in-2026-if-i-could-start-over"
     }
   ]
 }
