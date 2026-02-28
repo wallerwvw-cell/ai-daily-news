@@ -1,16 +1,16 @@
 {
   "news": [
     {
-      "title": "Nvidia's Quarterly Profit Hits $43 Billion on Strong A.I. Chip Sales",
-      "snippet": "Total profit for the fiscal year was $120 billion, the company said. Three years ago, it was just $4.4 billion.",
-      "url": "https://www.nytimes.com/2026/02/25/technology/nvidia-earnings.html"
+      "title": "AI System Interprets Brain MRI Scans in Seconds",
+      "snippet": "Researchers at the University of Michigan have created an AI system that can interpret brain MRI scans in just seconds, accurately identifying a wide range of neurological conditions and determining which cases need urgent care.",
+      "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/"
     }
   ],
   "tech": [
     {
-      "title": "How I'd Learn ML in 2026 (If I Could Start Over)",
-      "snippet": "All you need to learn ML in 2026 is a laptop and a list of the steps you need to take.",
-      "url": "https://towardsai.net/p/machine-learning/how-id-learn-ml-in-2026-if-i-could-start-over"
+      "title": "AI Certifications & Skills in 2026: 15 Powerful Career Secrets",
+      "snippet": "A suite of elite specialisations — Deep Learning, ML Engineering for Production (MLOps), NLP, and Generative AI with LLMs. Andrew Ng's curriculum is the global gold standard for building deep theoretical and practical AI expertise.",
+      "url": "https://abhyashsuchi.in/ai-certifications-skills-in-2026/"
     }
   ]
 }
