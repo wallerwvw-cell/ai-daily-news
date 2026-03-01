@@ -1,16 +1,16 @@
 {
   "news": [
     {
-      "title": "AI System Interprets Brain MRI Scans in Seconds",
-      "snippet": "Researchers at the University of Michigan have created an AI system that can interpret brain MRI scans in just seconds, accurately identifying a wide range of neurological conditions and determining which cases need urgent care.",
-      "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/"
+      "title": "Claude AI Made Generally Available - May 2025",
+      "snippet": "Anthropic's Claude AI was made generally available in May 2025 alongside Claude 4. Based on enterprise adoption, Anthropic reported a 5.5x increase in Claude Code revenue by July. Anthropic released a web version that October as well as an iOS app.",
+      "url": "https://en.wikipedia.org/wiki/Claude_(language_model)"
     }
   ],
   "tech": [
     {
-      "title": "AI Certifications & Skills in 2026: 15 Powerful Career Secrets",
-      "snippet": "A suite of elite specialisations — Deep Learning, ML Engineering for Production (MLOps), NLP, and Generative AI with LLMs. Andrew Ng's curriculum is the global gold standard for building deep theoretical and practical AI expertise.",
-      "url": "https://abhyashsuchi.in/ai-certifications-skills-in-2026/"
+      "title": "The Ultimate Machine Learning Tutorial for 2026",
+      "snippet": "This Machine Learning tutorial helps you to understand what is machine learning, its applications, and how to become a machine learning engineer.",
+      "url": "https://www.simplilearn.com/tutorials/machine-learning-tutorial"
     }
   ]
 }
