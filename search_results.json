@@ -1,16 +1,26 @@
 {
   "news": [
     {
-      "title": "WWDC 2026 to introduce Core AI as replacement for Core ML",
-      "snippet": "Apple is going to release a Core AI framework during WWDC 2026, replacing Core ML.",
-      "url": "https://appleinsider.com/articles/26/03/01/wwdc-2026-to-introduce-core-ai-as-replacement-for-core-ml"
+      "title": "AI Updates Today (March 2026) – Latest AI Model Releases",
+      "snippet": "Version releases, API changes, and improvements for GPT, Claude, Gemini, Llama, and 500+ language models. Major contributors include OpenAI, Anthropic, Google DeepMind, Meta AI, Mistral AI, xAI, DeepSeek, Alibaba and many others.",
+      "url": "https://llm-stats.com/llm-updates"
+    },
+    {
+      "title": "Agentic AI is Set to Dominate in 2026: Get Ready for the Revolution",
+      "snippet": "Microsoft set the tone by declaring 2025 the start of human-agent collaboration inside Microsoft 365, rolling out role-based assistants that can look up information, complete tasks like scheduling or onboarding, and then hand off results to users.",
+      "url": "https://www.eweek.com/news/agentic-ai-trend-2026/"
     }
   ],
   "tech": [
     {
-      "title": "2026超全AI使用指南，从会用到用好！",
-      "snippet": "2026年的春晚，AI不再是背景板，而是站到了舞台中央。超全AI使用指南",
-      "url": "https://www.sohu.com/a/989732546_99991555"
+      "title": "RAG in 2026: Bridging Knowledge and Generative AI",
+      "snippet": "RAG systems integrate up-to-date information from data sources without the need for retraining, ensuring that AI outputs are always up-to-date – an essential feature in always evolving enterprise environments.",
+      "url": "https://squirro.com/squirro-blog/state-of-rag-genai"
+    },
+    {
+      "title": "Prompt Engineering - Wikipedia",
+      "snippet": "In 2025, 'vibe coding' was the Collins Dictionary word of the year. Context engineering is a related process that focuses on the context elements that accompany user prompts, including system instructions, retrieved knowledge, tool definitions, conversation summaries, and task metadata.",
+      "url": "https://en.wikipedia.org/wiki/Prompt_engineering"
     }
   ]
 }
