@@ -1,26 +1,16 @@
 {
   "news": [
     {
-      "title": "AI Updates Today (March 2026) – Latest AI Model Releases",
-      "snippet": "Version releases, API changes, and improvements for GPT, Claude, Gemini, Llama, and 500+ language models. Major contributors include OpenAI, Anthropic, Google DeepMind, Meta AI, Mistral AI, xAI, DeepSeek, Alibaba and many others.",
-      "url": "https://llm-stats.com/llm-updates"
-    },
-    {
-      "title": "Agentic AI is Set to Dominate in 2026: Get Ready for the Revolution",
-      "snippet": "Microsoft set the tone by declaring 2025 the start of human-agent collaboration inside Microsoft 365, rolling out role-based assistants that can look up information, complete tasks like scheduling or onboarding, and then hand off results to users.",
-      "url": "https://www.eweek.com/news/agentic-ai-trend-2026/"
+      "title": "DeepMind Launches Gemini Robotics and Gemini Robotics-ER (March 2025)",
+      "snippet": "The model can adapt to new models of robotic arms, and to new types of tasks. In March 2025, DeepMind launched two AI models, Gemini Robotics and Gemini Robotics-ER, aimed at improving how robots interact with the physical world and released Gemini Robotics 1.5 in September 2025.",
+      "url": "https://en.wikipedia.org/wiki/Google_DeepMind"
     }
   ],
   "tech": [
     {
-      "title": "RAG in 2026: Bridging Knowledge and Generative AI",
-      "snippet": "RAG systems integrate up-to-date information from data sources without the need for retraining, ensuring that AI outputs are always up-to-date – an essential feature in always evolving enterprise environments.",
-      "url": "https://squirro.com/squirro-blog/state-of-rag-genai"
-    },
-    {
-      "title": "Prompt Engineering - Wikipedia",
-      "snippet": "In 2025, 'vibe coding' was the Collins Dictionary word of the year. Context engineering is a related process that focuses on the context elements that accompany user prompts, including system instructions, retrieved knowledge, tool definitions, conversation summaries, and task metadata.",
-      "url": "https://en.wikipedia.org/wiki/Prompt_engineering"
+      "title": "Machine Learning Tutorial - Neural Nets, Training, Math, Code",
+      "snippet": "This tutorial covers everything from how networks work and train to the Python code implementation.",
+      "url": "https://www.reddit.com/r/learnmachinelearning/comments/1ratdr3/machine_learning_tutorial_neural_nets_training/"
     }
   ]
 }
