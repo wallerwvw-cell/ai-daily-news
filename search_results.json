@@ -1,16 +1,16 @@
 {
   "news": [
     {
-      "title": "DeepMind Launches Gemini Robotics and Gemini Robotics-ER (March 2025)",
-      "snippet": "The model can adapt to new models of robotic arms, and to new types of tasks. In March 2025, DeepMind launched two AI models, Gemini Robotics and Gemini Robotics-ER, aimed at improving how robots interact with the physical world and released Gemini Robotics 1.5 in September 2025.",
-      "url": "https://en.wikipedia.org/wiki/Google_DeepMind"
+      "title": "2026，AI开始制造社会性EMO-36氪",
+      "url": "https://36kr.com/p/3701311195443975",
+      "snippet": "2025 年，特斯拉推出「脑机接口 2.0」，可实现人类大脑与 AI 系统的初步连接，帮助瘫痪患者恢复行动能力，这被认为是人类与硅基系统融合的初步尝试。"
     }
   ],
   "tech": [
     {
-      "title": "Machine Learning Tutorial - Neural Nets, Training, Math, Code",
-      "snippet": "This tutorial covers everything from how networks work and train to the Python code implementation.",
-      "url": "https://www.reddit.com/r/learnmachinelearning/comments/1ratdr3/machine_learning_tutorial_neural_nets_training/"
+      "title": "【AI基础教程】30集AI零基础入门到精通实战教学_哔哩哔哩",
+      "url": "https://www.bilibili.com/video/BV1v5411H7dR/",
+      "snippet": "AI零基础教程：120分钟从入门开始系统掌握AI软件实战教学，全是干货！"
     }
   ]
 }
