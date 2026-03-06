@@ -1,16 +1,16 @@
 {
   "news": [
     {
-      "title": "2026，AI开始制造社会性EMO-36氪",
-      "url": "https://36kr.com/p/3701311195443975",
-      "snippet": "2025 年，特斯拉推出「脑机接口 2.0」，可实现人类大脑与 AI 系统的初步连接，帮助瘫痪患者恢复行动能力，这被认为是人类与硅基系统融合的初步尝试。"
+      "title": "New ChatGPT 5.4 Model Is 'Built for Agents.' Will It Lure Back Claude Converts?",
+      "snippet": "OpenAI stepped into that void, releasing new models. The company previously announced it had struck a $200 million deal with the defense department in 2025.",
+      "url": "https://www.cnet.com/tech/services-and-software/openai-chatgpt-5-4-thinking-news/"
     }
   ],
   "tech": [
     {
-      "title": "【AI基础教程】30集AI零基础入门到精通实战教学_哔哩哔哩",
-      "url": "https://www.bilibili.com/video/BV1v5411H7dR/",
-      "snippet": "AI零基础教程：120分钟从入门开始系统掌握AI软件实战教学，全是干货！"
+      "title": "Python Artificial Intelligence Tutorial: Your Gateway to AI Mastery",
+      "snippet": "Practice Regularly: Experiment with different datasets and algorithms. Read Documentation: Libraries like Scikit-learn, TensorFlow, and PyTorch have excellent documentation.",
+      "url": "https://thenewschoolexeter.co.uk/2026/02/python-artificial-intelligence-tutorial.html"
     }
   ]
 }
