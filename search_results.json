@@ -1,15 +1,15 @@
 {
   "news": [
     {
-      "title": "Reuters AI News | Latest Headlines and Developments",
-      "snippet": "Latest artificial intelligence news from Reuters covering major AI releases, developments, and industry updates.",
-      "url": "https://www.reuters.com/technology/artificial-intelligence/"
+      "title": "New microchip-sized device could dramatically accelerate the future of quantum computing",
+      "snippet": "A new microchip-sized device could dramatically accelerate the future of quantum computing. It controls laser frequencies with extreme precision while using far less power than today's bulky equipment.",
+      "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/"
     }
   ],
   "tech": [
     {
       "title": "The Best AI Tools for 2026",
-      "snippet": "A comprehensive guide to the best AI tools for 2026, organized by category with rankings and tutorials to learn most tools.",
+      "snippet": "Over the past three years, I've tried dozens of AI tools for different tasks. Here are the best AI tools I've found, organized by category with guides to learn most tools.",
       "url": "https://medium.com/artificial-corner/the-best-ai-tools-for-2026-933535a44f8b"
     }
   ]
