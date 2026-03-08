@@ -181,16 +181,22 @@ def generate_category_pages(results):
     for cat_id, (cat_name, cat_class) in CATEGORIES.items():
         items = results.get(cat_id, [])
         
-        if not items:
-            continue
-        
         html = generate_header(f"{cat_name} - AI 日报", f"AI {cat_name}精选")
         html += f'<a href="index.html" class="back-link">← 返回首页</a>'
         html += f'<h1 class="category-header">{cat_name}</h1>'
-        html += f'<p style="color: var(--text-secondary); margin-bottom: 24px;">共 {len(items)} 条</p>'
         
-        for item in items:
-            html += generate_card(item, cat_class)
+        if items:
+            html += f'<p style="color: var(--text-secondary); margin-bottom: 24px;">共 {len(items)} 条</p>'
+            for item in items:
+                html += generate_card(item, cat_class)
+        else:
+            html += '''
+            <div class="empty-state">
+                <p style="font-size: 3rem; margin-bottom: 16px;">📭</p>
+                <h2>暂无相关内容</h2>
+                <p style="color: var(--text-secondary); margin-top: 8px;">目前该分类下还没有资讯，请稍后再来~</p>
+                <a href="index.html" style="display: inline-block; margin-top: 24px; padding: 12px 24px; background: var(--accent); color: white; border-radius: 8px;">← 返回首页</a>
+            </div>'''
         
         html += generate_footer()
         
@@ -282,7 +288,7 @@ def generate_main_page(results):
     # 统计
     total = sum(len(v) for v in results.values() if isinstance(v, list))
     
-    # 生成分类HTML
+    # 生成分类HTML - 只显示有内容的分类
     all_cards_html = ''
     for cat_id, (cat_name, cat_class) in CATEGORIES.items():
         items = results.get(cat_id, [])
@@ -293,17 +299,26 @@ def generate_main_page(results):
                 all_cards_html += generate_card(item, cat_class)
             all_cards_html += '</section>\n'
     
-    # 分类导航
+    # 分类导航 - 只显示有内容的分类
     category_nav = '\n'.join([
         f'<a href="{cat_id}.html" class="nav-category-link">{name}</a>'
         for cat_id, (name, _) in CATEGORIES.items()
+        if results.get(cat_id, [])
     ])
     
-    # 侧边栏分类
+    # 如果没有有内容的分类，显示提示
+    if not category_nav:
+        category_nav = '<span style="color: var(--text-muted);">暂无内容</span>'
+    
+    # 侧边栏分类 - 只显示有内容的分类
     sidebar_categories = '\n'.join([
         f'<li class="category-item"><a href="{cat_id}.html" class="category-link">{name}</a></li>'
         for cat_id, (name, _) in CATEGORIES.items()
+        if results.get(cat_id, [])
     ])
+    
+    if not sidebar_categories:
+        sidebar_categories = '<li class="category-item" style="color: var(--text-muted);">暂无分类</li>'
     
     # 侧边栏归档
     archives = get_all_archives()
