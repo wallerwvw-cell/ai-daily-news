@@ -3,17 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI 日报 - 2026-03-07 | 每日AI资讯</title>
+    <title>AI 日报 - 03月07日 | 每日AI资讯</title>
     <meta name="description" content="每日AI新闻、技术文章、产品融资、人物观点 - 您的AI资讯助手">
-    
-    <!-- Open Graph -->
-    <meta property="og:title" content="AI 日报 - 2026年03月07日">
-    <meta property="og:description" content="每日 AI 新闻资讯、技术文章、产品融资和人物观点">
-    <meta property="og:type" content="website">
     
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        
         :root {
             --bg-primary: #0a0a0b;
             --bg-secondary: #141416;
@@ -24,11 +18,7 @@
             --text-muted: #71717a;
             --accent: #f97316;
             --accent-hover: #fb923c;
-            --accent-light: rgba(249, 115, 22, 0.15);
             --border: #27272a;
-            --border-light: #3f3f46;
-            
-            /* 分类颜色 */
             --category-news: #ef4444;
             --category-tech: #3b82f6;
             --category-products: #22c55e;
@@ -37,705 +27,193 @@
             --category-opinions: #ec4899;
             --category-tutorial: #14b8a6;
             --category-fun: #f59e0b;
-            
-            --sidebar-width: 140px;
-            --header-height: 64px;
         }
-        
         body {
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', sans-serif;
             background: var(--bg-primary);
             color: var(--text-primary);
             line-height: 1.6;
-            min-height: 100vh;
         }
+        a { color: inherit; text-decoration: none; }
         
-        /* 订阅提示条 */
         .subscribe-bar {
             background: linear-gradient(135deg, #1e1e22 0%, #27272d 100%);
             border-bottom: 1px solid var(--border);
             padding: 12px 24px;
             text-align: center;
         }
-        
         .subscribe-content {
-            max-width: 800px;
-            margin: 0 auto;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 16px;
-            flex-wrap: wrap;
+            max-width: 800px; margin: 0 auto;
+            display: flex; align-items: center; justify-content: center;
+            gap: 16px; flex-wrap: wrap;
         }
+        .subscribe-text { color: var(--text-secondary); font-size: 0.9rem; }
+        .subscribe-text strong { color: var(--accent); }
         
-        .subscribe-text {
-            color: var(--text-secondary);
-            font-size: 0.9rem;
-        }
-        
-        .subscribe-text strong {
-            color: var(--accent);
-        }
-        
-        .subscribe-btn {
-            background: var(--accent);
-            color: #fff;
-            padding: 8px 20px;
-            border-radius: 20px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.85rem;
-            transition: all 0.2s;
-            display: inline-flex;
-            align-items: center;
-            gap: 6px;
-        }
-        
-        .subscribe-btn:hover {
-            background: var(--accent-hover);
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(249, 115, 22, 0.3);
-        }
-        
-        /* 顶部导航 */
         .top-nav {
-            background: rgba(20, 20, 22, 0.95);
-            backdrop-filter: blur(12px);
+            background: var(--bg-secondary);
             border-bottom: 1px solid var(--border);
-            padding: 0 24px;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            height: var(--header-height);
-            display: flex;
-            align-items: center;
+            position: sticky; top: 0; z-index: 100;
         }
-        
         .nav-container {
-            max-width: 1600px;
-            margin: 0 auto;
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
+            max-width: 1400px; margin: 0 auto; padding: 16px 24px;
+            display: flex; align-items: center; justify-content: space-between;
+            flex-wrap: wrap; gap: 16px;
         }
-        
-        .nav-brand {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            flex-shrink: 0;
-        }
-        
-        .nav-logo {
-            font-size: 1.4rem;
-            font-weight: 800;
-            color: var(--text-primary);
-            text-decoration: none;
-            letter-spacing: -0.5px;
-        }
-        
-        .nav-logo span {
-            color: var(--accent);
-        }
-        
-        .nav-meta {
-            display: flex;
-            flex-direction: column;
-            gap: 2px;
-        }
-        
-        .nav-subtitle {
-            color: var(--text-secondary);
-            font-size: 0.75rem;
-        }
-        
-        .nav-date {
-            color: var(--text-muted);
-            font-size: 0.7rem;
-        }
+        .nav-brand { display: flex; align-items: center; gap: 16px; flex: 1; min-width: 300px; }
+        .nav-logo { font-size: 1.5rem; font-weight: bold; }
+        .nav-meta { display: flex; flex-direction: column; gap: 4px; }
+        .nav-subtitle { color: var(--text-secondary); font-size: 0.85rem; }
+        .nav-date { color: var(--text-muted); font-size: 0.8rem; }
         
         .nav-categories {
-            display: flex;
-            gap: 4px;
-            flex-wrap: wrap;
-            justify-content: flex-end;
+            display: flex; gap: 8px; flex-wrap: wrap;
         }
-        
         .nav-category-link {
-            padding: 6px 12px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.8rem;
-            transition: all 0.2s;
-            background: transparent;
-            color: var(--text-secondary);
-            white-space: nowrap;
+            padding: 8px 16px; border-radius: 20px;
+            background: var(--bg-card); color: var(--text-secondary);
+            font-size: 0.9rem; transition: all 0.2s;
         }
+        .nav-category-link:hover { background: var(--bg-card-hover); color: var(--text-primary); }
         
-        .nav-category-link:hover {
-            background: var(--bg-card);
-            color: var(--text-primary);
-        }
-        
-        /* 主布局 */
         .main-layout {
-            max-width: 1600px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: var(--sidebar-width) 1fr;
-            gap: 20px;
-            padding: 24px 20px;
+            max-width: 1400px; margin: 0 auto; padding: 24px;
+            display: grid; grid-template-columns: 200px 1fr; gap: 24px;
         }
-        
-        @media (max-width: 1100px) {
-            .main-layout {
-                grid-template-columns: 1fr;
-            }
-            .sidebar {
-                display: none;
-            }
-        }
-        
-        /* 左侧边栏 */
-        .sidebar {
-            position: sticky;
-            top: calc(var(--header-height) + 24px);
-            height: fit-content;
-        }
-        
-        .sidebar-section {
-            background: var(--bg-secondary);
-            border-radius: 12px;
-            padding: 16px;
-            border: 1px solid var(--border);
-            margin-bottom: 16px;
-        }
-        
-        .sidebar-title {
-            font-size: 0.7rem;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            color: var(--text-muted);
-            margin-bottom: 12px;
-            font-weight: 600;
-        }
-        
-        .category-list, .date-list {
-            list-style: none;
-        }
-        
-        .category-item, .date-item {
-            margin-bottom: 4px;
-        }
-        
-        .category-link, .date-link {
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            padding: 8px 10px;
-            border-radius: 6px;
-            text-decoration: none;
-            color: var(--text-secondary);
-            transition: all 0.2s;
-            font-weight: 500;
-            font-size: 0.8rem;
-        }
-        
-        .category-link:hover, .date-link:hover {
-            background: var(--bg-card);
-            color: var(--accent);
-        }
-        
-        .category-link.active {
-            background: var(--accent-light);
-            color: var(--accent);
-        }
-        
-        /* 右侧内容 */
-        .content {
-            min-width: 0;
-        }
-        
-        /* 分类区块 */
-        .category-section {
-            margin-bottom: 36px;
-        }
-        
-        .category-header {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            margin-bottom: 18px;
-            padding-bottom: 12px;
-            border-bottom: 1px solid var(--border);
-        }
-        
-        .category-title {
-            font-size: 1.2rem;
-            font-weight: 700;
-            color: var(--text-primary);
-        }
-        
-        .category-count {
-            background: var(--bg-card);
-            color: var(--text-muted);
-            padding: 2px 10px;
-            border-radius: 12px;
-            font-size: 0.75rem;
-            font-weight: 500;
-        }
-        
-        /* 卡片网格 */
-        .cards-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-            gap: 16px;
-        }
-        
-        @media (max-width: 480px) {
-            .cards-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-        
-        /* 卡片样式 - 优化版 */
-        .card {
-            background: var(--bg-secondary);
-            border-radius: 14px;
-            overflow: hidden;
-            border: 1px solid var(--border);
-            transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-            display: flex;
-            flex-direction: column;
-            position: relative;
-        }
-        
-        .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.4);
-            border-color: var(--border-light);
-        }
-        
-        .card:hover .card-title a {
-            color: var(--accent);
-        }
-        
-        .card-header {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            padding: 14px 16px 0;
-        }
-        
-        .card-favicon {
-            width: 24px;
-            height: 24px;
-            border-radius: 6px;
-            object-fit: contain;
-            background: var(--bg-card);
-            padding: 2px;
-        }
-        
-        .card-source {
-            color: var(--text-muted);
-            font-size: 0.75rem;
-            font-weight: 500;
-        }
-        
-        .card-title {
-            font-size: 0.95rem;
-            font-weight: 600;
-            line-height: 1.45;
-            padding: 10px 16px;
-            margin: 0;
-        }
-        
-        .card-title a {
-            color: var(--text-primary);
-            text-decoration: none;
-            transition: color 0.2s;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-        
-        .card-summary {
-            color: var(--text-secondary);
-            font-size: 0.82rem;
-            line-height: 1.55;
-            padding: 0 16px;
-            flex: 1;
-            display: -webkit-box;
-            -webkit-line-clamp: 3;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-        
-        .card-footer {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 14px 16px;
-            margin-top: auto;
-            border-top: 1px solid var(--border);
-        }
-        
-        .card-category {
-            display: inline-block;
-            padding: 4px 10px;
-            border-radius: 4px;
-            font-size: 0.7rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 0.3px;
-        }
-        
-        .category-news { background: var(--category-news); color: #fff; }
-        .category-tech { background: var(--category-tech); color: #fff; }
-        .category-products { background: var(--category-products); color: #fff; }
-        .category-funding { background: var(--category-funding); color: #000; }
-        .category-people { background: var(--category-people); color: #fff; }
-        .category-opinions { background: var(--category-opinions); color: #fff; }
-        .category-tutorial { background: var(--category-tutorial); color: #fff; }
-        .category-fun { background: var(--category-fun); color: #000; }
-        
-        .card-date {
-            color: var(--text-muted);
-            font-size: 0.75rem;
-        }
-        
-        /* 空状态 */
-        .empty-msg {
-            color: var(--text-muted);
-            text-align: center;
-            padding: 40px;
-            grid-column: 1 / -1;
-        }
-        
-        /* 页脚 */
-        footer {
-            text-align: center;
-            padding: 32px 24px;
-            color: var(--text-muted);
-            font-size: 0.8rem;
-            border-top: 1px solid var(--border);
-            margin-top: 24px;
-            background: var(--bg-secondary);
-        }
-        
-        footer a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-        
-        footer a:hover {
-            text-decoration: underline;
-        }
-        
-        .footer-stats {
-            margin-top: 12px;
-            color: var(--text-muted);
-            font-size: 0.75rem;
-        }
-        
-        /* 响应式 */
         @media (max-width: 768px) {
-            .nav-container {
-                flex-direction: column;
-                padding: 12px 0;
-                gap: 12px;
-            }
-            
-            .nav-brand {
-                width: 100%;
-                justify-content: center;
-            }
-            
-            .nav-meta {
-                display: none;
-            }
-            
-            .nav-categories {
-                width: 100%;
-                justify-content: center;
-            }
-            
-            .subscribe-content {
-                flex-direction: column;
-                gap: 10px;
-            }
-            
-            .sidebar {
-                position: static;
-                display: none;
-            }
+            .main-layout { grid-template-columns: 1fr; }
+            .sidebar { display: none; }
         }
         
-        /* 滚动条 */
-        ::-webkit-scrollbar {
-            width: 8px;
-            height: 8px;
-        }
+        .sidebar { position: sticky; top: 80px; height: fit-content; }
+        .sidebar-section { background: var(--bg-secondary); border-radius: 12px; padding: 16px; margin-bottom: 16px; }
+        .sidebar-title { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+        .category-list, .date-list { list-style: none; }
+        .category-item, .date-item { margin-bottom: 8px; }
+        .category-link, .date-link { display: block; padding: 8px 12px; border-radius: 8px; color: var(--text-secondary); font-size: 0.9rem; }
+        .category-link:hover, .date-link:hover { background: var(--bg-card); color: var(--text-primary); }
         
-        ::-webkit-scrollbar-track {
-            background: var(--bg-primary);
-        }
+        .content { display: flex; flex-direction: column; gap: 32px; }
+        .category-section { scroll-margin-top: 100px; }
+        .category-title { font-size: 1.3rem; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
         
-        ::-webkit-scrollbar-thumb {
-            background: var(--border);
-            border-radius: 4px;
+        .card {
+            background: var(--bg-card); border-radius: 12px; padding: 20px;
+            margin-bottom: 16px; transition: transform 0.2s, box-shadow 0.2s;
         }
+        .card:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.3); }
+        .card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 12px; }
+        .card-favicon { width: 20px; height: 20px; border-radius: 4px; }
+        .card-source { color: var(--text-secondary); font-size: 0.85rem; }
+        .card-title { font-size: 1.1rem; margin-bottom: 8px; }
+        .card-title a { color: var(--text-primary); }
+        .card-title a:hover { color: var(--accent); }
+        .card-summary { color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 12px; }
+        .card-footer { display: flex; justify-content: space-between; align-items: center; }
+        .card-category { padding: 4px 12px; border-radius: 12px; font-size: 0.8rem; }
+        .category-news { background: rgba(239,68,68,0.2); color: #ef4444; }
+        .category-tech { background: rgba(59,130,246,0.2); color: #3b82f6; }
+        .category-products { background: rgba(34,197,94,0.2); color: #22c55e; }
+        .category-funding { background: rgba(234,179,8,0.2); color: #eab308; }
+        .category-people { background: rgba(168,85,247,0.2); color: #a855f7; }
+        .category-opinions { background: rgba(236,72,153,0.2); color: #ec4899; }
+        .category-tutorial { background: rgba(20,184,166,0.2); color: #14b8a6; }
+        .category-fun { background: rgba(245,158,11,0.2); color: #f59e0b; }
         
-        ::-webkit-scrollbar-thumb:hover {
-            background: var(--border-light);
-        }
+        footer { text-align: center; padding: 40px 20px; color: var(--text-muted); border-top: 1px solid var(--border); margin-top: 40px; }
+        footer a { color: var(--accent); }
     </style>
 </head>
 <body>
-    <!-- 订阅提示条 -->
     <div class="subscribe-bar">
         <div class="subscribe-content">
             <span class="subscribe-text">📬 订阅获得最新AI资讯 | <strong>每日更新</strong> | 精选全球AI新闻</span>
-            <a href="#" class="subscribe-btn">📧 立即订阅</a>
         </div>
     </div>
     
-    <!-- 顶部导航 -->
     <nav class="top-nav">
         <div class="nav-container">
             <div class="nav-brand">
-                <a href="#" class="nav-logo">🤖 AI <span>AI 日报</span></a>
+                <a href="index.html" class="nav-logo">🤖 <span>AI 日报</span></a>
                 <div class="nav-meta">
                     <span class="nav-subtitle">每日 AI 新闻资讯、技术文章、产品融资和人物观点</span>
-                    <span class="nav-date">2026年03月07日 Saturday · 2条资讯</span>
+                    <span class="nav-date">03月07日 · 2条资讯</span>
                 </div>
             </div>
             <div class="nav-categories">
-                
-            <a href="#news" class="nav-category-link" data-category="news">📰 新闻</a>
-
-            <a href="#tech" class="nav-category-link" data-category="tech">💻 技术</a>
-
-            <a href="#products" class="nav-category-link" data-category="products">🚀 产品</a>
-
-            <a href="#funding" class="nav-category-link" data-category="funding">💰 融资</a>
-
-            <a href="#people" class="nav-category-link" data-category="people">👤 人物</a>
-
-            <a href="#opinions" class="nav-category-link" data-category="opinions">💡 观点</a>
-
-            <a href="#tutorial" class="nav-category-link" data-category="tutorial">📚 教程</a>
-
-            <a href="#fun" class="nav-category-link" data-category="fun">🎉 趣闻</a>
+                <a href="news.html" class="nav-category-link">📰 新闻</a>
+<a href="tech.html" class="nav-category-link">💻 技术</a>
+<a href="products.html" class="nav-category-link">🚀 产品</a>
+<a href="funding.html" class="nav-category-link">💰 融资</a>
+<a href="people.html" class="nav-category-link">👤 人物</a>
+<a href="opinions.html" class="nav-category-link">💡 观点</a>
+<a href="tutorial.html" class="nav-category-link">📚 教程</a>
+<a href="fun.html" class="nav-category-link">🎉 趣闻</a>
+                <a href="archive.html" class="nav-category-link">📂 归档</a>
             </div>
         </div>
     </nav>
     
-    <!-- 主布局 -->
     <div class="main-layout">
-        <!-- 左侧边栏 -->
         <aside class="sidebar">
             <div class="sidebar-section">
                 <h3 class="sidebar-title">📂 分类</h3>
                 <ul class="category-list">
-                    
-            <li class="category-item">
-                <a href="#" class="category-link all" data-filter="all">
-                    📋 全部
-                </a>
-            </li>
-
-            <li class="category-item">
-                <a href="#news" class="category-link category-news" data-filter="category-news">
-                    📰 新闻
-                </a>
-            </li>
-
-            <li class="category-item">
-                <a href="#tech" class="category-link category-tech" data-filter="category-tech">
-                    💻 技术
-                </a>
-            </li>
-
-            <li class="category-item">
-                <a href="#products" class="category-link category-products" data-filter="category-products">
-                    🚀 产品
-                </a>
-            </li>
-
-            <li class="category-item">
-                <a href="#funding" class="category-link category-funding" data-filter="category-funding">
-                    💰 融资
-                </a>
-            </li>
-
-            <li class="category-item">
-                <a href="#people" class="category-link category-people" data-filter="category-people">
-                    👤 人物
-                </a>
-            </li>
-
-            <li class="category-item">
-                <a href="#opinions" class="category-link category-opinions" data-filter="category-opinions">
-                    💡 观点
-                </a>
-            </li>
-
-            <li class="category-item">
-                <a href="#tutorial" class="category-link category-tutorial" data-filter="category-tutorial">
-                    📚 教程
-                </a>
-            </li>
-
-            <li class="category-item">
-                <a href="#fun" class="category-link category-fun" data-filter="category-fun">
-                    🎉 趣闻
-                </a>
-            </li>
+                    <li class="category-item"><a href="news.html" class="category-link">📰 新闻</a></li>
+<li class="category-item"><a href="tech.html" class="category-link">💻 技术</a></li>
+<li class="category-item"><a href="products.html" class="category-link">🚀 产品</a></li>
+<li class="category-item"><a href="funding.html" class="category-link">💰 融资</a></li>
+<li class="category-item"><a href="people.html" class="category-link">👤 人物</a></li>
+<li class="category-item"><a href="opinions.html" class="category-link">💡 观点</a></li>
+<li class="category-item"><a href="tutorial.html" class="category-link">📚 教程</a></li>
+<li class="category-item"><a href="fun.html" class="category-link">🎉 趣闻</a></li>
                 </ul>
             </div>
             <div class="sidebar-section">
-                <h3 class="sidebar-title">📅 日期</h3>
+                <h3 class="sidebar-title">📅 归档</h3>
                 <ul class="date-list">
-                    
-            <li class="date-item">
-                <a href="#date-2026-03-07" class="date-link">
-                    <span class="date-label">03月07日</span>
-                </a>
-            </li>
+                    <li class="date-item">暂无存档</li>
+                    <li class="date-item"><a href="archive.html" class="date-link" style="color: var(--accent);">查看全部 →</a></li>
                 </ul>
             </div>
         </aside>
         
-        <!-- 右侧内容 -->
         <main class="content">
-            
-        <section class="category-section" id="news">
-            <div class="category-header">
-                <h2 class="category-title">📰 AI 新闻</h2>
-                <span class="category-count">1 条</span>
-            </div>
-            <div class="cards-grid">
-                
-        <article class="card">
-            <div class="card-header">
-                <img src="https://www.google.com/s2/favicons?domain=reuters.com&sz=128" alt="reuters.com" class="card-favicon" onerror="this.src='https://via.placeholder.com/32x32?text=AI'">
-                <span class="card-source">reuters.com</span>
-            </div>
-            <h3 class="card-title"><a href="https://www.reuters.com/technology/artificial-intelligence/" target="_blank" rel="noopener">Reuters AI News | Latest Headlines and Developments</a></h3>
-            <p class="card-summary">Latest artificial intelligence news from Reuters covering major AI releases, developments, and industry updates.</p>
-            <div class="card-footer">
-                <span class="card-category category-news">📰 新闻</span>
-                <span class="card-date">🕐 22:18</span>
-            </div>
-        </article>
-            </div>
-        </section>
+            <section id="news" class="category-section">
+<h2 class="category-title">📰 新闻</h2>
 
-        <section class="category-section" id="tech">
-            <div class="category-header">
-                <h2 class="category-title">💻 技术文章</h2>
-                <span class="category-count">1 条</span>
-            </div>
-            <div class="cards-grid">
-                
-        <article class="card">
-            <div class="card-header">
-                <img src="https://www.google.com/s2/favicons?domain=medium.com&sz=128" alt="medium.com" class="card-favicon" onerror="this.src='https://via.placeholder.com/32x32?text=AI'">
-                <span class="card-source">medium.com</span>
-            </div>
-            <h3 class="card-title"><a href="https://medium.com/artificial-corner/the-best-ai-tools-for-2026-933535a44f8b" target="_blank" rel="noopener">The Best AI Tools for 2026</a></h3>
-            <p class="card-summary">A comprehensive guide to the best AI tools for 2026, organized by category with rankings and tutorials to learn most tools.</p>
-            <div class="card-footer">
-                <span class="card-category category-tech">💻 技术</span>
-                <span class="card-date">🕐 11:03</span>
-            </div>
-        </article>
-            </div>
-        </section>
+    <article class="card" data-category="category-news" data-title="Reuters AI News | Latest Headlines and Developments" data-summary="Latest artificial intelligence news from Reuters covering major AI releases, developments, and industry updates.">
+        <div class="card-header">
+            <img src="https://www.google.com/s2/favicons?domain=reuters.com&sz=128" alt="reuters.com" class="card-favicon" onerror="this.src='https://via.placeholder.com/32x32?text=AI'">
+            <span class="card-source">reuters.com</span>
+        </div>
+        <h3 class="card-title"><a href="https://www.reuters.com/technology/artificial-intelligence/" target="_blank" rel="noopener">Reuters AI News | Latest Headlines and Developments</a></h3>
+        <p class="card-summary">Latest artificial intelligence news from Reuters covering major AI releases, developments, and industry updates.</p>
+        <div class="card-footer">
+            <span class="card-category category-news">📰 新闻</span>
+        </div>
+    </article></section>
+<section id="tech" class="category-section">
+<h2 class="category-title">💻 技术</h2>
+
+    <article class="card" data-category="category-tech" data-title="The Best AI Tools for 2026" data-summary="A comprehensive guide to the best AI tools for 2026, organized by category with rankings and tutorials to learn most tools.">
+        <div class="card-header">
+            <img src="https://www.google.com/s2/favicons?domain=medium.com&sz=128" alt="medium.com" class="card-favicon" onerror="this.src='https://via.placeholder.com/32x32?text=AI'">
+            <span class="card-source">medium.com</span>
+        </div>
+        <h3 class="card-title"><a href="https://medium.com/artificial-corner/the-best-ai-tools-for-2026-933535a44f8b" target="_blank" rel="noopener">The Best AI Tools for 2026</a></h3>
+        <p class="card-summary">A comprehensive guide to the best AI tools for 2026, organized by category with rankings and tutorials to learn most tools.</p>
+        <div class="card-footer">
+            <span class="card-category category-tech">💻 技术</span>
+        </div>
+    </article></section>
+
         </main>
     </div>
     
     <footer>
-        <p>🤖 由 <strong>AI 日报</strong> 自动生成 · <a href="https://github.com/wallerwvw-cell/ai-daily-news" target="_blank">GitHub</a></p>
-        <p class="footer-stats">汇聚 2 条精选AI资讯 · 每天早上8点更新</p>
+        <p>🤖 由 <strong>AI 日报</strong> 自动生成 · <a href="https://github.com/wallerwvw-cell/ai-daily-news" target="_blank">GitHub</a> · <a href="https://wallerwvw-cell.github.io/ai-daily-news/" target="_blank">在线阅读</a></p>
+        <p>汇聚 2 条精选AI资讯 · 每天早上8点更新</p>
     </footer>
-    
-    <script>
-        // 平滑滚动
-        document.querySelectorAll('.category-link, .date-link, .nav-category-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                const href = this.getAttribute('href');
-                if (href === '#') return;
-                
-                e.preventDefault();
-                const targetId = href.substring(1);
-                const target = document.getElementById(targetId);
-                if (target) {
-                    const offset = 100;
-                    const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
-                    window.scrollTo({
-                        top: targetPosition,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        
-        // 分类筛选功能
-        document.querySelectorAll('.category-link').forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                const filter = this.getAttribute('data-filter');
-                
-                // 更新激活状态
-                document.querySelectorAll('.category-link').forEach(l => l.classList.remove('active'));
-                this.classList.add('active');
-                
-                // 筛选卡片
-                const cards = document.querySelectorAll('.card');
-                cards.forEach(card => {
-                    if (filter === 'all' || filter === '#') {
-                        card.style.display = 'flex';
-                    } else {
-                        const category = card.querySelector('.card-category').className;
-                        if (category.includes(filter.replace('category-', ''))) {
-                            card.style.display = 'flex';
-                        } else {
-                            card.style.display = 'none';
-                        }
-                    }
-                });
-            });
-        });
-        
-        // 滚动高亮当前分类
-        const observerOptions = {
-            rootMargin: '-100px 0px -60% 0px',
-            threshold: 0
-        };
-        
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    const id = entry.target.id;
-                    document.querySelectorAll('.category-link').forEach(link => {
-                        link.classList.remove('active');
-                        if (link.getAttribute('href') === '#' + id) {
-                            link.classList.add('active');
-                        }
-                    });
-                }
-            });
-        }, observerOptions);
-        
-        document.querySelectorAll('.category-section').forEach(section => {
-            observer.observe(section);
-        });
-    </script>
 </body>
 </html>
