@@ -1,16 +1,16 @@
 {
   "news": [
     {
-      "title": "New microchip-sized device could dramatically accelerate the future of quantum computing",
-      "snippet": "A new microchip-sized device could dramatically accelerate the future of quantum computing. It controls laser frequencies with extreme precision while using far less power than today's bulky equipment.",
-      "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/"
+      "title": "LLM News Today (March 2026) – Open Source LLM Updates & AI Model Releases",
+      "snippet": "A comprehensive guide to Google DeepMind's Gemini 3.1 Pro — the most advanced Pro-tier model as of February 2026, featuring a 1M-token context window, 77.1% on ARC-AGI-2, multimodal reasoning across text, images, audio, video, and code",
+      "url": "https://llm-stats.com/ai-news"
     }
   ],
   "tech": [
     {
-      "title": "The Best AI Tools for 2026",
-      "snippet": "Over the past three years, I've tried dozens of AI tools for different tasks. Here are the best AI tools I've found, organized by category with guides to learn most tools.",
-      "url": "https://medium.com/artificial-corner/the-best-ai-tools-for-2026-933535a44f8b"
+      "title": "The Best AI Tools for 2026: A Practical, No-Hype Guide",
+      "snippet": "AI is no longer optional in modern careers. The real advantage in 2026 is not just using AI. It is knowing how to apply it meaningfully. Practice-Based Learning Tracks, Supercharged By A.I.",
+      "url": "https://www.masaischool.com/blog/the-best-ai-tools-for-2026-a-practical-no-hype-guide/"
     }
   ]
 }
