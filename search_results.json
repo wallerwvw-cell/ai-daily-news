@@ -1,26 +1,16 @@
 {
   "news": [
     {
-      "title": "OpenAI升级ChatGPT with GPT-5.4 Thinking，提供六项关键改进",
-      "snippet": "GPT-5.4 Thinking available for Plus, Team, and Pro subscribers and will replace GPT-5.2 Thinking, which is going away in three months.",
-      "url": "https://9to5mac.com/2026/03/05/openai-upgrades-chatgpt-with-gpt-5-4-thinking-offering-six-key-improvements/"
-    },
-    {
-      "title": "欧洲开始禁止AI生成儿童性虐待材料",
-      "snippet": "Europe takes first step towards outlawing AI practices which generate child sexual abuse material after EU governments proposed to add this provision to the bloc's landmark AI rules.",
+      "title": "Tesla Terafab AI Chip Project Launching in 7 Days",
+      "snippet": "Tesla CEO Elon Musk said the company's Terafab project to make artificial intelligence chips will launch in seven days.",
       "url": "https://www.reuters.com/technology/artificial-intelligence/"
     }
   ],
   "tech": [
     {
-      "title": "2026年如何学习AI？完整路线图",
-      "snippet": "Unsure how to learn AI? Follow this roadmap for No-Code Power Users and Technical Builders. Future-proof your career with step-by-step guide.",
+      "title": "How to Learn AI in 2026? The Complete Roadmap",
+      "snippet": "Unsure how to learn AI? Follow this roadmap for No-Code Power Users and Technical Builders. Future-proof your career with our step-by-step guide.",
       "url": "https://ischool.syracuse.edu/how-to-learn-ai/"
-    },
-    {
-      "title": "2026年最佳5个LLM微调工具",
-      "snippet": "Mispredictions are easy to find, and misclassified samples can be labeled again and submitted in the next training batch. Labelbox provides model evaluation, RLHF, and RAG development.",
-      "url": "https://deepchecks.com/best-llm-fine-tuning-tools/"
     }
   ]
 }
