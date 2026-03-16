@@ -1,21 +1,16 @@
 {
   "news": [
     {
-      "title": "USC Researchers Build Artificial Neurons Using Ion-Based Diffusive Memristors",
-      "snippet": "USC researchers built artificial neurons that replicate real brain processes using ion-based diffusive memristors. These devices emulate how neurons use chemicals to transmit and process signals, representing a breakthrough in optical processor technology.",
-      "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/"
+      "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
+      "snippet": "This new model shows improved reasoning, scoring significantly higher on complex problem-solving benchmarks. It's designed for tasks needing advanced reasoning, like synthesizing data or explaining complex topics.",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/"
     }
   ],
   "tech": [
     {
-      "title": "10 Python AI Automation Scripts Every Developer Should Try",
-      "snippet": "A practical guide featuring 10 Python AI automation scripts that every developer should try. Learn automation faster with practical examples.",
-      "url": "https://medium.com/illumination/10-python-ai-automation-scripts-every-developer-should-try-32552d360e2d"
-    },
-    {
-      "title": "The Ultimate Machine Learning Tutorial for 2026",
-      "snippet": "This Machine Learning tutorial helps you understand what is machine learning, its applications, and how to become a machine learning engineer.",
-      "url": "https://www.simplilearn.com/tutorials/machine-learning-tutorial"
+      "title": "Building an AI agent from scratch in Python",
+      "snippet": "A tutorial on building a simple AI agent that can use tools to answer questions in a multi-turn conversation, implementing a calculator tool and agent class.",
+      "url": "https://www.leoniemonigatti.com/blog/ai-agent-from-scratch-in-python.html"
     }
   ]
 }

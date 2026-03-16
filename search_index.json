@@ -90,6 +90,18 @@
     "date": "2026-03-15"
   },
   {
+    "title": "Gemini 3.1 Pro: A smarter model for your most complex tasks",
+    "summary": "This new model shows improved reasoning, scoring significantly higher on complex problem-solving benchmarks. It's designed for tasks needing advanced reasoning, like synthesizing d...",
+    "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro/",
+    "date": "2026-03-16"
+  },
+  {
+    "title": "Building an AI agent from scratch in Python",
+    "summary": "A tutorial on building a simple AI agent that can use tools to answer questions in a multi-turn conversation, implementing a calculator tool and agent class.",
+    "url": "https://www.leoniemonigatti.com/blog/ai-agent-from-scratch-in-python.html",
+    "date": "2026-03-16"
+  },
+  {
     "title": "Reuters AI News | Latest Headlines and Developments",
     "summary": "AI startup Thinking Machines clinches capital and a major chip supply deal from Nvidia. Legal AI startup Legora raises $550 million to speed up US expansion. China pins hopes on so...",
     "url": "https://www.reuters.com/technology/artificial-intelligence/",
