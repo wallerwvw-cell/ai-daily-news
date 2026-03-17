@@ -102,6 +102,18 @@
     "date": "2026-03-16"
   },
   {
+    "title": "Anthropic-Pentagon battle shows how big tech has reversed course on AI and war",
+    "summary": "OpenAI too had a blanket ban on military use, but along with Google, Anthropic and xAI, signed an up-to-$200m contract with the DoD last year to integrate its technology into milit...",
+    "url": "https://www.theguardian.com/technology/2026/mar/13/anthropic-pentagon-artificial-intelligence",
+    "date": "2026-03-17"
+  },
+  {
+    "title": "LLM Fine-tuning: Techniques for Adapting Language Models",
+    "summary": "A common question is when to fine-tune versus using prompting or RAG alone. In practice, fine-tuning is attempted only after exhausting prompt-based methods, and often used in tand...",
+    "url": "https://www.dailydoseofds.com/llmops-crash-course-part-12/",
+    "date": "2026-03-17"
+  },
+  {
     "title": "Reuters AI News | Latest Headlines and Developments",
     "summary": "AI startup Thinking Machines clinches capital and a major chip supply deal from Nvidia. Legal AI startup Legora raises $550 million to speed up US expansion. China pins hopes on so...",
     "url": "https://www.reuters.com/technology/artificial-intelligence/",
