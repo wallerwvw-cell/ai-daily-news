@@ -1,16 +1,36 @@
 {
   "news": [
     {
-      "title": "Anthropic-Pentagon battle shows how big tech has reversed course on AI and war",
-      "snippet": "OpenAI too had a blanket ban on military use, but along with Google, Anthropic and xAI, signed an up-to-$200m contract with the DoD last year to integrate its technology into military systems.",
-      "url": "https://www.theguardian.com/technology/2026/mar/13/anthropic-pentagon-artificial-intelligence"
+      "title": "AI Updates Today (March 2026) – Latest AI Model Releases",
+      "snippet": "Major contributors include OpenAI, Anthropic, Google DeepMind, Meta AI, Mistral AI, xAI, DeepSeek, Alibaba (Qwen), and many others. LLM Stats updates this page hourly to capture new model releases and API changes.",
+      "url": "https://llm-stats.com/llm-updates"
+    },
+    {
+      "title": "LLM News Today (March 2026) – AI Model Releases",
+      "snippet": "A comprehensive guide to Google DeepMind's Gemini 3.1 Pro — the most advanced Pro-tier model as of February 2026, featuring a 1M-token context window, 77.1% on ARC-AGI-2, multimodal reasoning across text, images, audio, video, and code.",
+      "url": "https://llm-stats.com/ai-news"
+    },
+    {
+      "title": "Google DeepMind - Project Genie Released",
+      "snippet": "On January 29, 2026, DeepMind released Project Genie to AI Ultra subscribers. In March 2025, DeepMind launched two AI models, Gemini Robotics.",
+      "url": "https://en.wikipedia.org/wiki/Google_DeepMind"
     }
   ],
   "tech": [
     {
-      "title": "LLM Fine-tuning: Techniques for Adapting Language Models",
-      "snippet": "A common question is when to fine-tune versus using prompting or RAG alone. In practice, fine-tuning is attempted only after exhausting prompt-based methods, and often used in tandem with prompting in real-world scenarios.",
-      "url": "https://www.dailydoseofds.com/llmops-crash-course-part-12/"
+      "title": "The Complete Prompt Engineering for AI Bootcamp (2026)",
+      "snippet": "Learn practical coding skills for working professionally with AI, including GPT-5, Veo3 & Midjourney",
+      "url": "https://www.udemy.com/course/prompt-engineering-for-ai/"
+    },
+    {
+      "title": "Prompt engineering - Wikipedia",
+      "snippet": "The process of writing and refining a prompt for an LLM or generative AI shares some parallels with an iterative engineering design process, such as by discovering reusable best practices through reproducible experimentation.",
+      "url": "https://en.wikipedia.org/wiki/Prompt_engineering"
+    },
+    {
+      "title": "Prompt Engineering Best Practices in 2026: The Ultimate Guide",
+      "snippet": "Ask for code plus a verification checklist. Force the model to validate its own output against your constraints. 400ms response time maintains flow state.",
+      "url": "https://ucstrategies.com/news/prompt-engineering-best-practices-in-2026-the-ultimate-guide-to-better-ai-prompts/"
     }
   ]
 }
