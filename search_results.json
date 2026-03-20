@@ -1,16 +1,1 @@
-{
-  "news": [
-    {
-      "title": "The trends that will shape AI and tech in 2026 | IBM",
-      "snippet": "IBM has publicly stated that 2026 will mark the first time a quantum computer will be able to outperform a classical computer—the point at which a quantum computer can solve a problem better than all classical-only methods.",
-      "url": "https://www.ibm.com/think/news/ai-tech-trends-predictions-2026"
-    }
-  ],
-  "tech": [
-    {
-      "title": "Building AI Applications in 2026: A Practical Guide to Product Utility and Conversion Readiness",
-      "snippet": "A practical Unicorn Platform guide for building AI applications in 2026, covering architecture choices, costs, timelines, trust design, and conversion-ready launch workflows.",
-      "url": "https://unicornplatform.com/blog/building-ai-applications-in-2026/"
-    }
-  ]
-}
+{"news": [{"title": "Google's Gemini AI is coming to Mac, and it could have a feature ChatGPT and Claude are missing", "snippet": "Google Gemini expands to more devices with enhanced integration capabilities, allowing reference to calendar, documents, and screen content. The AI assistant could potentially outperform competitors with its deep system integration on Mac.", "url": "https://timesofindia.indiatimes.com/technology/tech-news/googles-gemini-ai-is-coming-to-mac-and-it-could-have-a-feature-chatgpt-and-claude-are-missing/articleshow/129696522.cms"}], "tech": [{"title": "How to Start a Career in Artificial Intelligence (2026 Guide)", "snippet": "Focus on the basics first, then practice by building projects, and share your work as you improve. Start with Python and learn the basics: syntax, data structures, functions, and simple algorithms.", "url": "https://ischool.syracuse.edu/how-to-start-a-career-in-artificial-intelligence/"}]}
