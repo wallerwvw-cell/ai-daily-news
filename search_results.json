@@ -1,26 +1,16 @@
 {
   "news": [
     {
-      "title": "Neuromorphic computers can now solve complex physics simulations",
-      "snippet": "Neuromorphic computers modeled after the human brain can now solve the complex equations behind physics simulations — something once thought possible only with energy-hungry supercomputers.",
-      "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/"
-    },
-    {
-      "title": "AI Updates Today (March 2026) – Latest AI Model Releases",
-      "snippet": "Latest AI model releases from OpenAI, Google, Anthropic and more. Organizations use various naming conventions for their AI models.",
-      "url": "https://llm-stats.com/llm-updates"
+      "title": "Meta Platforms Increases Executive Compensation in AI Race",
+      "snippet": "Meta Platforms is increasing compensation for top executives, including its first-ever offer of stock options, as it tries to fend off competition in the artificial intelligence race and incentivize leaders to stay with the company.",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/"
     }
   ],
   "tech": [
     {
-      "title": "Comprehensive Guide to Google DeepMind's Gemini 3.1 Pro",
-      "snippet": "The most advanced Pro-tier model as of February 2026, featuring a 1M-token context window, 77.1% on ARC-AGI-2, multimodal reasoning across text, images, audio, video, and code.",
-      "url": "https://llm-stats.com/ai-news"
-    },
-    {
-      "title": "Figma Make Tutorial & Best Practice Guide | Figma AI 2026",
-      "snippet": "Learn how to use Figma AI features for design automation and efficient workflows in 2026.",
-      "url": "https://www.youtube.com/watch?v=L3prVyrBDmQ"
+      "title": "13 AI Skills Every SEO Needs in 2026 (Practical Guide)",
+      "snippet": "AI isn't replacing SEO — but it is changing how it works. Learn 13 practical AI skills, from prompt engineering to AI SEO, and build workflows that actually scale.",
+      "url": "https://www.link-assistant.com/news/ai-skills.html"
     }
   ]
 }
