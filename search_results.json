@@ -1,16 +1,36 @@
 {
   "news": [
     {
-      "title": "Meta Platforms Increases Executive Compensation in AI Race",
-      "snippet": "Meta Platforms is increasing compensation for top executives, including its first-ever offer of stock options, as it tries to fend off competition in the artificial intelligence race and incentivize leaders to stay with the company.",
+      "title": "OpenAI drops AI video tool Sora, startling Disney, sources say",
+      "snippet": "How Artificial Intelligence is creating the next normal - March 25, 2026",
       "url": "https://www.reuters.com/technology/artificial-intelligence/"
+    },
+    {
+      "title": "AI News - Latest News - Insights Powering AI-Driven Business Growth",
+      "snippet": "Subscribe now to get all our premium content and latest tech news delivered straight to your inbox",
+      "url": "https://www.artificialintelligence-news.com/"
+    },
+    {
+      "title": "College of Business Administration launches new Artificial Intelligence in Business Major",
+      "snippet": "Launching in fall 2026, this major will prepare the next generation of leaders with the technical proficiency and ethical framework necessary to navigate an AI-driven global economy",
+      "url": "https://today.marquette.edu/2026/03/shaping-the-future-college-of-business-administration-launches-new-artificial-intelligence-in-business-major/"
     }
   ],
   "tech": [
     {
       "title": "13 AI Skills Every SEO Needs in 2026 (Practical Guide)",
-      "snippet": "AI isn't replacing SEO — but it is changing how it works. Learn 13 practical AI skills, from prompt engineering to AI SEO, and build workflows that actually scale.",
+      "snippet": "AI isn't replacing SEO — but it is changing how it works. Learn 13 practical AI skills, from prompt engineering to AI SEO, and build workflows that actually scale",
       "url": "https://www.link-assistant.com/news/ai-skills.html"
+    },
+    {
+      "title": "What Is AI Development? A Complete 2026 Guide",
+      "snippet": "The field is moving rapidly toward agentic, multimodal, and on-device AI as the dominant development paradigms in 2026. Python, PyTorch, and Hugging Face form the de facto standard toolchain",
+      "url": "https://www.articsledge.com/post/artificial-intelligence-ai-development"
+    },
+    {
+      "title": "Google Stitch Tutorial 2026: Create AI UI Designs in 10 Minutes (Beginner Guide + New Features)",
+      "snippet": "Google just launched an AI design tool, Google Stitch that builds full UI designs from a single prompt",
+      "url": "https://www.youtube.com/watch?v=aVTGFDOFs74"
     }
   ]
 }
