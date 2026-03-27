@@ -1,36 +1,36 @@
 {
   "news": [
     {
-      "title": "OpenAI drops AI video tool Sora, startling Disney, sources say",
-      "snippet": "How Artificial Intelligence is creating the next normal - March 25, 2026",
+      "title": "NSF initiative aims to make every American worker, business and community AI-ready",
+      "snippet": "The NSF TechAccess: AI-Ready America initiative announced a new funding opportunity to enable all Americans to understand, apply and create with artificial intelligence.",
+      "url": "https://www.nsf.gov/news/nsf-initiative-aims-make-every-american-worker-business"
+    },
+    {
+      "title": "Reuters AI News | Latest Headlines and Developments",
+      "snippet": "Explore the latest artificial intelligence news with Reuters - from AI breakthroughs and technology trends to regulation, ethics, business and global impact.",
       "url": "https://www.reuters.com/technology/artificial-intelligence/"
     },
     {
-      "title": "AI News - Latest News - Insights Powering AI-Driven Business Growth",
-      "snippet": "Subscribe now to get all our premium content and latest tech news delivered straight to your inbox",
-      "url": "https://www.artificialintelligence-news.com/"
-    },
-    {
-      "title": "College of Business Administration launches new Artificial Intelligence in Business Major",
-      "snippet": "Launching in fall 2026, this major will prepare the next generation of leaders with the technical proficiency and ethical framework necessary to navigate an AI-driven global economy",
-      "url": "https://today.marquette.edu/2026/03/shaping-the-future-college-of-business-administration-launches-new-artificial-intelligence-in-business-major/"
+      "title": "Artificial Intelligence: Read latest news updates on AI technology",
+      "snippet": "Latest updates on AI like Google AI, ChatGPT, Google Lamda, Bard chatbot and latest articles on AI technology advances and new progress.",
+      "url": "https://indianexpress.com/section/technology/artificial-intelligence/"
     }
   ],
   "tech": [
     {
-      "title": "13 AI Skills Every SEO Needs in 2026 (Practical Guide)",
-      "snippet": "AI isn't replacing SEO — but it is changing how it works. Learn 13 practical AI skills, from prompt engineering to AI SEO, and build workflows that actually scale",
-      "url": "https://www.link-assistant.com/news/ai-skills.html"
+      "title": "AI (Artificial Intelligence) Tutorial",
+      "snippet": "In this AI tutorial for beginners, you will learn: What AI, Machine learning, Deep learning, Supervised Machine Learning, Unsupervised Machine Learning, Fuzzy logic, etc.",
+      "url": "https://www.guru99.com/ai-tutorial.html"
     },
     {
-      "title": "What Is AI Development? A Complete 2026 Guide",
-      "snippet": "The field is moving rapidly toward agentic, multimodal, and on-device AI as the dominant development paradigms in 2026. Python, PyTorch, and Hugging Face form the de facto standard toolchain",
-      "url": "https://www.articsledge.com/post/artificial-intelligence-ai-development"
+      "title": "Machine learning - Wikipedia",
+      "snippet": "Covers various emerging or potential future challenges such as machine ethics, AI safety and alignment, technological unemployment, AI-enabled misinformation, and artificial superintelligence.",
+      "url": "https://en.wikipedia.org/wiki/Machine_learning"
     },
     {
-      "title": "Google Stitch Tutorial 2026: Create AI UI Designs in 10 Minutes (Beginner Guide + New Features)",
-      "snippet": "Google just launched an AI design tool, Google Stitch that builds full UI designs from a single prompt",
-      "url": "https://www.youtube.com/watch?v=aVTGFDOFs74"
+      "title": "AI Courses and Training - Learn Artificial Intelligence - AWS",
+      "snippet": "Learn foundational concepts to train an ML model by building and racing an autonomous race car. Develop in-demand cloud skills in this immersive role-playing simulation.",
+      "url": "https://aws.amazon.com/ai/learn/"
     }
   ]
 }
