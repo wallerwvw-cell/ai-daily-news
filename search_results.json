@@ -1,36 +1,16 @@
 {
   "news": [
     {
-      "title": "Reuters AI News | Latest Headlines and Developments",
-      "snippet": "Explore the latest artificial intelligence news with Reuters - from AI breakthroughs and technology trends to regulation, ethics, business and global impact.",
-      "url": "https://www.reuters.com/technology/artificial-intelligence/"
-    },
-    {
-      "title": "NSF initiative aims to make every American worker, business and community AI-ready",
-      "snippet": "The NSF TechAccess: AI-Ready America initiative announced a new funding opportunity to enable all Americans to understand, apply and create with artificial intelligence.",
-      "url": "https://www.nsf.gov/news/nsf-initiative-aims-make-every-american-worker-business"
-    },
-    {
-      "title": "Artificial Intelligence: Read latest news updates on AI technology",
-      "snippet": "Latest updates on AI like Google AI, ChatGPT, Google Lamda, Bard chatbot and latest articles on AI technology advances and new progress.",
-      "url": "https://indianexpress.com/section/technology/artificial-intelligence/"
+      "title": "AI Breakthrough From Google Exposes Divide in Memory Chip Stocks - Bloomberg",
+      "snippet": "A two-day selloff in memory-chip stocks is revealing a new split in the artificial intelligence trade, as Google touts a breakthrough that analysts say may curb demand for certain types of storage while leaving others largely unscathed.",
+      "url": "https://www.bloomberg.com/news/articles/2026-03-27/ai-breakthrough-from-google-exposes-divide-in-memory-stocks"
     }
   ],
   "tech": [
     {
-      "title": "Artificial Intelligence News -- ScienceDaily",
-      "snippet": "This AI Finds Simple Rules Where Humans See Only Chaos — A new AI developed at Duke University can uncover simple, readable rules behind extremely complex systems.",
-      "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/"
-    },
-    {
-      "title": "AI (Artificial Intelligence) Tutorial",
-      "snippet": "In this AI tutorial for beginners, you will learn: What AI, Machine learning, Deep learning, Supervised Machine Learning, Unsupervised Machine Learning, Fuzzy logic, etc.",
-      "url": "https://www.guru99.com/ai-tutorial.html"
-    },
-    {
-      "title": "Machine learning - Wikipedia",
-      "snippet": "Covers various emerging or potential future challenges such as machine ethics, AI safety and alignment, technological unemployment, AI-enabled misinformation, and artificial superintelligence.",
-      "url": "https://en.wikipedia.org/wiki/Machine_learning"
+      "title": "How to Start Learning AI Tools: Beginner's Guide to AI in 2026",
+      "snippet": "Discover how to start learning AI tools from scratch. Explore beginner-friendly steps, essential tools, and practical tips to kickstart your AI journey in 2026.",
+      "url": "https://blog.skillwaala.com/how-to-start-learning-ai-tools/"
     }
   ]
 }
