@@ -1,16 +1,1 @@
-{
-  "news": [
-    {
-      "title": "Samsung Brings Advanced Generative AI to Mid-Tier Smartphones in 2026",
-      "snippet": "Samsung Electronics is expanding its advanced generative AI features to a wider range of mid-tier and budget smartphones and tablets, previously reserved for flagship models.",
-      "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates"
-    }
-  ],
-  "tech": [
-    {
-      "title": "How to Make Money With AI in 2026 (Without Being a Developer)",
-      "snippet": "A practical guide exploring realistic ways to earn with AI in 2026 without needing deep technical expertise.",
-      "url": "https://emergent.sh/learn/how-to-make-money-with-ai"
-    }
-  ]
-}
+{"news": [{"title": "OpenAI surpasses $25 billion in annualized revenue, taking early steps toward public listing", "snippet": "Latest AI News and AI Breakthroughs that Matter Most: 2026. On the OSWorld-V benchmark — OpenAI has surpassed $25 billion in annualized revenue and is reportedly taking early steps toward a public listing, potentially as soon as late 2026.", "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates"}], "tech": [{"title": "Run Your Own AI Model Locally: A Practical Ollama Setup Guide (2026)", "snippet": "With Ollama, you can run capable language models on a laptop or desktop — no API keys, no subscriptions, no internet required. Here's a practical guide to getting set up, choosing the right model, and actually using local AI for something useful.", "url": "https://dev.to/primghostdev/run-your-own-ai-model-locally-a-practical-ollama-setup-guide-2026-2kk9"}]}
