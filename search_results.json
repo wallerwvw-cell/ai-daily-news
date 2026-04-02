@@ -1,1 +1,16 @@
-{"news": [{"title": "OpenAI surpasses $25 billion in annualized revenue, taking early steps toward public listing", "snippet": "Latest AI News and AI Breakthroughs that Matter Most: 2026. On the OSWorld-V benchmark — OpenAI has surpassed $25 billion in annualized revenue and is reportedly taking early steps toward a public listing, potentially as soon as late 2026.", "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates"}], "tech": [{"title": "Run Your Own AI Model Locally: A Practical Ollama Setup Guide (2026)", "snippet": "With Ollama, you can run capable language models on a laptop or desktop — no API keys, no subscriptions, no internet required. Here's a practical guide to getting set up, choosing the right model, and actually using local AI for something useful.", "url": "https://dev.to/primghostdev/run-your-own-ai-model-locally-a-practical-ollama-setup-guide-2026-2kk9"}]}
+{
+  "news": [
+    {
+      "title": "Latest AI News and AI Breakthroughs that Matter Most: 2026",
+      "snippet": "Palladyne AI Corp. has announced it was awarded a contract by a major defense prime contractor to deliver a key propulsion subsystem. The project will leverage Palladyne's advanced AI-driven software to enhance the performance and ...",
+      "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates"
+    }
+  ],
+  "tech": [
+    {
+      "title": "Machine Learning Roadmap for 2026",
+      "snippet": "This is also your machine learning engineer roadmap in action. Start with Python – the most beginner-friendly language for ML. Use Jupyter Notebooks to practice coding and learn libraries like NumPy and Pandas for handling data.",
+      "url": "https://www.scaler.com/blog/machine-learning-roadmap/"
+    }
+  ]
+}
