@@ -1,16 +1,16 @@
 {
   "news": [
     {
-      "title": "Latest AI News and AI Breakthroughs that Matter Most: 2026",
-      "snippet": "Palladyne AI Corp. has announced it was awarded a contract by a major defense prime contractor to deliver a key propulsion subsystem. The project will leverage Palladyne's advanced AI-driven software to enhance the performance and ...",
+      "title": "OpenAI Has Surpassed $25 Billion in Annualized Revenue",
+      "snippet": "OpenAI年化收入突破250亿美元，正考虑最快2026年底上市。",
       "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates"
     }
   ],
   "tech": [
     {
-      "title": "Machine Learning Roadmap for 2026",
-      "snippet": "This is also your machine learning engineer roadmap in action. Start with Python – the most beginner-friendly language for ML. Use Jupyter Notebooks to practice coding and learn libraries like NumPy and Pandas for handling data.",
-      "url": "https://www.scaler.com/blog/machine-learning-roadmap/"
+      "title": "Agentic AI For Business: A Practical Guide To Autonomous Workflows",
+      "snippet": "从单一工作流开始，明确输入、输出和可衡量的成功标准，ROI高且复杂度相对较低。",
+      "url": "https://www.gianty.com/agentic-ai-for-business/"
     }
   ]
 }
