@@ -1,16 +1,16 @@
 {
   "news": [
     {
-      "title": "OpenAI Has Surpassed $25 Billion in Annualized Revenue",
-      "snippet": "OpenAI年化收入突破250亿美元，正考虑最快2026年底上市。",
+      "title": "NASA's Perseverance rover completed the first Mars drives ever planned by artificial intelligence",
+      "snippet": "Using Anthropic's Claude vision-language models to analyze orbital imagery and terrain data and autonomously generate safe waypoints.",
       "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates"
     }
   ],
   "tech": [
     {
-      "title": "Agentic AI For Business: A Practical Guide To Autonomous Workflows",
-      "snippet": "从单一工作流开始，明确输入、输出和可衡量的成功标准，ROI高且复杂度相对较低。",
-      "url": "https://www.gianty.com/agentic-ai-for-business/"
+      "title": "AI for Total Beginners: Learn the Absolute Basics of AI 2026",
+      "snippet": "A complete guide to learning AI from absolute zero to scheduled automations in 2026.",
+      "url": "https://www.theneuron.ai/explainer-articles/everything-we-covered-in-our-ai-for-total-beginners-livestream-full-guide-with-timestamps/"
     }
   ]
 }
