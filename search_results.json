@@ -1,16 +1,16 @@
 {
   "news": [
     {
-      "title": "隆雪陈氏书院 AI智能导览系统迎130周年",
-      "snippet": "书院在130周年引入全马首个宗祠AI导览系统，于2026年4月7日正式推介，支持超过30种语言，成为文化与科技融合的重要举措。",
-      "url": "https://mytruthmedia.com/2026/04/07/cssy-ai-tour-launching/"
+      "title": "Broadcom agrees to expanded chip deals with Google, Anthropic",
+      "snippet": "On an earnings call last month, Broadcom CEO Hock Tan said that for Anthropic, we are off to a very good start in 2026 in providing 1 gigawatt of compute from Google's homegrown tensor processing units (TPUs).",
+      "url": "https://www.cnbc.com/2026/04/06/broadcom-agrees-to-expanded-chip-deals-with-google-anthropic.html"
     }
   ],
   "tech": [
     {
-      "title": "【全748集】目前B站最全最细的AI大模型零基础全套教程",
-      "snippet": "2025最新版AI大模型零基础全套教程，包含Python入门、AI开发环境搭建、Transformer架构、提示词工程、RAG、Agent、Langchain、大模型微调和私有化部署。",
-      "url": "https://www.bilibili.com/video/BV1uNk1YxEJQ/"
+      "title": "Understanding AI: AI tools, training, and skills — Google AI",
+      "snippet": "Discover a curated collection of AI tutorials, explainers, and demos to deepen your understanding and build practical skills. Discover foundational AI concepts, such as machine learning (ML), and explore how AI works, including the rise of generative AI.",
+      "url": "https://ai.google/learn-ai-skills/"
     }
   ]
 }
