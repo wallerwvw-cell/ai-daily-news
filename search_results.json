@@ -1,16 +1,16 @@
 {
   "news": [
     {
-      "title": "Vance, Bessent questioned tech giants on AI security before Anthropic's Mythos release",
-      "snippet": "South Africa unveils draft AI policy, proposes new institutions and incentives. EU weighing tighter regulation for OpenAI...",
+      "title": "South Africa unveils draft AI policy, proposes new institutions and incentives",
+      "snippet": "EU weighing tighter regulation for OpenAI under Digital Services Act. CoreWeave strikes AI cloud deal with Anthropic, shares surge.",
       "url": "https://www.reuters.com/technology/artificial-intelligence/"
     }
   ],
   "tech": [
     {
-      "title": "Claude Code Ultimate Guide - GitHub",
-      "snippet": "A tremendous feat of documentation, this guide covers Claude Code from beginner to power user, with production-ready templates for Claude Code features, guides on agentic workflows.",
-      "url": "https://github.com/FlorianBruniaux/claude-code-ultimate-guide"
+      "title": "The 2026 AI Engineer Roadmap: From Beginner to Job-Ready",
+      "snippet": "A practical guide covering APIs, LLM apps, LangChain, and vector databases for developers looking to become AI engineers.",
+      "url": "https://javarevisited.wordpress.com/2026/04/10/the-2026-ai-engineer-roadmap-from-beginner-to-job-ready/"
     }
   ]
 }
