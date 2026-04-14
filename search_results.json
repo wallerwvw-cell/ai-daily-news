@@ -1,16 +1,31 @@
 {
   "news": [
     {
-      "title": "AI News | Latest News | Insights Powering AI-Driven Business Growth",
-      "snippet": "Artificial Intelligence · April 7, 2026 · Autonomous AI Systems in the Enterprise: Governance and Control",
-      "url": "https://www.artificialintelligence-news.com/"
+      "title": "AI Updates Today (April 2026) – Latest AI Model Releases",
+      "snippet": "Track AI model updates and LLM releases in real time. Version launches, API changes, and notable improvements across GPT, Claude, Gemini, Llama, and 500+ language models.",
+      "url": "https://llm-stats.com/llm-updates"
+    },
+    {
+      "title": "Reuters AI News | Latest Headlines and Developments",
+      "snippet": "Explore the latest artificial intelligence news with Reuters - from AI breakthroughs and technology trends to regulation, ethics, business and global impact.",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/"
+    },
+    {
+      "title": "NVIDIA Blackwell Platform Arrives to Power a New Era of Computing",
+      "snippet": "GB200-powered systems connected with NVIDIA Quantum-X800 InfiniBand and Spectrum-X800 Ethernet platforms deliver advanced networking at speeds up to 800Gb/s.",
+      "url": "https://nvidianews.nvidia.com/news/nvidia-blackwell-platform-arrives-to-power-a-new-era-of-computing"
     }
   ],
   "tech": [
     {
-      "title": "Understanding AI: AI tools, training, and skills — Google AI",
-      "snippet": "Discover a curated collection of AI tutorials, explainers, and demos to deepen your understanding and build practical skills. Explore foundational AI concepts, machine learning, and generative AI.",
-      "url": "https://ai.google/learn-ai-skills/"
+      "title": "LLM Full Fine-Tuning on Databricks Serverless GPU Compute with Axolotl (Part 1)",
+      "snippet": "Learn how to combine Databricks Serverless GPU compute with the Axolotl framework to run LLM fine-tuning jobs with minimal setup.",
+      "url": "https://medium.com/@AI-on-Databricks/llm-full-fine-tuning-on-databricks-serverless-gpu-compute-with-axolotl-part-1-79f019c1d7a9"
+    },
+    {
+      "title": "AI Video Generator for Beginners: Step-by-Step Tutorial 2026",
+      "snippet": "Complete beginner's guide to AI video generators in 2026. Learn text-to-video, image-to-video workflows, and create professional videos in minutes—no editing skills required.",
+      "url": "https://vidfab.ai/blog/ai-video-generator-beginners-step-by-step-tutorial-2025"
     }
   ]
 }
