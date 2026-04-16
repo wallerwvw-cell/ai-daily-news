@@ -1,16 +1,16 @@
 {
   "news": [
     {
-      "title": "AI News | Latest News | Insights Powering AI-Driven Business Growth",
-      "snippet": "Artificial Intelligence news including Workforce & HR, Finance AI, Physical AI, Governance, Regulation & Policy from April 2026",
-      "url": "https://www.artificialintelligence-news.com/"
+      "title": "Researchers at the University of Michigan have created an AI system that can interpret brain MRI scans in just seconds",
+      "snippet": "accurately identifying a wide range of neurological conditions and determining",
+      "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/"
     }
   ],
   "tech": [
     {
-      "title": "DeepLearning.AI: Start or Advance Your Career in AI",
-      "snippet": "A practical roadmap to building your career in AI from AI pioneer Andrew Ng. Includes Machine Learning Yearning, NLP guides, and career resources.",
-      "url": "https://www.deeplearning.ai/"
+      "title": "AI in Software Testing Tutorial 2026 for Modern QA Teams",
+      "snippet": "Learn AI in software testing with this practical 2026 tutorial. Explore types, tools, use cases, and how QA teams use AI to improve speed and reliability",
+      "url": "https://www.testleaf.com/blog/ai-software-testing-tutorial-2026/"
     }
   ]
 }
