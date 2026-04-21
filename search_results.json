@@ -1,16 +1,16 @@
 {
   "news": [
     {
-      "title": "Autonomous AI Systems in the Enterprise: Governance and Control",
-      "snippet": "Exploring autonomous AI systems治理与控制，企业AI治理会议活动，2026年4-5月",
-      "url": "https://www.artificialintelligence-news.com/"
+      "title": "Anthropic's Model Context Protocol Crossed 97 Million Installs in March 2026",
+      "snippet": "A milestone that signals its transition from an experimental standard to foundational infrastructure for building AI agents.",
+      "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates"
     }
   ],
   "tech": [
     {
-      "title": "5 Best Books for Building Agentic AI Systems in 2026",
-      "snippet": "推荐构建Agentic AI系统的5本最佳书籍，涵盖chain-of-thought推理、ReAct模式、planning循环等",
-      "url": "https://www.kdnuggets.com/5-best-books-for-building-agentic-ai-systems-in-2026"
+      "title": "AI A-Z 2026: Agentic & Generative AI, Prompt Engineering, RL",
+      "snippet": "The step-by-step guide covers account creation, chatbot configuration, and testing your AI assistant with real-time user interactions. Perfect for beginners exploring AI and LLMs.",
+      "url": "https://www.udemy.com/course/artificial-intelligence-az/"
     }
   ]
 }
