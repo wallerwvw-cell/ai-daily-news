@@ -1,19 +1,19 @@
 {
   "news": [
     {
+      "title": "Sony AI Announces Breakthrough Research in Real-World Artificial Intelligence and Robotics",
+      "snippet": "Tokyo, Japan – April 23, 2026 – Sony AI today announced its major breakthrough in robotics and artificial intelligence (AI) with the publication of its project Ace, the first known real-world autonomous system competitive with elite and ...",
+      "url": "https://ai.sony/news/sony-ai-announces-breakthrough-research-in-real-world-artificial-intelligence-and-robotics"
+    },
+    {
+      "title": "DeepSeek Unveils Newest Flagship AI Model a Year after Upending Silicon Valley",
+      "snippet": "April 24, 2026 at 2:10 PM UTC – A year after rattling Silicon Valley with its technology, China's DeepSeek rolled out preview versions of a new flagship artificial intelligence model, calling it the most powerful open-source platform ...",
+      "url": "https://www.bloomberg.com/news/articles/2026-04-24/deepseek-unveils-newest-flagship-a-year-after-ai-breakthrough"
+    },
+    {
       "title": "OpenAI announces GPT-5.5, its latest artificial intelligence model",
-      "snippet": "OpenAI announced GPT-5.5, its latest AI model that is better at coding, using computers and pursuing deeper research capabilities.",
+      "snippet": "OpenAI announced GPT-5.5, its latest AI model that is better at coding, using computers and pursuing deeper research capabilities. The launch comes just weeks after Anthropic unveiled Claude Mythos Preview, its new model with advanced cybersecurity ...",
       "url": "https://www.cnbc.com/2026/04/23/openai-announces-latest-artificial-intelligence-model.html"
-    },
-    {
-      "title": "AI Updates Today (April 2026) – Latest AI Model Releases",
-      "snippet": "Track recent AI model releases, API changes, pricing updates, and feature launches across the major model providers in one daily changelog.",
-      "url": "https://llm-stats.com/llm-updates"
-    },
-    {
-      "title": "OpenAI releases GPT-5.5, bringing company one step closer to an AI 'super app'",
-      "snippet": "OpenAI on Thursday released GPT-5.5, its newest AI model, which the company calls its \"smartest and most intuitive to use model\" yet.",
-      "url": "https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/"
     }
   ],
   "tech": [
@@ -23,9 +23,9 @@
       "url": "https://uploadarticle.com/ai-developer-roadmap-2026/"
     },
     {
-      "title": "Best AI Courses for Beginners 2026",
-      "snippet": "For a complete roadmap of this learning journey, see our detailed guide on how to learn AI in 2026, which breaks down each stage with specific milestones and practical advice.",
-      "url": "https://aiu.ac/2026/04/19/best-ai-courses-beginners-2026/"
+      "title": "AI Certifications & Skills 2026: Best AI & Machine Learning Courses, Certificates & Career Roadmap",
+      "snippet": "Employers are hiring for a mix of technical AI skills and high-value human skills. Certifications help you get noticed — but practical skills determine your salary, job role, and long-term growth.",
+      "url": "https://abhyashsuchi.in/ai-certifications-skills-in-2026/"
     },
     {
       "title": "Understanding AI: AI tools, training, and skills — Google AI",
