@@ -1,36 +1,16 @@
 {
   "news": [
     {
-      "title": "AI News Last 24 Hours: April 2026 Latest Model Releases & Papers",
-      "snippet": "Anthropic drops 10-Trillion parameter Claude Mythos 5, SpaceX acquires xAI for $250B, and Google unveils TurboQuant efficiency breakthrough",
-      "url": "https://www.devflokers.com/blog/ai-news-last-24-hours-april-2026-model-releases-breakthroughs"
-    },
-    {
-      "title": "Reuters AI News | Latest Headlines and Developments",
-      "snippet": "How Artificial Intelligence is creating the next normal. Exclusive: Musk sees bigger opportunity in AI than space",
+      "title": "Google to invest up to $40 billion in AI rival Anthropic",
+      "snippet": "From Australia to Europe, countries move to curb children's social media access. Major AI investment news.",
       "url": "https://www.reuters.com/technology/artificial-intelligence/"
-    },
-    {
-      "title": "AI (artificial intelligence) | The Guardian",
-      "snippet": "Latest news and analysis on artificial intelligence from The Guardian",
-      "url": "https://www.theguardian.com/technology/artificialintelligenceai"
     }
   ],
   "tech": [
     {
-      "title": "Machine learning | MIT News",
-      "snippet": "Researchers use control theory to shed unnecessary complexity from AI models during training, cutting compute costs without sacrificing performance",
-      "url": "https://news.mit.edu/topic/machine-learning"
-    },
-    {
-      "title": "Advancing Machine Intelligence through Adaptive Robotics",
-      "snippet": "High-Speed Perception: Use of advanced computer vision systems to track the ball's coordinates in three-dimensional space at millisecond intervals",
-      "url": "https://science-technology.news-articles.net/content/2026/04/26/advancing-machine-intelligence-through-adaptive-robotics.html"
-    },
-    {
-      "title": "Artificial Intelligence News -- ScienceDaily",
-      "snippet": "A new tomato-picking robot is learning to think before it acts. This smarter strategy boosted success rates to 81%",
-      "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/"
+      "title": "Understanding AI: AI tools, training, and skills",
+      "snippet": "Expert-led training designed to help small business owners tackle real business problems using Google AI tools.",
+      "url": "https://ai.google/learn-ai-skills/"
     }
   ]
 }
