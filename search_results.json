@@ -1,16 +1,56 @@
 {
   "news": [
     {
-      "title": "Google to invest up to $40 billion in AI rival Anthropic",
-      "snippet": "From Australia to Europe, countries move to curb children's social media access. Major AI investment news.",
+      "title": "AI Is Eliminating Jobs on Wall Street - The New York Times",
+      "snippet": "At Wells Fargo, artificial intelligence software is generating instant memos on the creditworthiness of potential borrowers, creating the pitchbooks that banks use to persuade companies to consider merger deals.",
+      "url": "https://www.nytimes.com/2026/04/21/business/ai-job-cuts-wall-street.html"
+    },
+    {
+      "title": "Reuters AI News - Latest Headlines and Developments",
+      "snippet": "Latest AI news and developments from Reuters technology section.",
       "url": "https://www.reuters.com/technology/artificial-intelligence/"
+    },
+    {
+      "title": "Artificial Intelligence News - ScienceDaily",
+      "snippet": "DNA Robots Could Deliver Drugs and Hunt Viruses Inside Your Body - DNA robots are emerging as tiny programmable machines that could one day deliver drugs, hunt viruses.",
+      "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/"
+    },
+    {
+      "title": "LLM News Today - AI Model Releases",
+      "snippet": "Latest LLM model releases and updates for April 2026.",
+      "url": "https://llm-stats.com/ai-news"
+    },
+    {
+      "title": "AI News | Latest News | Insights",
+      "snippet": "Powering AI-Driven Business Growth - Autonomous AI Systems in the Enterprise: Governance and Control.",
+      "url": "https://www.artificialintelligence-news.com/"
     }
   ],
   "tech": [
     {
-      "title": "Understanding AI: AI tools, training, and skills",
-      "snippet": "Expert-led training designed to help small business owners tackle real business problems using Google AI tools.",
+      "title": "Machine learning - Wikipedia",
+      "snippet": "Hebb's model of neurons interacting - understanding how AIs and machine learning algorithms work under nodes.",
+      "url": "https://en.wikipedia.org/wiki/Machine_learning"
+    },
+    {
+      "title": "Understanding AI: AI tools, training, and skills - Google AI",
+      "snippet": "Discover a curated collection of AI tutorials, explainers, and demos to deepen your understanding and build practical skills.",
       "url": "https://ai.google/learn-ai-skills/"
+    },
+    {
+      "title": "Deep learning - Wikipedia",
+      "snippet": "The representations developed by deep learning models are similar to those measured in the primate visual system.",
+      "url": "https://en.wikipedia.org/wiki/Deep_learning"
+    },
+    {
+      "title": "What Is Artificial Intelligence (AI)? - IBM",
+      "snippet": "To fully understand generative AI, it's important to first understand the technologies on which generative AI tools are built: machine learning and deep learning.",
+      "url": "https://www.ibm.com/think/topics/artificial-intelligence"
+    },
+    {
+      "title": "Artificial intelligence - Wikipedia",
+      "snippet": "Artificial intelligence is the capability of computational systems to perform tasks typically associated with human intelligence.",
+      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence"
     }
   ]
 }
