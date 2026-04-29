@@ -1,56 +1,36 @@
 {
   "news": [
     {
-      "title": "AI Is Eliminating Jobs on Wall Street - The New York Times",
-      "snippet": "At Wells Fargo, artificial intelligence software is generating instant memos on the creditworthiness of potential borrowers, creating the pitchbooks that banks use to persuade companies to consider merger deals.",
-      "url": "https://www.nytimes.com/2026/04/21/business/ai-job-cuts-wall-street.html"
-    },
-    {
-      "title": "Reuters AI News - Latest Headlines and Developments",
-      "snippet": "Latest AI news and developments from Reuters technology section.",
-      "url": "https://www.reuters.com/technology/artificial-intelligence/"
-    },
-    {
-      "title": "Artificial Intelligence News - ScienceDaily",
-      "snippet": "DNA Robots Could Deliver Drugs and Hunt Viruses Inside Your Body - DNA robots are emerging as tiny programmable machines that could one day deliver drugs, hunt viruses.",
-      "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/"
-    },
-    {
-      "title": "LLM News Today - AI Model Releases",
-      "snippet": "Latest LLM model releases and updates for April 2026.",
+      "title": "LLM News Today (April 2026) – AI Model Releases",
+      "snippet": "The LLM ecosystem has evolved dramatically, with over 500 models now available across commercial APIs and open source LLM releases. From OpenAI's GPT-4 series to Anthropic's Claude, Google's Gemini, and Meta's Llama family, developers tracking...",
       "url": "https://llm-stats.com/ai-news"
     },
     {
-      "title": "AI News | Latest News | Insights",
-      "snippet": "Powering AI-Driven Business Growth - Autonomous AI Systems in the Enterprise: Governance and Control.",
-      "url": "https://www.artificialintelligence-news.com/"
+      "title": "The First Blockbuster Artificial Intelligence IPO of 2026 Is Almost Here",
+      "snippet": "2026 is set to see quite a few blockbuster initial public offerings (IPOs). Both OpenAI and Anthropic are expected to make their public debuts this year, but another notable artificial intelligence (AI) company may beat them to the punch.",
+      "url": "https://www.fool.com/investing/2026/04/27/the-first-blockbuster-artificial-intelligence-ipo/"
+    },
+    {
+      "title": "9 Benefits of Artificial Intelligence (AI) in 2026",
+      "snippet": "However, with that said, there are still some noticeable patterns and themes emerging for AI in 2026 and beyond: Multimodal AI: The release of multimodal AI models, like OpenAI's GPT-4o, changes how AI is used.",
+      "url": "https://www.online.uc.edu/blog/artificial-intelligence-ai-benefits.html"
     }
   ],
   "tech": [
     {
-      "title": "Machine learning - Wikipedia",
-      "snippet": "Hebb's model of neurons interacting - understanding how AIs and machine learning algorithms work under nodes.",
-      "url": "https://en.wikipedia.org/wiki/Machine_learning"
+      "title": "Introduction to Machine Learning | 10-301 + 10-601 | Spring 2026",
+      "snippet": "Machine Learning is concerned with diseases, recommend music and movies, drive autonomous robots. This course covers the theory and practical algorithms for machine learning from a variety of perspectives.",
+      "url": "https://www.cs.cmu.edu/~mgormley/courses/10601/"
     },
     {
-      "title": "Understanding AI: AI tools, training, and skills - Google AI",
-      "snippet": "Discover a curated collection of AI tutorials, explainers, and demos to deepen your understanding and build practical skills.",
+      "title": "MLcon London 2026 – The Event for Machine Learning & AI",
+      "snippet": "The Model Context Protocol (MCP) is becoming the universal handshake for AI agents—enabling agent orchestration, shared context, and interoperability. Know the risks: data leakage, unauthorized persistence, prompt injection...",
+      "url": "https://mlconference.ai/london/"
+    },
+    {
+      "title": "Understanding AI: AI tools, training, and skills — Google AI",
+      "snippet": "Discover a curated collection of AI tutorials, explainers, and demos to deepen your understanding and build practical skills. Explore foundational AI concepts, such as machine learning (ML), and explore how AI works.",
       "url": "https://ai.google/learn-ai-skills/"
-    },
-    {
-      "title": "Deep learning - Wikipedia",
-      "snippet": "The representations developed by deep learning models are similar to those measured in the primate visual system.",
-      "url": "https://en.wikipedia.org/wiki/Deep_learning"
-    },
-    {
-      "title": "What Is Artificial Intelligence (AI)? - IBM",
-      "snippet": "To fully understand generative AI, it's important to first understand the technologies on which generative AI tools are built: machine learning and deep learning.",
-      "url": "https://www.ibm.com/think/topics/artificial-intelligence"
-    },
-    {
-      "title": "Artificial intelligence - Wikipedia",
-      "snippet": "Artificial intelligence is the capability of computational systems to perform tasks typically associated with human intelligence.",
-      "url": "https://en.wikipedia.org/wiki/Artificial_intelligence"
     }
   ]
 }
