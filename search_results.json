@@ -1,36 +1,36 @@
 {
   "news": [
     {
-      "title": "Pentagon partners with major AI companies for use in classified networks",
-      "snippet": "AI technology will be integrated into U.S. military networks for operational use. The military's AI platform, GenAI.mil, is already used by over 1.3 million personnel. The Pentagon announced agreements with seven of the world's largest artificial intelligence companies.",
-      "url": "https://www.washingtontimes.com/news/2026/may/1/pentagon-partners-major-ai-companies-use-classified-networks/"
-    },
-    {
-      "title": "US military reaches deals with 7 tech companies to use their AI on classified systems",
-      "snippet": "The Pentagon said Friday that it has partnered with seven tech companies to tap into their artificial intelligence in classified systems, allowing the military to boost its use of AI to help it fight wars.",
-      "url": "https://www.redlandsdailyfacts.com/2026/05/01/pentagon-ai/"
+      "title": "Artificial intelligence | MIT News",
+      "snippet": "The company is creating an AI-driven platform to help diagnose and treat disease. Founded by Jake Donoghue PhD '19 and former MIT researcher Jarrett Revels.",
+      "url": "https://news.mit.edu/topic/artificial-intelligence2"
     },
     {
       "title": "Reuters AI News | Latest Headlines and Developments",
-      "snippet": "Latest AI news and developments from Reuters. EventMomentum AI conferences in New York, London, Austin, and more.",
+      "snippet": "How Artificial Intelligence is creating the next normal. Exclusive: Prices of Nvidia's B300 server at $1 million in China on US curbs.",
       "url": "https://www.reuters.com/technology/artificial-intelligence/"
+    },
+    {
+      "title": "This new brain-like chip could slash AI energy use by 70%",
+      "snippet": "University of Cambridge researchers develop a new brain-like chip that could reduce AI energy consumption by 70%.",
+      "url": "https://www.sciencedaily.com/releases/2026/04/260422044633.htm"
     }
   ],
   "tech": [
     {
-      "title": "AI A-Z 2026: Agentic & Generative AI, Prompt Engineering, RL",
-      "snippet": "Welcome to Artificial Intelligence A-Z! Learn all things AI and practice them by building 12 different AIs including a ChatBot App that speaks like Master Yoda in 5 Minutes.",
+      "title": "AI and Machine Learning Full Course 2026 [FREE] | Simplilearn",
+      "snippet": "A beginner-friendly program designed to help you understand how intelligent systems work and how machines learn from data.",
+      "url": "https://amazingelearning.com/ai-and-machine-learning-full-course-2026-free-ai-and-machine-learning-tutorial-simplilearn/"
+    },
+    {
+      "title": "AI A-Z 2026: Agentic & Generative AI, Prompt Engineering, RL | Udemy",
+      "snippet": "Learn AI concepts including Prompt Engineering, Generative AI, Agentic AI, Q-Learning, Deep Q-Learning, A3C, PPO, SAC, LLMs and Responsible AI. Build 12 different AI projects.",
       "url": "https://www.udemy.com/course/artificial-intelligence-az/"
     },
     {
-      "title": "MLcon London 2026 – The Event for Machine Learning & AI",
-      "snippet": "The Model Context Protocol (MCP) is becoming the universal handshake for AI agents—enabling agent orchestration, shared context, and interoperability. Learn practical controls, access controls, logging, and security best practices.",
-      "url": "https://mlconference.ai/london/"
-    },
-    {
-      "title": "Artificial Intelligence Basics Tutorial: Your Gateway to Understanding AI",
-      "snippet": "Unlock the fundamentals of Artificial Intelligence with our beginner-friendly tutorial. Learn about Machine Learning, Deep Learning, NLP, Computer Vision, and Robotics.",
-      "url": "https://www.tmilimited.co.uk/2026/04/artificial-intelligence-basics-tutorial.html"
+      "title": "Learn Artificial Intelligence Online: How to Start 2026",
+      "snippet": "This comprehensive guide outlines how to learn artificial intelligence online - what you need to start and how to obtain those skills.",
+      "url": "https://studyabroadnations.com/learn-artificial-intelligence-online/"
     }
   ]
 }
