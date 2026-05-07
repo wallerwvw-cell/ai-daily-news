@@ -1,16 +1,36 @@
 {
   "news": [
     {
-      "title": "Reuters AI News - Latest Headlines and Developments",
-      "snippet": "How Artificial Intelligence is creating the next normal. Exclusive: Prices of Nvidia's B300 server at $1 million in China on US curbs as strong demand for AI computing equipment nearly doubles prices.",
+      "title": "Anthropic's CEO Says It Could Grow by 80 Times This Year",
+      "snippet": "Dario Amodei, the chief executive of Anthropic, discusses the company's massive growth projections.",
+      "url": "https://www.nytimes.com/2026/05/06/technology/anthropic-ceo-ai-growth.html"
+    },
+    {
+      "title": "How Artificial Intelligence is creating the next normal",
+      "snippet": "Exclusive: Prices of Nvidia's B300 server at $1 million in China on US curbs.",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/"
+    },
+    {
+      "title": "Latest AI News from Reuters",
+      "snippet": "Latest headlines and developments in artificial intelligence.",
       "url": "https://www.reuters.com/technology/artificial-intelligence/"
     }
   ],
   "tech": [
     {
-      "title": "AI Tools for Tutorial Generation: The Complete 2026 Guide",
-      "snippet": "In 2026, AI tutorial generation represents a mature technology category with platforms offering advanced features like automatic language translation, AI-generated voiceovers, intelligent content organization, and brand customization.",
-      "url": "https://www.guidde.com/knowledge-hub/ai-tools-for-tutorial-generation-2026-guide"
+      "title": "What is a Large Language Model (LLM) - GeeksforGeeks",
+      "snippet": "Comprehensive guide to LLMs including Mistral 7B, BERT, RoBERTa, and BLOOM models.",
+      "url": "https://www.geeksforgeeks.org/artificial-intelligence/large-language-model-llm/"
+    },
+    {
+      "title": "AI A-Z 2026: Agentic & Generative AI, Prompt Engineering, RL",
+      "snippet": "Practical demonstration on leveraging advanced chatbot technology through user-friendly interface.",
+      "url": "https://www.udemy.com/course/artificial-intelligence-az/"
+    },
+    {
+      "title": "How to Learn AI & Machine Learning in 2026 | Full Roadmap",
+      "snippet": "Step by step roadmap to learn AI ML in 2026 with best resources.",
+      "url": "https://amazingelearning.com/how-to-learn-ai-machine-learning-in-2026-full-roadmap/"
     }
   ]
 }
