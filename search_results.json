@@ -1,1 +1,56 @@
-{"news": [{"title": "Nvidia B300 Server Prices Surge to $1 Million in China on US Curbs", "snippet": "Strong demand for AI computing equipment in China has nearly doubled prices for Nvidia's B300 servers to about 7 million yuan ($1 million) each", "url": "https://www.reuters.com/technology/artificial-intelligence/"}], "tech": [{"title": "Claude API with Python: Complete Tutorial 2026", "snippet": "Learn to use the Claude API with Python. Complete 2026 guide covering messages, streaming, vision, tool use, and async.", "url": "https://tutorials.technology/tutorials/tutorials/claude-api-python-tutorial-2026.html.html"}]}
+{
+  "news": [
+    {
+      "title": "Snap CEO announces layoff of 1,000 employees citing AI advancements",
+      "snippet": "Snap CEO Evan Spiegel announced the layoff of approximately 1,000 employees and the closure of over 300 open roles, citing rapid advancements in artificial intelligence.",
+      "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates"
+    },
+    {
+      "title": "How Artificial Intelligence is creating the next normal",
+      "snippet": "Reuters: Prices of Nvidia's B300 server at $1 million in China on US curbs.",
+      "url": "https://www.reuters.com/technology/artificial-intelligence/"
+    },
+    {
+      "title": "This AI knew the answers but didn't understand the questions",
+      "snippet": "New tests reveal it struggles with true understanding, exposing a major gap in today's AI systems.",
+      "url": "https://www.sciencedaily.com/releases/2026/04/260429102035.htm"
+    },
+    {
+      "title": "White House distances itself from tighter AI regulation",
+      "snippet": "Senior White House officials are trying to soothe industry concerns that the administration could require tech companies to submit their advanced AI models for federal vetting.",
+      "url": "https://www.politico.com/news/2026/05/07/white-house-ai-oversight-00910837"
+    },
+    {
+      "title": "AI Swarms Could Hijack Democracy Without Anyone Noticing",
+      "snippet": "AI-powered personas are becoming so realistic that they can infiltrate online communities and subtly steer public opinion.",
+      "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/"
+    }
+  ],
+  "tech": [
+    {
+      "title": "How To Learn Machine Learning in 2026",
+      "snippet": "Learn to build AI models, generate content, work with prompts and apply generative techniques to real use cases.",
+      "url": "https://www.igmguru.com/blog/learn-machine-learning"
+    },
+    {
+      "title": "How to Learn AI & Machine Learning in 2026 | Full Roadmap",
+      "snippet": "Fastest way to become an AI Engineer - Complete roadmap for AI/ML learning in 2026.",
+      "url": "https://amazingelearning.com/how-to-learn-ai-machine-learning-in-2026-full-roadmap/"
+    },
+    {
+      "title": "Neuromorphic computers can now solve complex physics equations",
+      "snippet": "Neuromorphic computers modeled after the human brain can now solve the complex equations behind physics simulations.",
+      "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/"
+    },
+    {
+      "title": "Future-Proof Your Career: A Guide to AI Skills",
+      "snippet": "Proficiency in programming languages such as Python is almost universally required, given its extensive libraries for machine learning like TensorFlow and PyTorch.",
+      "url": "https://www.sayeducate.com/2026/05/07/future-proof-your-career-a-guide-to-ai-skills/"
+    },
+    {
+      "title": "AI News & Artificial Intelligence | TechCrunch",
+      "snippet": "Read the latest on artificial intelligence and machine learning tech, the companies that are building them, and the ethical issues AI raises today.",
+      "url": "https://techcrunch.com/category/artificial-intelligence/"
+    }
+  ]
+}
