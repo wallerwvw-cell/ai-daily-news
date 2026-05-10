@@ -1,56 +1,56 @@
 {
   "news": [
     {
-      "title": "Snap CEO announces layoff of 1,000 employees citing AI advancements",
-      "snippet": "Snap CEO Evan Spiegel announced the layoff of approximately 1,000 employees and the closure of over 300 open roles, citing rapid advancements in artificial intelligence.",
-      "url": "https://www.crescendo.ai/news/latest-ai-news-and-updates"
-    },
-    {
-      "title": "How Artificial Intelligence is creating the next normal",
-      "snippet": "Reuters: Prices of Nvidia's B300 server at $1 million in China on US curbs.",
+      "title": "Anthropic signs $1.8 billion AI cloud deal with Akamai",
+      "snippet": "Bloomberg News reports - Major AI cloud infrastructure deal signed in May 2026",
       "url": "https://www.reuters.com/technology/artificial-intelligence/"
     },
     {
-      "title": "This AI knew the answers but didn't understand the questions",
-      "snippet": "New tests reveal it struggles with true understanding, exposing a major gap in today's AI systems.",
-      "url": "https://www.sciencedaily.com/releases/2026/04/260429102035.htm"
+      "title": "AI Updates Today - Latest AI Model Releases",
+      "snippet": "AI model versioning follows patterns that help developers understand capabilities and stability",
+      "url": "https://llm-stats.com/llm-updates"
     },
     {
-      "title": "White House distances itself from tighter AI regulation",
-      "snippet": "Senior White House officials are trying to soothe industry concerns that the administration could require tech companies to submit their advanced AI models for federal vetting.",
-      "url": "https://www.politico.com/news/2026/05/07/white-house-ai-oversight-00910837"
+      "title": "AI in the sky: Inside the FAA plan to overhaul air traffic",
+      "snippet": "The FAA is targeting September for the start of an operational demonstration with AI",
+      "url": "https://www.politico.com/news/2026/05/09/faa-artificial-intelligence-00909097"
     },
     {
-      "title": "AI Swarms Could Hijack Democracy Without Anyone Noticing",
-      "snippet": "AI-powered personas are becoming so realistic that they can infiltrate online communities and subtly steer public opinion.",
-      "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/"
+      "title": "Google I/O 2026: We Expect Updates for Gemini, Android XR Glasses",
+      "snippet": "The new version of Gemini will likely be one of the biggest announcements of Google I/O 2026",
+      "url": "https://www.cnet.com/tech/services-and-software/google-io-2026-everything-to-know/"
+    },
+    {
+      "title": "AI isn't actually 'taking' your job. Here's what's happening instead",
+      "snippet": "The anxiety around AI at work is real - Microsoft report about how AI is changing jobs",
+      "url": "https://www.cnn.com/2026/05/10/tech/ai-taking-jobs"
     }
   ],
   "tech": [
     {
-      "title": "How To Learn Machine Learning in 2026",
-      "snippet": "Learn to build AI models, generate content, work with prompts and apply generative techniques to real use cases.",
-      "url": "https://www.igmguru.com/blog/learn-machine-learning"
+      "title": "Claude API with Python: Complete Tutorial 2026",
+      "snippet": "Learn to use the Claude API with Python - covering messages, streaming, vision, tool use, and async",
+      "url": "https://tutorials.technology/tutorials/tutorials/claude-api-python-tutorial-2026.html.html"
     },
     {
-      "title": "How to Learn AI & Machine Learning in 2026 | Full Roadmap",
-      "snippet": "Fastest way to become an AI Engineer - Complete roadmap for AI/ML learning in 2026.",
-      "url": "https://amazingelearning.com/how-to-learn-ai-machine-learning-in-2026-full-roadmap/"
+      "title": "Using AI at work: A practical 90-day guide",
+      "snippet": "A practical step-by-step plan to boost productivity, build key skills and grow your career",
+      "url": "https://news.microsoft.com/signal/articles/work-smarter-in-90-days-a-real-world-guide-to-using-ai/"
     },
     {
-      "title": "Neuromorphic computers can now solve complex physics equations",
-      "snippet": "Neuromorphic computers modeled after the human brain can now solve the complex equations behind physics simulations.",
-      "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/"
+      "title": "How To Use AI in 2026: AI Tools Explained for Beginners",
+      "snippet": "Best tools in 2026: ChatGPT 5.2, Gemini 3, Sora 2, Veo 3.1, Kling 3.0",
+      "url": "https://www.mylivingai.com/how-to-use-ai-in-2026-ai-tools-explained-for-beginners/"
     },
     {
-      "title": "Future-Proof Your Career: A Guide to AI Skills",
-      "snippet": "Proficiency in programming languages such as Python is almost universally required, given its extensive libraries for machine learning like TensorFlow and PyTorch.",
-      "url": "https://www.sayeducate.com/2026/05/07/future-proof-your-career-a-guide-to-ai-skills/"
+      "title": "How to Build AI Agents (2026): Frameworks, Code & Systems",
+      "snippet": "Learn how to build AI agents using LangChain, AutoGen, & CrewAI",
+      "url": "https://blog.eduonix.com/2026/05/building-ai-agents-in-2026-a-practical-guide-to-agentic-ai-systems-frameworks-and-workflows/"
     },
     {
-      "title": "AI News & Artificial Intelligence | TechCrunch",
-      "snippet": "Read the latest on artificial intelligence and machine learning tech, the companies that are building them, and the ethical issues AI raises today.",
-      "url": "https://techcrunch.com/category/artificial-intelligence/"
+      "title": "AI Tools for Tutorial Generation: The Complete 2026 Guide",
+      "snippet": "Companies using AI-powered tutorial generation tools reduce content creation time by 87%",
+      "url": "https://www.guidde.com/knowledge-hub/ai-tools-for-tutorial-generation-2026-guide"
     }
   ]
 }
