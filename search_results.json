@@ -1,56 +1,16 @@
 {
   "news": [
     {
-      "title": "Google races to put Gemini at the center of Android before Apple's AI reboot",
-      "snippet": "Google said Gemini Intelligence will be able to move across apps, understand what's on the screen and complete tasks that would normally require a user to jump between multiple services.",
-      "url": "https://www.cnbc.com/2026/05/12/google-races-put-gemini-at-center-of-android-before-apples-ai-reboot.html"
-    },
-    {
-      "title": "Anthropic and NEC collaborate to build Japan's largest AI engineering workforce",
-      "snippet": "Announcements - Apr 24, 2026: Anthropic and NEC collaborate to build Japan's largest AI engineering workforce.",
-      "url": "https://www.anthropic.com/news"
-    },
-    {
-      "title": "Salesforce launches Summer '26 AI upgrade amid stock slump",
-      "snippet": "Major AI release: The Summer '26 update rolls out on June 15 with multi-agent orchestration, Slack-first workflows, real-time data activation, and AI-powered customer engagement.",
-      "url": "https://www.msn.com/en-us/news/other/salesforce-launches-summer-26-ai-upgrade-amid-stock-slump/gm-GM88D93973"
-    },
-    {
-      "title": "Userlytics Delivers Major Platform Releases in Early 2026, Advancing AI-Driven UX Research",
-      "snippet": "New AI Insights and AI Annotations - The completion of major AI-related platform releases in early 2026: AI Insights and Automated Annotations.",
-      "url": "https://www.einnews.com/pr_news/909432172/userlytics-delivers-major-platform-releases-in-early-2026-advancing-ai-driven-ux-research"
-    },
-    {
-      "title": "Reuters AI News | Latest Headlines and Developments",
-      "snippet": "Latest AI news headlines and developments from Reuters.",
+      "title": "Anthropic's Mythos sends US banks rushing to plug cyber holes",
+      "snippet": "U.S. banks are rushing to fix scores of IT system weaknesses flagged by Anthropic's powerful but costly Mythos AI tool, prompting urgent repairs, software upgrades...",
       "url": "https://www.reuters.com/technology/artificial-intelligence/"
     }
   ],
   "tech": [
     {
-      "title": "How to Learn AI From Scratch in 2026: A Complete Expert Guide",
-      "snippet": "Discover step-by-step tutorials, practical tips, and an 8-week learning plan to master deep learning with PyTorch.",
-      "url": "https://www.datacamp.com/blog/how-to-learn-ai"
-    },
-    {
-      "title": "AI System Design: A Complete Guide (2026)",
-      "snippet": "This guide walks you through the essential steps of architecting AI systems, including defining data ingestion, managing model lifecycles, and optimizing inference layers.",
-      "url": "https://www.systemdesignhandbook.com/guides/ai-system-design/"
-    },
-    {
       "title": "What Is Agentic AI? A Complete Guide for 2026",
-      "snippet": "Agentic AI is artificial intelligence that takes goal-directed action on its own — planning, calling tools, and adapting until a task is done.",
+      "snippet": "Agentic AI is artificial intelligence that takes goal-directed action on its own — planning, calling tools, and adapting until a task is done. This guide covers what makes AI agentic, how it differs from chatbots and copilots, the 6 levels of autonomy, real-world tools, and how to evaluate them.",
       "url": "https://agentic.ai/what-is-agentic-ai"
-    },
-    {
-      "title": "AI A-Z [2026]: Agentic AI, Gen AI, Prompt Engineering and RL",
-      "snippet": "Welcome to Artificial Intelligence - Parts include: Prompt Engineering, Generative AI, Agentic AI, Q-Learning, Deep Q-Learning, A3C, PPO and SAC, LLMs, Responsible AI.",
-      "url": "https://www.udemy.com/course/artificial-intelligence-az/"
-    },
-    {
-      "title": "Student Guide to Artificial Intelligence 2026",
-      "snippet": "A detailed student resource with guidance on developing AI skills, academic integrity, ethics and career preparation.",
-      "url": "https://studentguidetoai.org/"
     }
   ]
 }
