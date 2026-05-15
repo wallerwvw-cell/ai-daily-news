@@ -1,16 +1,36 @@
 {
   "news": [
     {
-      "title": "Anthropic's Mythos sends US banks rushing to plug cyber holes",
-      "snippet": "U.S. banks are rushing to fix scores of IT system weaknesses flagged by Anthropic's powerful but costly Mythos AI tool, prompting urgent repairs, software upgrades...",
-      "url": "https://www.reuters.com/technology/artificial-intelligence/"
+      "title": "Researchers have built a fully implantable device that sends light-based messages directly to the brain",
+      "snippet": "Mice learned to interpret these artificial patterns as meaningful signals, even without touch. This breakthrough in brain-computer interfaces could enable new neural therapies.",
+      "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/"
+    },
+    {
+      "title": "RIT Launches New Major in Artificial Intelligence",
+      "snippet": "A six-course minor in AI will also be launched, with students focusing on natural language processing, cybersecurity and generative modeling.",
+      "url": "https://reporter.rit.edu/8601/news/rit-launches-new-major-in-artificial-intelligence/"
+    },
+    {
+      "title": "Aquinas College adds new artificial intelligence major for fall 2026 semester",
+      "snippet": "Courses in the artificial intelligence literacy major will include AI for Everyone, AI for Decision-Making, AI Ethics and more.",
+      "url": "https://www.woodtv.com/westmichiganguide/aquinas-college-adds-new-artificial-intelligence-literacy-major/"
     }
   ],
   "tech": [
     {
-      "title": "What Is Agentic AI? A Complete Guide for 2026",
-      "snippet": "Agentic AI is artificial intelligence that takes goal-directed action on its own — planning, calling tools, and adapting until a task is done. This guide covers what makes AI agentic, how it differs from chatbots and copilots, the 6 levels of autonomy, real-world tools, and how to evaluate them.",
-      "url": "https://agentic.ai/what-is-agentic-ai"
+      "title": "10 GitHub Repositories to Master Self-Hosting",
+      "snippet": "Essential GitHub repos for developers looking to master self-hosting AI and ML models. Includes tools for vector search, RAG systems, and production deployment.",
+      "url": "https://www.kdnuggets.com/"
+    },
+    {
+      "title": "What Is Deep Learning? - IBM",
+      "snippet": "Learn fundamental concepts and build your skills with hands-on labs, courses, guided projects. Learn how to incorporate generative AI and machine learning into your business.",
+      "url": "https://www.ibm.com/think/topics/deep-learning"
+    },
+    {
+      "title": "AI career pathways practical guide for engineers",
+      "snippet": "Detailed guides on portfolio building, salary negotiation strategies, and technical implementation tutorials. Covers RAG system implementation to production deployment strategies.",
+      "url": "https://zenvanriel.com/ai-engineer-blog/ai-career-pathways-practical-guide-engineers-2026/"
     }
   ]
 }
