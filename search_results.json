@@ -1,36 +1,26 @@
 {
   "news": [
     {
-      "title": "Researchers have built a fully implantable device that sends light-based messages directly to the brain",
-      "snippet": "Mice learned to interpret these artificial patterns as meaningful signals, even without touch. This breakthrough in brain-computer interfaces could enable new neural therapies.",
-      "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/"
+      "title": "What Is Agentic AI? A Complete Guide for 2026",
+      "snippet": "A given AI agent has some level of agenticness. In 2026, agentic AI ships production code, runs literature reviews across millions of papers, manages outbound sales campaigns, controls browsers and computers to complete tasks, automates customer support workflows, monitors and rebalances investment portfolios, and orchestrates multi-step business processes.",
+      "url": "https://agentic.ai/what-is-agentic-ai"
     },
     {
-      "title": "RIT Launches New Major in Artificial Intelligence",
-      "snippet": "A six-course minor in AI will also be launched, with students focusing on natural language processing, cybersecurity and generative modeling.",
-      "url": "https://reporter.rit.edu/8601/news/rit-launches-new-major-in-artificial-intelligence/"
-    },
-    {
-      "title": "Aquinas College adds new artificial intelligence major for fall 2026 semester",
-      "snippet": "Courses in the artificial intelligence literacy major will include AI for Everyone, AI for Decision-Making, AI Ethics and more.",
-      "url": "https://www.woodtv.com/westmichiganguide/aquinas-college-adds-new-artificial-intelligence-literacy-major/"
+      "title": "2026 AI Partner·北京亦庄AI+产业大会即将启幕，三大亮点抢先看！",
+      "snippet": "5月19日上午，大会将正式发布\"2026 AI最佳场景渗透案例\"。该评选自年初启动，覆盖智能制造、内容生产、金融医疗、公共服务等数十个赛道，由14位产学研专家多维度评审，入选案例均在产业一线实现了可量化的投资回报。",
+      "url": "https://www.ncsti.gov.cn/kjdt/scyq/bjjjjskfq/jkdt/202605/t20260515_246762.html"
     }
   ],
   "tech": [
     {
-      "title": "10 GitHub Repositories to Master Self-Hosting",
-      "snippet": "Essential GitHub repos for developers looking to master self-hosting AI and ML models. Includes tools for vector search, RAG systems, and production deployment.",
-      "url": "https://www.kdnuggets.com/"
+      "title": "Prompt, Prompt Engineering, 提示工程, 提示词-大模型服务平台百炼",
+      "snippet": "提示（Prompt）是您输入给大模型（LLM）的文本信息，用于明确地告诉模型您想要解决的问题或完成的任务，也是大语言模型理解用户需求并生成相关、准确回答或内容的基础。",
+      "url": "https://help.aliyun.com/zh/model-studio/prompt-engineering-guide"
     },
     {
-      "title": "What Is Deep Learning? - IBM",
-      "snippet": "Learn fundamental concepts and build your skills with hands-on labs, courses, guided projects. Learn how to incorporate generative AI and machine learning into your business.",
-      "url": "https://www.ibm.com/think/topics/deep-learning"
-    },
-    {
-      "title": "AI career pathways practical guide for engineers",
-      "snippet": "Detailed guides on portfolio building, salary negotiation strategies, and technical implementation tutorials. Covers RAG system implementation to production deployment strategies.",
-      "url": "https://zenvanriel.com/ai-engineer-blog/ai-career-pathways-practical-guide-engineers-2026/"
+      "title": "What is LLM? - Large Language Models Explained",
+      "snippet": "Learn what Large Language Models are and why LLMs are essential. Discover its benefits and how you can use it to create new content and ideas including text, conversations, images, video, and audio.",
+      "url": "https://aws.amazon.com/what-is/large-language-model/"
     }
   ]
 }
