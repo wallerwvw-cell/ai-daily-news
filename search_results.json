@@ -1,36 +1,36 @@
 {
   "news": [
     {
-      "title": "Scientists Discover AI Can Make Humans More Creative",
-      "snippet": "Artificial intelligence is often portrayed as a tool that replaces human work, but new research from Swansea University suggests a far more exciting role: creative collaborator.",
-      "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/"
-    },
-    {
       "title": "Anthropic's Mythos sends US banks rushing to plug cyber holes",
-      "snippet": "U.S. banks are rushing to fix scores of IT system weaknesses flagged by Anthropic's powerful but costly Mythos AI tool, prompting urgent repairs.",
+      "snippet": "U.S. banks are rushing to fix scores of IT system weaknesses flagged by Anthropic's powerful but costly Mythos AI tool, prompting urgent repairs, software upgrades and raising the possibility of disruption for customers.",
       "url": "https://www.reuters.com/technology/artificial-intelligence/"
     },
     {
-      "title": "LLM News Today (May 2026) – AI Model Releases",
-      "snippet": "Large language model updates include GPT, Claude, Gemini, Llama, and other model families. Check our LLM News section for the latest updates.",
-      "url": "https://llm-stats.com/ai-news"
+      "title": "AI just discovered new physics in the fourth state of matter",
+      "snippet": "Emory University researchers used AI to discover new physics in the fourth state of matter, marking a significant breakthrough in scientific AI applications.",
+      "url": "https://www.sciencedaily.com/releases/2026/04/260422044635.htm"
+    },
+    {
+      "title": "AI Updates Today (May 2026) – Latest AI Model Releases",
+      "snippet": "Timeline tracking release dates, new capabilities, benchmark improvements, and feature additions for major AI models including OpenAI, Anthropic, Google Cloud AI, and more.",
+      "url": "https://llm-stats.com/llm-updates"
     }
   ],
   "tech": [
     {
-      "title": "Machine Learning A-Z [2026]: ML, DL, AI with AWS, Python & R",
-      "snippet": "This lecture covers essential data preprocessing steps, including identifying different types of missing data and applying appropriate imputation methods.",
-      "url": "https://www.udemy.com/course/machinelearning/"
-    },
-    {
-      "title": "Google AI Updates April 2026",
-      "snippet": "They launched features like a free video generator, a personal coding tutor and advanced research assistants.",
-      "url": "https://blog.google/innovation-and-ai/technology/ai/google-ai-updates-april-2026/"
-    },
-    {
       "title": "How to Learn AI From Scratch in 2026: A Complete Expert Guide",
-      "snippet": "Succeeding in AI requires mastery of three critical areas: Mathematics, Programming, and Machine Learning concepts.",
+      "snippet": "Step-by-step tutorials, practical tips, and an 8-week learning plan to master deep learning with PyTorch and Python fundamentals.",
       "url": "https://www.datacamp.com/blog/how-to-learn-ai"
+    },
+    {
+      "title": "Steps to Mastering AI: A Practical Roadmap for 2026",
+      "snippet": "A practical roadmap to mastering artificial intelligence in 2026. From math foundations to deploying real-world projects.",
+      "url": "https://theinsightrr.com/steps-to-mastering-ai-a-practical-roadmap-for"
+    },
+    {
+      "title": "Student Guide to Artificial Intelligence",
+      "snippet": "An introduction to AI tools from a student perspective, with practical advice on using AI responsibly while in college and preparing for the AI future.",
+      "url": "https://studentguidetoai.org/"
     }
   ]
 }
