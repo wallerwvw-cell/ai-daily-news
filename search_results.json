@@ -1,16 +1,1 @@
-{
-  "news": [
-    {
-      "title": "GPT-5.2 Model Release Notes - Extended Thinking Fix",
-      "snippet": "OpenAI发布了GPT-5.2模型更新，修复了Extended thinking设置的意外变更问题。",
-      "url": "https://help.openai.com/en/articles/9624314-model-release-notes"
-    }
-  ],
-  "tech": [
-    {
-      "title": "The Ultimate Machine Learning Tutorial for 2026",
-      "snippet": "全面的机器学习教程，帮助理解机器学习概念、应用以及如何成为机器学习工程师。",
-      "url": "https://www.simplilearn.com/tutorials/machine-learning-tutorial"
-    }
-  ]
-}
+{"news": [{"title": "Researchers at Penn have created a hybrid light-matter particle that could dramatically speed up AI computing while using far less energy", "snippet": "The breakthrough may help replace some electronic computing processes with ultra-efficient optical computing", "url": "https://www.sciencedaily.com/news/computers_math/artificial_intelligence/"}], "tech": [{"title": "Understanding AI: AI tools, training, and skills", "snippet": "This expert-led training is designed to help small business owners tackle real business problems using Google AI tools", "url": "https://ai.google/learn-ai-skills/"}]}
